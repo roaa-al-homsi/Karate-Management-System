@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarateSystem", "KarateSystem.csproj", "{9870F381-A117-42B9-95B8-13C0B4FC382C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarateSystemUI", "KarateSystemUI.csproj", "{9870F381-A117-42B9-95B8-13C0B4FC382C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarateBusiness", "..\KarateBusiness\KarateBusiness.csproj", "{5F2885B0-23D3-4B87-B6F7-5038ABA25760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarateDataAccess", "..\KarateDataAccess\KarateDataAccess.csproj", "{147EF04C-73B8-40EE-8521-B6782C22469C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{9870F381-A117-42B9-95B8-13C0B4FC382C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9870F381-A117-42B9-95B8-13C0B4FC382C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9870F381-A117-42B9-95B8-13C0B4FC382C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2885B0-23D3-4B87-B6F7-5038ABA25760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2885B0-23D3-4B87-B6F7-5038ABA25760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2885B0-23D3-4B87-B6F7-5038ABA25760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2885B0-23D3-4B87-B6F7-5038ABA25760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147EF04C-73B8-40EE-8521-B6782C22469C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147EF04C-73B8-40EE-8521-B6782C22469C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147EF04C-73B8-40EE-8521-B6782C22469C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147EF04C-73B8-40EE-8521-B6782C22469C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
