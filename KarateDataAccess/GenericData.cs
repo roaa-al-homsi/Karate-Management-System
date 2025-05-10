@@ -33,14 +33,14 @@ namespace KarateDataAccess
             catch (Exception ex) { LogException(ex.Message, EventLogEntryType.Error); }
             return dt;
         }
-        static public bool Delete<T>(string query, string ParameterName, T DeleteBy)
+        static public bool Delete<T>(string query, string parameterName, T deleteBy)
         {
             int RowsAffected = 0;
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue(ParameterName, DeleteBy);
+                    command.Parameters.AddWithValue(parameterName, deleteBy);
 
                     try
                     {
@@ -57,7 +57,7 @@ namespace KarateDataAccess
 
             return RowsAffected > 0;
         }
-        static public bool Exist<T>(string query, string ParameterName, T ParameterValue)
+        static public bool Exist<T>(string query, string parameterName, T parameterValue)
         {
             bool IsFound = false;
             try
@@ -66,7 +66,7 @@ namespace KarateDataAccess
                 {
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue(ParameterName, ParameterValue);
+                        command.Parameters.AddWithValue(parameterName, parameterValue);
 
                         connection.Open();
                         using (SqlDataReader Reader = command.ExecuteReader())
@@ -81,7 +81,7 @@ namespace KarateDataAccess
             return IsFound;
 
         }
-        static public void LogException(string EventMessage, EventLogEntryType eventLogEntryType)
+        static public void LogException(string eventMessage, EventLogEntryType eventLogEntryType)
         {
             string sourceName = ConfigurationManager.AppSettings["SourceAppName"];
             try
@@ -91,7 +91,7 @@ namespace KarateDataAccess
                     EventLog.CreateEventSource(sourceName, ConfigurationManager.AppSettings["EventLogName"]);
 
                 }
-                EventLog.WriteEntry(sourceName, EventMessage, eventLogEntryType);
+                EventLog.WriteEntry(sourceName, eventMessage, eventLogEntryType);
             }
             catch (Exception ex)
             {
