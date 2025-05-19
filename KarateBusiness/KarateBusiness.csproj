@@ -41,10 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeltRank.cs" />
+    <Compile Include="BeltTest.cs" />
     <Compile Include="Instructor.cs" />
     <Compile Include="Member.cs" />
+    <Compile Include="MemberInstructors.cs" />
+    <Compile Include="Payment.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubscriptionPeriod.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KarateDataAccess\KarateDataAccess.csproj">
