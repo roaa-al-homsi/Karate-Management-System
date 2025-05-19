@@ -46,5 +46,11 @@
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KarateDataAccess\KarateDataAccess.csproj">
+      <Project>{147ef04c-73b8-40ee-8521-b6782c22469c}</Project>
+      <Name>KarateDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
