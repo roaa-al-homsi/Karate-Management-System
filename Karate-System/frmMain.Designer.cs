@@ -1,6 +1,6 @@
 ﻿namespace KarateSystem
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnPayments = new Guna.UI2.WinForms.Guna2Button();
             this.btnBeltTests = new Guna.UI2.WinForms.Guna2Button();
@@ -315,9 +315,9 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(21, 113);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(56, 113);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(258, 38);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(180, 38);
             this.guna2HtmlLabel3.TabIndex = 48;
             this.guna2HtmlLabel3.Text = "Karate System";
             // 
@@ -400,7 +400,7 @@
             this.labCurrentUser.TabIndex = 0;
             this.labCurrentUser.Text = "Username";
             // 
-            // Form1
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -409,7 +409,7 @@
             this.Controls.Add(this.panelMainMenu);
             this.Controls.Add(this.guna2Panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.Text = "Form1";
             this.pnlOptions.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
