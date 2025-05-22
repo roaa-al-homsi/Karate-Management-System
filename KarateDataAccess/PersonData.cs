@@ -125,6 +125,50 @@ namespace KarateDataAccess
             catch (Exception ex) { GenericData.LogException(ex.Message, EventLogEntryType.Error); }
             return IsFound;
         }
+        public static bool Get(string nationalNumber, ref int personId, ref string firstName, ref string secondName, ref string thirdName, ref string lastName, ref DateTime dateOfBirth, ref byte gender, ref string address, ref string phone, ref string email, ref int countryId, ref string imagePath)
+        {
+            bool IsFound = false;
+            string query = "select * from People  WHERE NationalNo=@NationalNo;";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@NationalNo", nationalNumber);
+                    try
+                    {
+                        connection.Open();
+                        SqlDataReader reader = command.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            IsFound = true;
+                            personId = (int)reader["id"];
+                            firstName = (string)reader["firstName"];
+                            secondName = (string)reader["secondName"];
+                            thirdName = reader["thirdName"] != DBNull.Value ? (string)reader["thirdName"] : string.Empty;
+                            lastName = (string)reader["lastName"];
+                            nationalNumber = (string)reader["nationalNumber"];
+                            countryId = (int)reader["countryId"];
+                            dateOfBirth = (DateTime)reader["dateOfBirth"];
+                            email = reader["email"] != DBNull.Value ? (string)reader["email"] : string.Empty;
+                            address = (string)reader["address"];
+                            phone = (string)reader["phone"];
+                            gender = (byte)reader["gender"];
+                            imagePath = reader["imagePath"] != DBNull.Value ? (string)reader["imagePath"] : string.Empty;
+
+
+                        }
+                        else
+                        {
+                            IsFound = false;
+                        }
+                    }
+                    catch (Exception ex) { GenericData.LogException(ex.Message, EventLogEntryType.Error); }
+                }
+            }
+
+            return IsFound;
+        }
+
         static public DataTable All()
         {
             return GenericData.All("select * from People");
@@ -137,7 +181,10 @@ namespace KarateDataAccess
         {
             return GenericData.Exist("select Found=1 from People where id= @id", "@id", id);
         }
-
+        static public string GetNameCountryById(int id)
+        {
+            return GenericData.GetNameById("select Name from Countries where Id=@Id", "@Id", id);
+        }
     }
 
 

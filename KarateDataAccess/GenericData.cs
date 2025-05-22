@@ -99,7 +99,28 @@ namespace KarateDataAccess
 
             }
         }
-
+        static public string GetNameById(string query, string ParameterName, int ParameterValue)
+        {
+            string name = string.Empty;
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue(ParameterName, ParameterValue);
+                    try
+                    {
+                        connection.Open();
+                        object result = command.ExecuteScalar();
+                        if (result != null)
+                        {
+                            name = result.ToString();
+                        }
+                    }
+                    catch (Exception ex) { }
+                }
+            }
+            return name;
+        }
     }
 
 }

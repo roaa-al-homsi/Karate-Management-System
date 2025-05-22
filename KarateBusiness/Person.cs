@@ -8,6 +8,23 @@ namespace KarateBusiness
     {
         private enum Mode { Add, Update }
         private Mode _mode;
+        public enum enGender { Male = 0, Female = 1 }
+        public string GenderText
+        {
+            get
+            {
+                switch (gender)
+                {
+                    case enGender.Male:
+                        return "Male";
+
+                    case enGender.Female:
+                        return "Female";
+                    default:
+                        return "Male";
+                }
+            }
+        }
         public int id { get; set; }
         public string firstName { get; set; }
         public string secondName { get; set; }
@@ -19,8 +36,16 @@ namespace KarateBusiness
         public string email { get; set; }
         public string address { get; set; }
         public string phone { get; set; }
-        public byte gender { get; set; }
+        public enGender gender { get; set; }
         public string imagePath { get; set; }
+
+        public string FullName
+        {
+            get
+            {
+                return string.IsNullOrEmpty(this.thirdName) ? $"{this.firstName} {this.secondName} {this.lastName}" : $"{this.firstName} {this.secondName} {this.thirdName} {this.lastName}";
+            }
+        }
 
         public Person()
         {
@@ -124,6 +149,39 @@ namespace KarateBusiness
             }
             return null;
         }
+
+        public static Person FindByNationalNo(string nationalNo)
+        {
+            int PersonId = -1;
+            string FirstName = string.Empty;
+            string SecondName = string.Empty;
+            string ThirdName = string.Empty;
+            string LastName = string.Empty;
+            DateTime DateOfBirth = DateTime.MinValue;
+            byte Gender = 0;
+            string Address = string.Empty;
+            string Phone = string.Empty;
+            string Email = string.Empty;
+            int NationalityCountryID = -1;
+            string ImagePath = string.Empty;
+
+            if (PersonData.Get(nationalNo, ref PersonId, ref FirstName, ref SecondName, ref ThirdName, ref LastName, ref DateOfBirth, ref Gender, ref Address, ref Phone, ref Email, ref NationalityCountryID, ref ImagePath))
+            {
+                return new Person(PersonId, nationalNo, FirstName, SecondName, ThirdName, LastName, DateOfBirth, (enGender)Gender, Address, Phone, Email, NationalityCountryID, ImagePath);
+            }
+            return null;
+        }
+        public static string GetNameCountryById(int id)
+        {
+            return PersonData.GetNameCountryById(id);
+        }
+
+
+
+
+
+
+
     }
 
 
