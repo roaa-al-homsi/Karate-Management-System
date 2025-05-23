@@ -60,12 +60,12 @@ namespace KarateBusiness
             this.email = string.Empty;
             this.address = string.Empty;
             this.phone = string.Empty;
-            this.gender = 0;
+            this.gender = enGender.Male;
             this.imagePath = string.Empty;
 
             _mode = Mode.Add;
         }
-        private Person(int id, string firstName, string secondName, string thirdName, string lastName, string nationalNumber, int countryId, DateTime dateOfBirth, string email, string address, string phone, byte gender, string imagePath)
+        private Person(int id, string firstName, string secondName, string thirdName, string lastName, string nationalNumber, int countryId, DateTime dateOfBirth, string email, string address, string phone, enGender gender, string imagePath)
         {
             this.id = id;
             this.firstName = firstName;
@@ -86,14 +86,14 @@ namespace KarateBusiness
         }
         private bool _Add()
         {
-            this.id = PersonData.Add(this.firstName, this.secondName, this.thirdName, this.lastName, this.nationalNumber, this.countryId, this.dateOfBirth, this.email, this.address, this.phone, this.gender, this.imagePath);
+            this.id = PersonData.Add(this.firstName, this.secondName, this.thirdName, this.lastName, this.nationalNumber, this.countryId, this.dateOfBirth, this.email, this.address, this.phone, (byte)this.gender, this.imagePath);
 
             return (this.id != -1);
         }
 
         private bool _Update()
         {
-            return PersonData.Update(this.id, this.firstName, this.secondName, this.thirdName, this.lastName, this.nationalNumber, this.countryId, this.dateOfBirth, this.email, this.address, this.phone, this.gender, this.imagePath);
+            return PersonData.Update(this.id, this.firstName, this.secondName, this.thirdName, this.lastName, this.nationalNumber, this.countryId, this.dateOfBirth, this.email, this.address, this.phone, (byte)this.gender, this.imagePath);
         }
         public bool Save()
         {
@@ -140,34 +140,35 @@ namespace KarateBusiness
             string email = string.Empty;
             string address = string.Empty;
             string phone = string.Empty;
-            byte gender = 0;
+            byte gender = (byte)enGender.Male;
             string imagePath = string.Empty;
 
             if (PersonData.Get(id, ref firstName, ref secondName, ref thirdName, ref lastName, ref nationalNumber, ref countryId, ref dateOfBirth, ref email, ref address, ref phone, ref gender, ref imagePath))
             {
-                return new Person(id, firstName, secondName, thirdName, lastName, nationalNumber, countryId, dateOfBirth, email, address, phone, gender, imagePath);
+                return new Person(id, firstName, secondName, thirdName, lastName, nationalNumber, countryId, dateOfBirth, email, address, phone, (enGender)gender, imagePath);
             }
             return null;
         }
 
         public static Person FindByNationalNo(string nationalNo)
         {
-            int PersonId = -1;
-            string FirstName = string.Empty;
-            string SecondName = string.Empty;
-            string ThirdName = string.Empty;
-            string LastName = string.Empty;
-            DateTime DateOfBirth = DateTime.MinValue;
-            byte Gender = 0;
-            string Address = string.Empty;
-            string Phone = string.Empty;
-            string Email = string.Empty;
-            int NationalityCountryID = -1;
-            string ImagePath = string.Empty;
+            int personId = -1;
+            string firstName = string.Empty;
+            string secondName = string.Empty;
+            string thirdName = string.Empty;
+            string lastName = string.Empty;
+            DateTime dateOfBirth = DateTime.MinValue;
+            byte gender = (byte)enGender.Male;
+            string address = string.Empty;
+            string phone = string.Empty;
+            string email = string.Empty;
+            int countryId = -1;
+            string imagePath = string.Empty;
 
-            if (PersonData.Get(nationalNo, ref PersonId, ref FirstName, ref SecondName, ref ThirdName, ref LastName, ref DateOfBirth, ref Gender, ref Address, ref Phone, ref Email, ref NationalityCountryID, ref ImagePath))
+            if (PersonData.Get(nationalNo, ref personId, ref firstName, ref secondName, ref thirdName, ref lastName, ref dateOfBirth, ref gender, ref address, ref phone, ref email, ref countryId, ref imagePath))
             {
-                return new Person(PersonId, nationalNo, FirstName, SecondName, ThirdName, LastName, DateOfBirth, (enGender)Gender, Address, Phone, Email, NationalityCountryID, ImagePath);
+                //(int id, string firstName, string secondName, string thirdName, string lastName, string nationalNumber, int countryId, DateTime dateOfBirth, string email, string address, string phone, enGender gender, string imagePath)
+                return new Person(personId, firstName, secondName, thirdName, lastName, nationalNo, countryId, dateOfBirth, email, address, phone, (enGender)gender, imagePath);
             }
             return null;
         }

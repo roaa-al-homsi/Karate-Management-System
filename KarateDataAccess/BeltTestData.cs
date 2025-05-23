@@ -26,8 +26,8 @@ namespace KarateDataAccess
                     try
                     {
                         connection.Open();
-                        object result = command.ExecuteScalar();
-                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                        object execResult = command.ExecuteScalar();
+                        if (execResult != null && int.TryParse(execResult.ToString(), out int insertedID))
                         {
                             newId = insertedID;
                         }

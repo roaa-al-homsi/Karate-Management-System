@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_PersonInfoCard));
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCountry = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,7 +59,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtNationalNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPerson)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
@@ -68,8 +69,46 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.Black;
+            this.guna2CustomGradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2CustomGradientPanel1.BorderThickness = 1;
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox8);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtCountry);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtBirth);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtGender);
+            this.guna2CustomGradientPanel1.Controls.Add(this.linkLabEdit);
+            this.guna2CustomGradientPanel1.Controls.Add(this.labId);
+            this.guna2CustomGradientPanel1.Controls.Add(this.LabPersonId);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtName);
+            this.guna2CustomGradientPanel1.Controls.Add(this.linkLabPic);
+            this.guna2CustomGradientPanel1.Controls.Add(this.picPerson);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox7);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtAddress);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel12);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox6);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel11);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox5);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel10);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox4);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtPhone);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel9);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox3);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtEmail);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel8);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox2);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel7);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtNationalNo);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel6);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(3, 3);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(717, 383);
+            this.guna2CustomGradientPanel1.TabIndex = 4;
             // 
             // guna2PictureBox8
             // 
@@ -185,7 +224,6 @@
             this.linkLabEdit.TabIndex = 39;
             this.linkLabEdit.TabStop = true;
             this.linkLabEdit.Text = "Edit Person Info";
-            this.linkLabEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabEdit_LinkClicked);
             // 
             // labId
             // 
@@ -530,52 +568,15 @@
             this.guna2HtmlLabel6.TabIndex = 9;
             this.guna2HtmlLabel6.Text = "National No:";
             // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.guna2CustomGradientPanel1.BorderThickness = 1;
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox8);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtCountry);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtBirth);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtGender);
-            this.guna2CustomGradientPanel1.Controls.Add(this.linkLabEdit);
-            this.guna2CustomGradientPanel1.Controls.Add(this.labId);
-            this.guna2CustomGradientPanel1.Controls.Add(this.LabPersonId);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtName);
-            this.guna2CustomGradientPanel1.Controls.Add(this.linkLabPic);
-            this.guna2CustomGradientPanel1.Controls.Add(this.picPerson);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox7);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtAddress);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel12);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox6);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel11);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox5);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel10);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox4);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtPhone);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel9);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox3);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtEmail);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel8);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox2);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel7);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtNationalNo);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel6);
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(3, 3);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(717, 383);
-            this.guna2CustomGradientPanel1.TabIndex = 3;
-            // 
             // uc_PersonInfoCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Name = "uc_PersonInfoCard";
-            this.Size = new System.Drawing.Size(733, 393);
+            this.Size = new System.Drawing.Size(728, 394);
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPerson)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
@@ -585,14 +586,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.guna2CustomGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txtCountry;
@@ -622,6 +622,5 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox txtNationalNo;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
     }
 }

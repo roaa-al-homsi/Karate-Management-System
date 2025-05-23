@@ -18,10 +18,7 @@ namespace KarateSystem.People.uc_Controls
         {
             get { return _person; }
         }
-        public uc_PersonInfoCard()
-        {
-            InitializeComponent();
-        }
+
         private void _LoadImagePerson()
         {
             //picPerson.ImageLocation = string.IsNullOrWhiteSpace(_Person.ImagePath) ?
@@ -92,10 +89,9 @@ namespace KarateSystem.People.uc_Controls
             _FillPersonInfoDataToForm();
 
         }
-
-        private void linkLabEdit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        public uc_PersonInfoCard()
         {
-
+            InitializeComponent();
         }
     }
 }
