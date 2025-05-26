@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this.btnAllBooks = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlOptions = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnPayments = new Guna.UI2.WinForms.Guna2Button();
             this.btnBeltTests = new Guna.UI2.WinForms.Guna2Button();
@@ -38,8 +40,7 @@
             this.btnUsers = new Guna.UI2.WinForms.Guna2Button();
             this.btnInstructors = new Guna.UI2.WinForms.Guna2Button();
             this.btnMembers = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAllBooks = new Guna.UI2.WinForms.Guna2Button();
-            this.pnlOptions = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnManagePeople = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -55,195 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCurrentUser)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLogout.FillColor = System.Drawing.Color.Black;
-            this.btnLogout.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnLogout.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnLogout.Location = new System.Drawing.Point(0, 688);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(291, 59);
-            this.btnLogout.TabIndex = 13;
-            this.btnLogout.Tag = "Logout";
-            this.btnLogout.Text = "Logout";
-            // 
-            // btnPayments
-            // 
-            this.btnPayments.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnPayments.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPayments.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPayments.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPayments.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPayments.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPayments.FillColor = System.Drawing.Color.Black;
-            this.btnPayments.Font = new System.Drawing.Font("Andalus", 12F);
-            this.btnPayments.ForeColor = System.Drawing.Color.White;
-            this.btnPayments.Image = ((System.Drawing.Image)(resources.GetObject("btnPayments.Image")));
-            this.btnPayments.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPayments.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnPayments.Location = new System.Drawing.Point(0, 629);
-            this.btnPayments.Name = "btnPayments";
-            this.btnPayments.Size = new System.Drawing.Size(291, 59);
-            this.btnPayments.TabIndex = 12;
-            this.btnPayments.Tag = "Logins";
-            this.btnPayments.Text = "Logins";
-            // 
-            // btnBeltTests
-            // 
-            this.btnBeltTests.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnBeltTests.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBeltTests.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBeltTests.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBeltTests.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBeltTests.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBeltTests.FillColor = System.Drawing.Color.Black;
-            this.btnBeltTests.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBeltTests.ForeColor = System.Drawing.Color.White;
-            this.btnBeltTests.Image = ((System.Drawing.Image)(resources.GetObject("btnBeltTests.Image")));
-            this.btnBeltTests.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBeltTests.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnBeltTests.Location = new System.Drawing.Point(0, 570);
-            this.btnBeltTests.Name = "btnBeltTests";
-            this.btnBeltTests.Size = new System.Drawing.Size(291, 59);
-            this.btnBeltTests.TabIndex = 11;
-            this.btnBeltTests.Tag = "Belt Tests";
-            this.btnBeltTests.Text = "Belt Tests";
-            // 
-            // btnSubscriptionPeriods
-            // 
-            this.btnSubscriptionPeriods.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnSubscriptionPeriods.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSubscriptionPeriods.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSubscriptionPeriods.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSubscriptionPeriods.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSubscriptionPeriods.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubscriptionPeriods.FillColor = System.Drawing.Color.Black;
-            this.btnSubscriptionPeriods.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubscriptionPeriods.ForeColor = System.Drawing.Color.White;
-            this.btnSubscriptionPeriods.Image = ((System.Drawing.Image)(resources.GetObject("btnSubscriptionPeriods.Image")));
-            this.btnSubscriptionPeriods.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSubscriptionPeriods.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnSubscriptionPeriods.Location = new System.Drawing.Point(0, 511);
-            this.btnSubscriptionPeriods.Name = "btnSubscriptionPeriods";
-            this.btnSubscriptionPeriods.Size = new System.Drawing.Size(291, 59);
-            this.btnSubscriptionPeriods.TabIndex = 10;
-            this.btnSubscriptionPeriods.Tag = "Subscription Periods";
-            this.btnSubscriptionPeriods.Text = "Subscription Periods";
-            // 
-            // btnBeltRanks
-            // 
-            this.btnBeltRanks.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnBeltRanks.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBeltRanks.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBeltRanks.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBeltRanks.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBeltRanks.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBeltRanks.FillColor = System.Drawing.Color.Black;
-            this.btnBeltRanks.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBeltRanks.ForeColor = System.Drawing.Color.White;
-            this.btnBeltRanks.Image = ((System.Drawing.Image)(resources.GetObject("btnBeltRanks.Image")));
-            this.btnBeltRanks.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBeltRanks.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnBeltRanks.Location = new System.Drawing.Point(0, 452);
-            this.btnBeltRanks.Name = "btnBeltRanks";
-            this.btnBeltRanks.Size = new System.Drawing.Size(291, 59);
-            this.btnBeltRanks.TabIndex = 9;
-            this.btnBeltRanks.Tag = "Belt Ranks";
-            this.btnBeltRanks.Text = "Belt Ranks";
-            // 
-            // btnMembersInstructors
-            // 
-            this.btnMembersInstructors.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnMembersInstructors.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMembersInstructors.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMembersInstructors.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMembersInstructors.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMembersInstructors.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMembersInstructors.FillColor = System.Drawing.Color.Black;
-            this.btnMembersInstructors.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMembersInstructors.ForeColor = System.Drawing.Color.White;
-            this.btnMembersInstructors.Image = ((System.Drawing.Image)(resources.GetObject("btnMembersInstructors.Image")));
-            this.btnMembersInstructors.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMembersInstructors.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMembersInstructors.Location = new System.Drawing.Point(0, 393);
-            this.btnMembersInstructors.Name = "btnMembersInstructors";
-            this.btnMembersInstructors.Size = new System.Drawing.Size(291, 59);
-            this.btnMembersInstructors.TabIndex = 8;
-            this.btnMembersInstructors.Tag = "Members Instructors";
-            this.btnMembersInstructors.Text = "Members Instructors";
-            // 
-            // btnUsers
-            // 
-            this.btnUsers.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUsers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUsers.FillColor = System.Drawing.Color.Black;
-            this.btnUsers.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
-            this.btnUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnUsers.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnUsers.Location = new System.Drawing.Point(0, 334);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(291, 59);
-            this.btnUsers.TabIndex = 5;
-            this.btnUsers.Tag = "Users";
-            this.btnUsers.Text = "Users";
-            // 
-            // btnInstructors
-            // 
-            this.btnInstructors.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnInstructors.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnInstructors.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnInstructors.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnInstructors.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnInstructors.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInstructors.FillColor = System.Drawing.Color.Black;
-            this.btnInstructors.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInstructors.ForeColor = System.Drawing.Color.White;
-            this.btnInstructors.Image = ((System.Drawing.Image)(resources.GetObject("btnInstructors.Image")));
-            this.btnInstructors.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnInstructors.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnInstructors.Location = new System.Drawing.Point(0, 275);
-            this.btnInstructors.Name = "btnInstructors";
-            this.btnInstructors.Size = new System.Drawing.Size(291, 59);
-            this.btnInstructors.TabIndex = 4;
-            this.btnInstructors.Tag = "Instructors";
-            this.btnInstructors.Text = "Instructors";
-            // 
-            // btnMembers
-            // 
-            this.btnMembers.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnMembers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMembers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMembers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMembers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMembers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMembers.FillColor = System.Drawing.Color.Black;
-            this.btnMembers.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMembers.ForeColor = System.Drawing.Color.White;
-            this.btnMembers.Image = ((System.Drawing.Image)(resources.GetObject("btnMembers.Image")));
-            this.btnMembers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMembers.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMembers.Location = new System.Drawing.Point(0, 216);
-            this.btnMembers.Name = "btnMembers";
-            this.btnMembers.Size = new System.Drawing.Size(291, 59);
-            this.btnMembers.TabIndex = 3;
-            this.btnMembers.Tag = "Members";
-            this.btnMembers.Text = "Members";
             // 
             // btnAllBooks
             // 
@@ -278,13 +90,225 @@
             this.pnlOptions.Controls.Add(this.btnUsers);
             this.pnlOptions.Controls.Add(this.btnInstructors);
             this.pnlOptions.Controls.Add(this.btnMembers);
+            this.pnlOptions.Controls.Add(this.btnManagePeople);
             this.pnlOptions.Controls.Add(this.btnAllBooks);
             this.pnlOptions.Controls.Add(this.guna2Panel1);
             this.pnlOptions.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlOptions.Location = new System.Drawing.Point(0, 72);
             this.pnlOptions.Name = "pnlOptions";
-            this.pnlOptions.Size = new System.Drawing.Size(291, 754);
+            this.pnlOptions.Size = new System.Drawing.Size(291, 833);
             this.pnlOptions.TabIndex = 6;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogout.FillColor = System.Drawing.Color.Black;
+            this.btnLogout.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnLogout.Location = new System.Drawing.Point(0, 747);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(291, 59);
+            this.btnLogout.TabIndex = 23;
+            this.btnLogout.Tag = "Logout";
+            this.btnLogout.Text = "Logout";
+            // 
+            // btnPayments
+            // 
+            this.btnPayments.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnPayments.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPayments.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPayments.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPayments.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPayments.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPayments.FillColor = System.Drawing.Color.Black;
+            this.btnPayments.Font = new System.Drawing.Font("Andalus", 12F);
+            this.btnPayments.ForeColor = System.Drawing.Color.White;
+            this.btnPayments.Image = ((System.Drawing.Image)(resources.GetObject("btnPayments.Image")));
+            this.btnPayments.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPayments.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnPayments.Location = new System.Drawing.Point(0, 688);
+            this.btnPayments.Name = "btnPayments";
+            this.btnPayments.Size = new System.Drawing.Size(291, 59);
+            this.btnPayments.TabIndex = 22;
+            this.btnPayments.Tag = "Logins";
+            this.btnPayments.Text = "Logins";
+            // 
+            // btnBeltTests
+            // 
+            this.btnBeltTests.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnBeltTests.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBeltTests.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBeltTests.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBeltTests.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBeltTests.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBeltTests.FillColor = System.Drawing.Color.Black;
+            this.btnBeltTests.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBeltTests.ForeColor = System.Drawing.Color.White;
+            this.btnBeltTests.Image = ((System.Drawing.Image)(resources.GetObject("btnBeltTests.Image")));
+            this.btnBeltTests.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBeltTests.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnBeltTests.Location = new System.Drawing.Point(0, 629);
+            this.btnBeltTests.Name = "btnBeltTests";
+            this.btnBeltTests.Size = new System.Drawing.Size(291, 59);
+            this.btnBeltTests.TabIndex = 21;
+            this.btnBeltTests.Tag = "Belt Tests";
+            this.btnBeltTests.Text = "Belt Tests";
+            // 
+            // btnSubscriptionPeriods
+            // 
+            this.btnSubscriptionPeriods.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnSubscriptionPeriods.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSubscriptionPeriods.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSubscriptionPeriods.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSubscriptionPeriods.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSubscriptionPeriods.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSubscriptionPeriods.FillColor = System.Drawing.Color.Black;
+            this.btnSubscriptionPeriods.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubscriptionPeriods.ForeColor = System.Drawing.Color.White;
+            this.btnSubscriptionPeriods.Image = ((System.Drawing.Image)(resources.GetObject("btnSubscriptionPeriods.Image")));
+            this.btnSubscriptionPeriods.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSubscriptionPeriods.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnSubscriptionPeriods.Location = new System.Drawing.Point(0, 570);
+            this.btnSubscriptionPeriods.Name = "btnSubscriptionPeriods";
+            this.btnSubscriptionPeriods.Size = new System.Drawing.Size(291, 59);
+            this.btnSubscriptionPeriods.TabIndex = 20;
+            this.btnSubscriptionPeriods.Tag = "Subscription Periods";
+            this.btnSubscriptionPeriods.Text = "Subscription Periods";
+            // 
+            // btnBeltRanks
+            // 
+            this.btnBeltRanks.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnBeltRanks.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBeltRanks.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBeltRanks.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBeltRanks.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBeltRanks.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBeltRanks.FillColor = System.Drawing.Color.Black;
+            this.btnBeltRanks.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBeltRanks.ForeColor = System.Drawing.Color.White;
+            this.btnBeltRanks.Image = ((System.Drawing.Image)(resources.GetObject("btnBeltRanks.Image")));
+            this.btnBeltRanks.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBeltRanks.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnBeltRanks.Location = new System.Drawing.Point(0, 511);
+            this.btnBeltRanks.Name = "btnBeltRanks";
+            this.btnBeltRanks.Size = new System.Drawing.Size(291, 59);
+            this.btnBeltRanks.TabIndex = 19;
+            this.btnBeltRanks.Tag = "Belt Ranks";
+            this.btnBeltRanks.Text = "Belt Ranks";
+            // 
+            // btnMembersInstructors
+            // 
+            this.btnMembersInstructors.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnMembersInstructors.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMembersInstructors.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMembersInstructors.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMembersInstructors.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMembersInstructors.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMembersInstructors.FillColor = System.Drawing.Color.Black;
+            this.btnMembersInstructors.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMembersInstructors.ForeColor = System.Drawing.Color.White;
+            this.btnMembersInstructors.Image = ((System.Drawing.Image)(resources.GetObject("btnMembersInstructors.Image")));
+            this.btnMembersInstructors.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMembersInstructors.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnMembersInstructors.Location = new System.Drawing.Point(0, 452);
+            this.btnMembersInstructors.Name = "btnMembersInstructors";
+            this.btnMembersInstructors.Size = new System.Drawing.Size(291, 59);
+            this.btnMembersInstructors.TabIndex = 18;
+            this.btnMembersInstructors.Tag = "Members Instructors";
+            this.btnMembersInstructors.Text = "Members Instructors";
+            // 
+            // btnUsers
+            // 
+            this.btnUsers.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsers.FillColor = System.Drawing.Color.Black;
+            this.btnUsers.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.ForeColor = System.Drawing.Color.White;
+            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
+            this.btnUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnUsers.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnUsers.Location = new System.Drawing.Point(0, 393);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(291, 59);
+            this.btnUsers.TabIndex = 17;
+            this.btnUsers.Tag = "Users";
+            this.btnUsers.Text = "Users";
+            // 
+            // btnInstructors
+            // 
+            this.btnInstructors.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnInstructors.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInstructors.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInstructors.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInstructors.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInstructors.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInstructors.FillColor = System.Drawing.Color.Black;
+            this.btnInstructors.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInstructors.ForeColor = System.Drawing.Color.White;
+            this.btnInstructors.Image = ((System.Drawing.Image)(resources.GetObject("btnInstructors.Image")));
+            this.btnInstructors.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnInstructors.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnInstructors.Location = new System.Drawing.Point(0, 334);
+            this.btnInstructors.Name = "btnInstructors";
+            this.btnInstructors.Size = new System.Drawing.Size(291, 59);
+            this.btnInstructors.TabIndex = 16;
+            this.btnInstructors.Tag = "Instructors";
+            this.btnInstructors.Text = "Instructors";
+            // 
+            // btnMembers
+            // 
+            this.btnMembers.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnMembers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMembers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMembers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMembers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMembers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMembers.FillColor = System.Drawing.Color.Black;
+            this.btnMembers.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMembers.ForeColor = System.Drawing.Color.White;
+            this.btnMembers.Image = ((System.Drawing.Image)(resources.GetObject("btnMembers.Image")));
+            this.btnMembers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMembers.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnMembers.Location = new System.Drawing.Point(0, 275);
+            this.btnMembers.Name = "btnMembers";
+            this.btnMembers.Size = new System.Drawing.Size(291, 59);
+            this.btnMembers.TabIndex = 15;
+            this.btnMembers.Tag = "Members";
+            this.btnMembers.Text = "Members";
+            // 
+            // btnManagePeople
+            // 
+            this.btnManagePeople.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnManagePeople.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnManagePeople.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnManagePeople.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnManagePeople.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnManagePeople.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnManagePeople.FillColor = System.Drawing.Color.Black;
+            this.btnManagePeople.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManagePeople.ForeColor = System.Drawing.Color.White;
+            this.btnManagePeople.Image = ((System.Drawing.Image)(resources.GetObject("btnManagePeople.Image")));
+            this.btnManagePeople.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnManagePeople.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnManagePeople.Location = new System.Drawing.Point(0, 216);
+            this.btnManagePeople.Name = "btnManagePeople";
+            this.btnManagePeople.Size = new System.Drawing.Size(291, 59);
+            this.btnManagePeople.TabIndex = 14;
+            this.btnManagePeople.Tag = "People";
+            this.btnManagePeople.Text = "People";
+            this.btnManagePeople.Click += new System.EventHandler(this.btnManagePeople_Click);
             // 
             // guna2Panel1
             // 
@@ -325,9 +349,9 @@
             // 
             this.panelMainMenu.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.panelMainMenu.FillColor = System.Drawing.Color.Black;
-            this.panelMainMenu.Location = new System.Drawing.Point(285, 72);
+            this.panelMainMenu.Location = new System.Drawing.Point(289, 72);
             this.panelMainMenu.Name = "panelMainMenu";
-            this.panelMainMenu.Size = new System.Drawing.Size(1513, 754);
+            this.panelMainMenu.Size = new System.Drawing.Size(1509, 833);
             this.panelMainMenu.TabIndex = 8;
             // 
             // picCurrentUser
@@ -369,9 +393,9 @@
             this.btnTitle.Image = ((System.Drawing.Image)(resources.GetObject("btnTitle.Image")));
             this.btnTitle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTitle.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnTitle.Location = new System.Drawing.Point(12, 3);
+            this.btnTitle.Location = new System.Drawing.Point(289, 9);
             this.btnTitle.Name = "btnTitle";
-            this.btnTitle.Size = new System.Drawing.Size(615, 60);
+            this.btnTitle.Size = new System.Drawing.Size(474, 60);
             this.btnTitle.TabIndex = 2;
             this.btnTitle.Text = "Home";
             this.btnTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -404,12 +428,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1798, 826);
+            this.ClientSize = new System.Drawing.Size(1798, 905);
             this.Controls.Add(this.pnlOptions);
             this.Controls.Add(this.panelMainMenu);
             this.Controls.Add(this.guna2Panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.pnlOptions.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
@@ -422,15 +447,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button btnLogout;
-        private Guna.UI2.WinForms.Guna2Button btnPayments;
-        private Guna.UI2.WinForms.Guna2Button btnBeltTests;
-        private Guna.UI2.WinForms.Guna2Button btnSubscriptionPeriods;
-        private Guna.UI2.WinForms.Guna2Button btnBeltRanks;
-        private Guna.UI2.WinForms.Guna2Button btnMembersInstructors;
-        private Guna.UI2.WinForms.Guna2Button btnUsers;
-        private Guna.UI2.WinForms.Guna2Button btnInstructors;
-        private Guna.UI2.WinForms.Guna2Button btnMembers;
         private Guna.UI2.WinForms.Guna2Button btnAllBooks;
         private Guna.UI2.WinForms.Guna2Panel pnlOptions;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
@@ -442,6 +458,16 @@
         private Guna.UI2.WinForms.Guna2Button btnTitle;
         private Guna.UI2.WinForms.Guna2HtmlLabel labUserName;
         private Guna.UI2.WinForms.Guna2HtmlLabel labCurrentUser;
+        private Guna.UI2.WinForms.Guna2Button btnLogout;
+        private Guna.UI2.WinForms.Guna2Button btnPayments;
+        private Guna.UI2.WinForms.Guna2Button btnBeltTests;
+        private Guna.UI2.WinForms.Guna2Button btnSubscriptionPeriods;
+        private Guna.UI2.WinForms.Guna2Button btnBeltRanks;
+        private Guna.UI2.WinForms.Guna2Button btnMembersInstructors;
+        private Guna.UI2.WinForms.Guna2Button btnUsers;
+        private Guna.UI2.WinForms.Guna2Button btnInstructors;
+        private Guna.UI2.WinForms.Guna2Button btnMembers;
+        private Guna.UI2.WinForms.Guna2Button btnManagePeople;
     }
 }
 
