@@ -38,7 +38,7 @@ namespace KarateBusiness
         public string phone { get; set; }
         public enGender gender { get; set; }
         public string imagePath { get; set; }
-
+        public Country CountryInfo { get; }
         public string FullName
         {
             get

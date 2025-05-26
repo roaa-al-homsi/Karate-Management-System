@@ -83,6 +83,11 @@ namespace KarateBusiness
             }
             return null;
         }
+
+        public static int GetIdCountryByName(string name)
+        {
+            return CountryData.GetCountryIdByName(name);
+        }
     }
 
 

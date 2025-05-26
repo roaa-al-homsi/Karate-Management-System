@@ -58,6 +58,7 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalClasses\Util.cs" />
     <Compile Include="GlobalClasses\Validation.cs" />
     <Compile Include="People\frmAddUpdatePerson.cs">
       <SubType>Form</SubType>

@@ -118,7 +118,7 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.txtNationalNo);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel6);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Panel1);
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(21, 69);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(12, 69);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1092, 474);
             this.guna2CustomGradientPanel1.TabIndex = 2;
@@ -173,6 +173,7 @@
             this.btnCancel.Size = new System.Drawing.Size(64, 54);
             this.btnCancel.TabIndex = 36;
             this.btnCancel.UseTransparentBackground = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -190,6 +191,7 @@
             this.btnSave.Size = new System.Drawing.Size(64, 54);
             this.btnSave.TabIndex = 35;
             this.btnSave.UseTransparentBackground = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // linkLabSetImage
             // 
@@ -448,7 +450,7 @@
             // radioBtnMale
             // 
             this.radioBtnMale.BackColor = System.Drawing.Color.Transparent;
-            this.radioBtnMale.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.radioBtnMale.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.radioBtnMale.Image = ((System.Drawing.Image)(resources.GetObject("radioBtnMale.Image")));
             this.radioBtnMale.ImageOffset = new System.Drawing.Point(0, 0);
             this.radioBtnMale.ImageRotate = 0F;
@@ -458,11 +460,12 @@
             this.radioBtnMale.Size = new System.Drawing.Size(33, 34);
             this.radioBtnMale.TabIndex = 16;
             this.radioBtnMale.UseTransparentBackground = true;
+            this.radioBtnMale.CheckedChanged += new System.EventHandler(this.radioBtnMale_CheckedChanged);
             // 
             // radioBtnFemale
             // 
             this.radioBtnFemale.BackColor = System.Drawing.Color.Transparent;
-            this.radioBtnFemale.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.radioBtnFemale.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.radioBtnFemale.Image = ((System.Drawing.Image)(resources.GetObject("radioBtnFemale.Image")));
             this.radioBtnFemale.ImageOffset = new System.Drawing.Point(0, 0);
             this.radioBtnFemale.ImageRotate = 0F;
@@ -472,6 +475,7 @@
             this.radioBtnFemale.Size = new System.Drawing.Size(33, 34);
             this.radioBtnFemale.TabIndex = 15;
             this.radioBtnFemale.UseTransparentBackground = true;
+            this.radioBtnFemale.CheckedChanged += new System.EventHandler(this.radioBtnFemale_CheckedChanged);
             // 
             // guna2PictureBox2
             // 
@@ -718,7 +722,7 @@
             this.labTitleForm.BackColor = System.Drawing.Color.Transparent;
             this.labTitleForm.Font = new System.Drawing.Font("Andalus", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labTitleForm.ForeColor = System.Drawing.Color.DarkRed;
-            this.labTitleForm.Location = new System.Drawing.Point(459, 12);
+            this.labTitleForm.Location = new System.Drawing.Point(450, 12);
             this.labTitleForm.Name = "labTitleForm";
             this.labTitleForm.Size = new System.Drawing.Size(233, 34);
             this.labTitleForm.TabIndex = 3;
@@ -736,12 +740,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 555);
+            this.ClientSize = new System.Drawing.Size(1107, 555);
             this.Controls.Add(this.labTitleForm);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAddUpdatePerson";
             this.Text = "AddUpdatePerson";
+            this.Load += new System.EventHandler(this.frmAddUpdatePerson_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();

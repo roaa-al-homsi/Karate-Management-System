@@ -105,6 +105,10 @@ namespace KarateDataAccess
         {
             return GenericData.Exist("select Found=1 from Countries where id= @id", "@id", id);
         }
+        static public int GetCountryIdByName(string name)
+        {
+            return GenericData.GetIdByName("select Id from Countries where name=@name", "@name", name);
+        }
 
     }
 

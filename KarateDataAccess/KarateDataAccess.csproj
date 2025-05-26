@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="BeltRankData.cs" />
     <Compile Include="BeltTestData.cs" />
+    <Compile Include="CountryData.cs" />
     <Compile Include="GenericData.cs" />
     <Compile Include="InstructorData.cs" />
     <Compile Include="MemberData.cs" />
