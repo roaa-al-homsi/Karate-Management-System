@@ -173,6 +173,11 @@ namespace KarateDataAccess
         {
             return GenericData.All("select * from People");
         }
+
+        static public DataTable AllPersonInfoInView()
+        {
+            return GenericData.All(" select* from view_PersonInfo");
+        }
         static public bool Delete(int id)
         {
             return GenericData.Delete("delete People where id = @id", "@id", id);

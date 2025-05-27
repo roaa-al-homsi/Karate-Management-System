@@ -128,6 +128,10 @@ namespace KarateBusiness
         {
             return PersonData.All();
         }
+        public static DataTable AllPersonInfoInView()
+        {
+            return PersonData.AllPersonInfoInView();
+        }
         public static Person Find(int id)
         {
             string firstName = string.Empty;
