@@ -55,7 +55,7 @@ namespace KarateSystem.People.uc_Controls
         }
         private void _FillPersonInfoDataToForm()
         {
-            LabPersonId.Text = _personId.ToString();
+            LabPersonId.Text = _person.id.ToString();
             txtAddress.Text = _person.address;
             txtEmail.Text = _person.email;
             txtPhone.Text = _person.phone;
@@ -75,6 +75,7 @@ namespace KarateSystem.People.uc_Controls
                 MessageBox.Show($"There is no person with this Id {personId}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            _personId = _person.id;
             _FillPersonInfoDataToForm();
 
         }
