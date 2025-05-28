@@ -133,5 +133,11 @@ namespace KarateSystem.People
                     break;
             }
         }
+
+        private void btnAddPerson_Click(object sender, System.EventArgs e)
+        {
+            frmAddUpdatePerson frmAddUpdate = new frmAddUpdatePerson();
+            frmAddUpdate.ShowDialog();
+        }
     }
 }
