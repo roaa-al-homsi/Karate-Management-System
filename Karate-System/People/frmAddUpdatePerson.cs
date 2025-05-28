@@ -104,6 +104,7 @@ namespace KarateSystem.People
             txtEmail.Text = _person.email;//nullable
             txtNationalNo.Text = _person.nationalNumber;
             txtAddress.Text = _person.address;
+            txtPhone.Text = _person.phone;
             if (_person.gender == Person.enGender.Female)
             {
                 radioBtnFemale.Checked = true;

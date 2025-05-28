@@ -7,7 +7,7 @@ namespace KarateSystem.People
     public partial class frmManagePeople : Form
     {
         private frmMain _frmMain;
-        private DataTable _dtPeople = Person.AllPersonInfoInView();
+        private DataTable _dtPeople;
         public frmManagePeople(frmMain frmMain)
         {
             InitializeComponent();
@@ -70,6 +70,7 @@ namespace KarateSystem.People
 
         private void frmManagePeople_Load(object sender, System.EventArgs e)
         {
+            _dtPeople = Person.AllPersonInfoInView();
             dgvAllPeople.DataSource = _dtPeople;
             _ChangeFormatDgvAllPeople();
             _FillCmbFilterBy();
@@ -138,6 +139,13 @@ namespace KarateSystem.People
         {
             frmAddUpdatePerson frmAddUpdate = new frmAddUpdatePerson();
             frmAddUpdate.ShowDialog();
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmAddUpdatePerson addUpdatePerson = new frmAddUpdatePerson((int)dgvAllPeople.CurrentRow.Cells[0].Value);
+            addUpdatePerson.ShowDialog();
+            frmManagePeople_Load(null, null);
         }
     }
 }

@@ -80,7 +80,7 @@ namespace KarateBusiness
             this.phone = phone;
             this.gender = gender;
             this.imagePath = imagePath;
-
+            this.CountryInfo = Country.Find(countryId);
 
             _mode = Mode.Update;
         }
