@@ -170,6 +170,8 @@
             this.txtFilterBy.SelectedText = "";
             this.txtFilterBy.Size = new System.Drawing.Size(175, 36);
             this.txtFilterBy.TabIndex = 14;
+            this.txtFilterBy.TextChanged += new System.EventHandler(this.txtFilterBy_TextChanged);
+            this.txtFilterBy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterBy_KeyPress);
             // 
             // cmbFilterBy
             // 
