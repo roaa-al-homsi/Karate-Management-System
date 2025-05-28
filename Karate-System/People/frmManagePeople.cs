@@ -147,5 +147,11 @@ namespace KarateSystem.People
             addUpdatePerson.ShowDialog();
             frmManagePeople_Load(null, null);
         }
+
+        private void showDetailsToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmShowPersonInfo frmShowPersonInfo = new frmShowPersonInfo((int)dgvAllPeople.CurrentRow.Cells[0].Value);
+            frmShowPersonInfo.ShowDialog();
+        }
     }
 }
