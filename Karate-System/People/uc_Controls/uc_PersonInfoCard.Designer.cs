@@ -224,6 +224,7 @@
             this.linkLabEdit.TabIndex = 39;
             this.linkLabEdit.TabStop = true;
             this.linkLabEdit.Text = "Edit Person Info";
+            this.linkLabEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabEdit_LinkClicked);
             // 
             // labId
             // 

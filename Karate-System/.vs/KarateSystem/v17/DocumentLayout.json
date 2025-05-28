@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:people\\uc_controls\\uc_personinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\people\\uc_controls\\uc_personinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:people\\uc_controls\\uc_personinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\people\\frmshowpersoninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:people\\frmshowpersoninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,20 +45,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "uc_PersonInfoCard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\People\\uc_Controls\\uc_PersonInfoCard.cs",
+              "RelativeDocumentMoniker": "People\\uc_Controls\\uc_PersonInfoCard.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\People\\uc_Controls\\uc_PersonInfoCard.cs [Design] \u2B24",
+              "RelativeToolTip": "People\\uc_Controls\\uc_PersonInfoCard.cs [Design] \u2B24",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T23:53:39.339Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "uc_PersonInfoCard.cs",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\People\\uc_Controls\\uc_PersonInfoCard.cs",
               "RelativeDocumentMoniker": "People\\uc_Controls\\uc_PersonInfoCard.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\People\\uc_Controls\\uc_PersonInfoCard.cs",
-              "RelativeToolTip": "People\\uc_Controls\\uc_PersonInfoCard.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAcwE0AAAAiAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\People\\uc_Controls\\uc_PersonInfoCard.cs \u2B24",
+              "RelativeToolTip": "People\\uc_Controls\\uc_PersonInfoCard.cs \u2B24",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGMAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T23:48:38.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmShowPersonInfo.cs",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\People\\frmShowPersonInfo.cs",
               "RelativeDocumentMoniker": "People\\frmShowPersonInfo.cs",
@@ -67,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "frmShowPersonInfo.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\People\\frmShowPersonInfo.cs",
               "RelativeDocumentMoniker": "People\\frmShowPersonInfo.cs",
@@ -79,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\KarateBusiness\\Person.cs",
               "RelativeDocumentMoniker": "..\\KarateBusiness\\Person.cs",
@@ -92,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "frmManagePeople.cs",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\People\\frmManagePeople.cs",
               "RelativeDocumentMoniker": "People\\frmManagePeople.cs",
@@ -105,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "frmManagePeople.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\People\\frmManagePeople.cs",
               "RelativeDocumentMoniker": "People\\frmManagePeople.cs",
