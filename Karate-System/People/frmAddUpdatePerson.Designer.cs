@@ -450,7 +450,7 @@
             // radioBtnMale
             // 
             this.radioBtnMale.BackColor = System.Drawing.Color.Transparent;
-            this.radioBtnMale.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.radioBtnMale.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.radioBtnMale.Image = ((System.Drawing.Image)(resources.GetObject("radioBtnMale.Image")));
             this.radioBtnMale.ImageOffset = new System.Drawing.Point(0, 0);
             this.radioBtnMale.ImageRotate = 0F;
@@ -465,7 +465,7 @@
             // radioBtnFemale
             // 
             this.radioBtnFemale.BackColor = System.Drawing.Color.Transparent;
-            this.radioBtnFemale.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.radioBtnFemale.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.radioBtnFemale.Image = ((System.Drawing.Image)(resources.GetObject("radioBtnFemale.Image")));
             this.radioBtnFemale.ImageOffset = new System.Drawing.Point(0, 0);
             this.radioBtnFemale.ImageRotate = 0F;
@@ -745,6 +745,7 @@
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAddUpdatePerson";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddUpdatePerson";
             this.Load += new System.EventHandler(this.frmAddUpdatePerson_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
