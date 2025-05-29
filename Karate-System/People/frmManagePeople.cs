@@ -1,4 +1,5 @@
 ﻿using KarateBusiness;
+using System;
 using System.Data;
 using System.Windows.Forms;
 
@@ -152,6 +153,22 @@ namespace KarateSystem.People
         {
             frmShowPersonInfo frmShowPersonInfo = new frmShowPersonInfo((int)dgvAllPeople.CurrentRow.Cells[0].Value);
             frmShowPersonInfo.ShowDialog();
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure delete this person?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                if (Person.Delete(Convert.ToInt32(dgvAllPeople.CurrentRow.Cells[0].Value)))
+                {
+                    MessageBox.Show("Delete Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmManagePeople_Load(null, null);
+                }
+                else
+                {
+                    MessageBox.Show("Delete Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
