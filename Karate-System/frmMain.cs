@@ -1,5 +1,6 @@
 ﻿using Guna.UI2.WinForms;
 using KarateSystem.People;
+using KarateSystem.Users;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -88,6 +89,12 @@ namespace KarateSystem
         {
             btnTitle.Image = btnManagePeople.Image;
             OpenChildFormAsync(new frmManagePeople(this), sender);
+        }
+
+        private void btnUsers_Click(object sender, System.EventArgs e)
+        {
+            btnTitle.Image = btnManageUsers.Image;
+            OpenChildFormAsync(new frmManagementUsers(this), sender);
         }
     }
 }

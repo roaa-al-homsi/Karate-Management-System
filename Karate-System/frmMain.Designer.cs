@@ -37,7 +37,7 @@
             this.btnSubscriptionPeriods = new Guna.UI2.WinForms.Guna2Button();
             this.btnBeltRanks = new Guna.UI2.WinForms.Guna2Button();
             this.btnMembersInstructors = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUsers = new Guna.UI2.WinForms.Guna2Button();
+            this.btnManageUsers = new Guna.UI2.WinForms.Guna2Button();
             this.btnInstructors = new Guna.UI2.WinForms.Guna2Button();
             this.btnMembers = new Guna.UI2.WinForms.Guna2Button();
             this.btnManagePeople = new Guna.UI2.WinForms.Guna2Button();
@@ -87,7 +87,7 @@
             this.pnlOptions.Controls.Add(this.btnSubscriptionPeriods);
             this.pnlOptions.Controls.Add(this.btnBeltRanks);
             this.pnlOptions.Controls.Add(this.btnMembersInstructors);
-            this.pnlOptions.Controls.Add(this.btnUsers);
+            this.pnlOptions.Controls.Add(this.btnManageUsers);
             this.pnlOptions.Controls.Add(this.btnInstructors);
             this.pnlOptions.Controls.Add(this.btnMembers);
             this.pnlOptions.Controls.Add(this.btnManagePeople);
@@ -225,26 +225,27 @@
             this.btnMembersInstructors.Tag = "Members Instructors";
             this.btnMembersInstructors.Text = "Members Instructors";
             // 
-            // btnUsers
+            // btnManageUsers
             // 
-            this.btnUsers.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUsers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUsers.FillColor = System.Drawing.Color.Black;
-            this.btnUsers.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
-            this.btnUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnUsers.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnUsers.Location = new System.Drawing.Point(0, 393);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(291, 59);
-            this.btnUsers.TabIndex = 17;
-            this.btnUsers.Tag = "Users";
-            this.btnUsers.Text = "Users";
+            this.btnManageUsers.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnManageUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnManageUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnManageUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnManageUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnManageUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnManageUsers.FillColor = System.Drawing.Color.Black;
+            this.btnManageUsers.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageUsers.ForeColor = System.Drawing.Color.White;
+            this.btnManageUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnManageUsers.Image")));
+            this.btnManageUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnManageUsers.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnManageUsers.Location = new System.Drawing.Point(0, 393);
+            this.btnManageUsers.Name = "btnManageUsers";
+            this.btnManageUsers.Size = new System.Drawing.Size(291, 59);
+            this.btnManageUsers.TabIndex = 17;
+            this.btnManageUsers.Tag = "Users";
+            this.btnManageUsers.Text = "Users";
+            this.btnManageUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // btnInstructors
             // 
@@ -464,7 +465,7 @@
         private Guna.UI2.WinForms.Guna2Button btnSubscriptionPeriods;
         private Guna.UI2.WinForms.Guna2Button btnBeltRanks;
         private Guna.UI2.WinForms.Guna2Button btnMembersInstructors;
-        private Guna.UI2.WinForms.Guna2Button btnUsers;
+        private Guna.UI2.WinForms.Guna2Button btnManageUsers;
         private Guna.UI2.WinForms.Guna2Button btnInstructors;
         private Guna.UI2.WinForms.Guna2Button btnMembers;
         private Guna.UI2.WinForms.Guna2Button btnManagePeople;
