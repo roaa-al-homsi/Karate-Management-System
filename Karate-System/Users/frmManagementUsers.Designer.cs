@@ -1,6 +1,6 @@
-﻿namespace KarateSystem.People
+﻿namespace KarateSystem.Users
 {
-    partial class frmManagePeople
+    partial class frmManagementUsers
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManagePeople));
-            this.dgvAllPeople = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManagementUsers));
+            this.dgvAllUsers = new System.Windows.Forms.DataGridView();
             this.cmsManagePeople = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,29 +40,53 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnAddPerson = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnAddUser = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtFilterBy = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllPeople)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAllUsers)).BeginInit();
             this.cmsManagePeople.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvAllPeople
+            // dgvAllUsers
             // 
-            this.dgvAllPeople.AllowUserToAddRows = false;
-            this.dgvAllPeople.AllowUserToDeleteRows = false;
-            this.dgvAllPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAllPeople.ContextMenuStrip = this.cmsManagePeople;
-            this.dgvAllPeople.Location = new System.Drawing.Point(21, 344);
-            this.dgvAllPeople.Name = "dgvAllPeople";
-            this.dgvAllPeople.ReadOnly = true;
-            this.dgvAllPeople.RowHeadersWidth = 70;
-            this.dgvAllPeople.RowTemplate.Height = 24;
-            this.dgvAllPeople.Size = new System.Drawing.Size(1466, 304);
-            this.dgvAllPeople.TabIndex = 10;
+            this.dgvAllUsers.AllowUserToAddRows = false;
+            this.dgvAllUsers.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAllUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvAllUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAllUsers.ContextMenuStrip = this.cmsManagePeople;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAllUsers.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvAllUsers.Location = new System.Drawing.Point(21, 373);
+            this.dgvAllUsers.Name = "dgvAllUsers";
+            this.dgvAllUsers.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAllUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvAllUsers.RowHeadersWidth = 70;
+            this.dgvAllUsers.RowTemplate.Height = 24;
+            this.dgvAllUsers.Size = new System.Drawing.Size(1466, 304);
+            this.dgvAllUsers.TabIndex = 19;
             // 
             // cmsManagePeople
             // 
@@ -86,7 +113,6 @@
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.updateToolStripMenuItem.Text = "Update";
-            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
@@ -94,7 +120,6 @@
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // showDetailsToolStripMenuItem
             // 
@@ -102,17 +127,16 @@
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
             this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.showDetailsToolStripMenuItem.Text = "Show Details";
-            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(627, 47);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(627, 76);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 18;
+            this.guna2PictureBox1.TabIndex = 27;
             this.guna2PictureBox1.TabStop = false;
             // 
             // guna2HtmlLabel3
@@ -121,10 +145,10 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(46, 695);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(46, 724);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(114, 32);
-            this.guna2HtmlLabel3.TabIndex = 17;
+            this.guna2HtmlLabel3.TabIndex = 26;
             this.guna2HtmlLabel3.Text = "#Records:";
             // 
             // labCountRecords
@@ -133,26 +157,25 @@
             this.labCountRecords.BackColor = System.Drawing.Color.Transparent;
             this.labCountRecords.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCountRecords.ForeColor = System.Drawing.Color.Black;
-            this.labCountRecords.Location = new System.Drawing.Point(149, 694);
+            this.labCountRecords.Location = new System.Drawing.Point(149, 723);
             this.labCountRecords.Name = "labCountRecords";
             this.labCountRecords.Size = new System.Drawing.Size(104, 33);
-            this.labCountRecords.TabIndex = 16;
+            this.labCountRecords.TabIndex = 25;
             this.labCountRecords.Text = "??";
             this.labCountRecords.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnAddPerson
+            // btnAddUser
             // 
-            this.btnAddPerson.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddPerson.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddPerson.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPerson.Image")));
-            this.btnAddPerson.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnAddPerson.ImageRotate = 0F;
-            this.btnAddPerson.Location = new System.Drawing.Point(1375, 273);
-            this.btnAddPerson.Name = "btnAddPerson";
-            this.btnAddPerson.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddPerson.Size = new System.Drawing.Size(112, 65);
-            this.btnAddPerson.TabIndex = 15;
-            this.btnAddPerson.Click += new System.EventHandler(this.btnAddPerson_Click);
+            this.btnAddUser.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddUser.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddUser.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUser.Image")));
+            this.btnAddUser.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnAddUser.ImageRotate = 0F;
+            this.btnAddUser.Location = new System.Drawing.Point(1375, 302);
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddUser.Size = new System.Drawing.Size(112, 65);
+            this.btnAddUser.TabIndex = 24;
             // 
             // txtFilterBy
             // 
@@ -167,15 +190,13 @@
             this.txtFilterBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFilterBy.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFilterBy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFilterBy.Location = new System.Drawing.Point(310, 301);
+            this.txtFilterBy.Location = new System.Drawing.Point(310, 330);
             this.txtFilterBy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFilterBy.Name = "txtFilterBy";
             this.txtFilterBy.PlaceholderText = "";
             this.txtFilterBy.SelectedText = "";
             this.txtFilterBy.Size = new System.Drawing.Size(175, 36);
-            this.txtFilterBy.TabIndex = 14;
-            this.txtFilterBy.TextChanged += new System.EventHandler(this.txtFilterBy_TextChanged);
-            this.txtFilterBy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterBy_KeyPress);
+            this.txtFilterBy.TabIndex = 23;
             // 
             // cmbFilterBy
             // 
@@ -191,20 +212,19 @@
             this.cmbFilterBy.ItemHeight = 30;
             this.cmbFilterBy.Items.AddRange(new object[] {
             "None"});
-            this.cmbFilterBy.Location = new System.Drawing.Point(101, 302);
+            this.cmbFilterBy.Location = new System.Drawing.Point(101, 331);
             this.cmbFilterBy.Name = "cmbFilterBy";
             this.cmbFilterBy.Size = new System.Drawing.Size(186, 36);
-            this.cmbFilterBy.TabIndex = 13;
-            this.cmbFilterBy.SelectedIndexChanged += new System.EventHandler(this.cmbFilterBy_SelectedIndexChanged);
+            this.cmbFilterBy.TabIndex = 22;
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(21, 305);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(21, 334);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(74, 33);
-            this.guna2HtmlLabel2.TabIndex = 12;
+            this.guna2HtmlLabel2.TabIndex = 21;
             this.guna2HtmlLabel2.Text = "Filter By: ";
             // 
             // guna2HtmlLabel1
@@ -212,32 +232,31 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sakkal Majalla", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(627, 240);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(627, 269);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(300, 75);
-            this.guna2HtmlLabel1.TabIndex = 11;
-            this.guna2HtmlLabel1.Text = "Manage People";
+            this.guna2HtmlLabel1.TabIndex = 20;
+            this.guna2HtmlLabel1.Text = "Manage Users";
             // 
-            // frmManagePeople
+            // frmManagementUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1509, 833);
-            this.Controls.Add(this.dgvAllPeople);
+            this.Controls.Add(this.dgvAllUsers);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.labCountRecords);
-            this.Controls.Add(this.btnAddPerson);
+            this.Controls.Add(this.btnAddUser);
             this.Controls.Add(this.txtFilterBy);
             this.Controls.Add(this.cmbFilterBy);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmManagePeople";
-            this.Text = "Manage People";
-            this.Load += new System.EventHandler(this.frmManagePeople_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllPeople)).EndInit();
+            this.Name = "frmManagementUsers";
+            this.Text = "frmManagementUsers";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAllUsers)).EndInit();
             this.cmsManagePeople.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -247,7 +266,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvAllPeople;
+        private System.Windows.Forms.DataGridView dgvAllUsers;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip cmsManagePeople;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
@@ -255,7 +274,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel labCountRecords;
-        private Guna.UI2.WinForms.Guna2ImageButton btnAddPerson;
+        private Guna.UI2.WinForms.Guna2ImageButton btnAddUser;
         private Guna.UI2.WinForms.Guna2TextBox txtFilterBy;
         private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;

@@ -140,6 +140,7 @@ namespace KarateSystem.People
         {
             frmAddUpdatePerson frmAddUpdate = new frmAddUpdatePerson();
             frmAddUpdate.ShowDialog();
+            frmManagePeople_Load(null, null);
         }
 
         private void updateToolStripMenuItem_Click(object sender, System.EventArgs e)
