@@ -5,6 +5,7 @@ namespace KarateSystem.People.uc_Controls
 {
     public partial class uc_PersonInfoWithFilter : UserControl
     {
+
         private bool _ShowAddPerson = true;
         public bool ShowAddPerson
         {
@@ -94,11 +95,17 @@ namespace KarateSystem.People.uc_Controls
 
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
-            frmAddUpdatePerson frmAdd = new frmAddUpdatePerson();
-            //suscribe to event..
-            frmAdd.ShowDialog();
+            frmAddUpdatePerson frmAddUpdatePerson = new frmAddUpdatePerson();
+            frmAddUpdatePerson.DataBack += _DataBackMethod;
+            frmAddUpdatePerson.ShowDialog();
         }
-
+        private void _DataBackMethod(object sender, int personId)
+        {
+            cmbFilterBy.SelectedIndex = 0;
+            txtFilterValue.Text = personId.ToString();
+            uc_PersonInfoCard1.LoadPersonInfo(personId);
+            FilterEnable = false;
+        }
         private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
         {
             //check if the pressed key is Enter (character code is 13)

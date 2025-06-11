@@ -13,6 +13,9 @@ namespace KarateSystem.People
 {
     public partial class frmAddUpdatePerson : Form
     {
+        public delegate void DataBackEventHandler(object sender, int personId);
+
+        public event DataBackEventHandler DataBack;
         public enum Mode { Add = 1, Update = 2 }
         private Mode _mode;
 
@@ -302,7 +305,7 @@ namespace KarateSystem.People
                 labTitleForm.Text = "Update A Person";
                 this.Text = "Update A Person";
                 MessageBox.Show("Data Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //DataBack?.Invoke(this, _person.Id);
+                DataBack?.Invoke(this, _person.id);
             }
             else
             {

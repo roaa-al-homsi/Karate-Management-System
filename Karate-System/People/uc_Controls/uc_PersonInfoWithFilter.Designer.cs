@@ -143,9 +143,9 @@
             // 
             // uc_PersonInfoCard1
             // 
-            this.uc_PersonInfoCard1.Location = new System.Drawing.Point(3, 159);
+            this.uc_PersonInfoCard1.Location = new System.Drawing.Point(0, 134);
             this.uc_PersonInfoCard1.Name = "uc_PersonInfoCard1";
-            this.uc_PersonInfoCard1.Size = new System.Drawing.Size(726, 366);
+            this.uc_PersonInfoCard1.Size = new System.Drawing.Size(726, 391);
             this.uc_PersonInfoCard1.TabIndex = 2;
             // 
             // uc_PersonInfoWithFilter
