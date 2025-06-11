@@ -37,6 +37,7 @@
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,7 +46,6 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllUsers)).BeginInit();
             this.cmsManagePeople.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -73,7 +73,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvAllUsers.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvAllUsers.Location = new System.Drawing.Point(310, 384);
+            this.dgvAllUsers.Location = new System.Drawing.Point(389, 375);
             this.dgvAllUsers.Name = "dgvAllUsers";
             this.dgvAllUsers.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -86,7 +86,7 @@
             this.dgvAllUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvAllUsers.RowHeadersWidth = 70;
             this.dgvAllUsers.RowTemplate.Height = 24;
-            this.dgvAllUsers.Size = new System.Drawing.Size(893, 305);
+            this.dgvAllUsers.Size = new System.Drawing.Size(677, 305);
             this.dgvAllUsers.TabIndex = 19;
             // 
             // cmsManagePeople
@@ -107,34 +107,43 @@
             this.cmsManagePeople.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePeople.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePeople.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePeople.Size = new System.Drawing.Size(198, 108);
+            this.cmsManagePeople.Size = new System.Drawing.Size(215, 136);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // showDetailsToolStripMenuItem
             // 
             this.showDetailsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showDetailsToolStripMenuItem.Image")));
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.showDetailsToolStripMenuItem.Text = "Show Person Info";
+            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
+            // 
+            // changePasswordToolStripMenuItem
+            // 
+            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.changePasswordToolStripMenuItem.Text = "Change Password";
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(627, 76);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(565, 39);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -147,7 +156,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(46, 724);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(389, 707);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(114, 32);
             this.guna2HtmlLabel3.TabIndex = 26;
@@ -159,7 +168,7 @@
             this.labCountRecords.BackColor = System.Drawing.Color.Transparent;
             this.labCountRecords.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCountRecords.ForeColor = System.Drawing.Color.Black;
-            this.labCountRecords.Location = new System.Drawing.Point(149, 723);
+            this.labCountRecords.Location = new System.Drawing.Point(565, 706);
             this.labCountRecords.Name = "labCountRecords";
             this.labCountRecords.Size = new System.Drawing.Size(104, 33);
             this.labCountRecords.TabIndex = 25;
@@ -173,7 +182,7 @@
             this.btnAddUser.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUser.Image")));
             this.btnAddUser.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnAddUser.ImageRotate = 0F;
-            this.btnAddUser.Location = new System.Drawing.Point(1091, 302);
+            this.btnAddUser.Location = new System.Drawing.Point(954, 304);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAddUser.Size = new System.Drawing.Size(112, 65);
@@ -192,7 +201,7 @@
             this.txtFilterBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFilterBy.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFilterBy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFilterBy.Location = new System.Drawing.Point(599, 330);
+            this.txtFilterBy.Location = new System.Drawing.Point(678, 321);
             this.txtFilterBy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFilterBy.Name = "txtFilterBy";
             this.txtFilterBy.PlaceholderText = "";
@@ -218,8 +227,9 @@
             "None",
             "Id",
             "Person Id",
+            "FullName",
             "Username"});
-            this.cmbFilterBy.Location = new System.Drawing.Point(390, 331);
+            this.cmbFilterBy.Location = new System.Drawing.Point(469, 322);
             this.cmbFilterBy.Name = "cmbFilterBy";
             this.cmbFilterBy.Size = new System.Drawing.Size(186, 36);
             this.cmbFilterBy.TabIndex = 22;
@@ -229,7 +239,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(310, 334);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(389, 325);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(74, 33);
             this.guna2HtmlLabel2.TabIndex = 21;
@@ -240,17 +250,11 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sakkal Majalla", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(627, 269);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(588, 221);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(300, 75);
             this.guna2HtmlLabel1.TabIndex = 20;
             this.guna2HtmlLabel1.Text = "Manage Users";
-            // 
-            // changePasswordToolStripMenuItem
-            // 
-            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
-            this.changePasswordToolStripMenuItem.Text = "Change Password";
             // 
             // frmManagementUsers
             // 
@@ -269,7 +273,7 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManagementUsers";
-            this.Text = "frmManagementUsers";
+            this.Text = "Management Users";
             this.Load += new System.EventHandler(this.frmManagementUsers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllUsers)).EndInit();
             this.cmsManagePeople.ResumeLayout(false);

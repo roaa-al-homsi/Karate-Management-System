@@ -1,4 +1,5 @@
 ﻿using KarateBusiness;
+using KarateSystem.People;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -21,12 +22,31 @@ namespace KarateSystem.Users
             dgvAllUsers.DataSource = _dtAllUsers;
             cmbFilterBy.SelectedIndex = 0;
             txtFilterBy.Visible = cmbFilterBy.SelectedIndex != 0;
+            _ChangeFormatDgvAllPeople();
         }
         private void frmManagementUsers_Load(object sender, EventArgs e)
         {
             ResetDefaultValueToForm();
         }
 
+        private void _ChangeFormatDgvAllPeople()
+        {
+            if (dgvAllUsers.Rows.Count > 0)
+            {
+                //"Id";
+                dgvAllUsers.Columns[0].Width = 110;
+
+                //FullName
+                dgvAllUsers.Columns[0].Width = 150;
+
+                //username
+                dgvAllUsers.Columns[0].Width = 120;
+
+                //IsActive
+                dgvAllUsers.Columns[0].Width = 110;
+
+            }
+        }
         private void cmbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtFilterBy.Visible = cmbFilterBy.SelectedIndex != 0;
@@ -75,6 +95,39 @@ namespace KarateSystem.Users
                         e.Handled = true;
                     }
                     break;
+            }
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdatePerson frmAddUpdatePerson = new frmAddUpdatePerson((int)dgvAllUsers.CurrentRow.Cells[2].Value);
+            frmAddUpdatePerson.ShowDialog();
+            frmManagementUsers_Load(null, null);
+
+        }
+
+        private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowPersonInfo frmShowPersonInfo = new frmShowPersonInfo((int)dgvAllUsers.CurrentRow.Cells[2].Value);
+            frmShowPersonInfo.ShowDialog();
+            frmManagementUsers_Load(null, null);
+
+
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure delete this user?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                if (User.Delete(Convert.ToInt32(dgvAllUsers.CurrentRow.Cells[0].Value)))
+                {
+                    MessageBox.Show("Delete Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmManagementUsers_Load(null, null);
+                }
+                else
+                {
+                    MessageBox.Show("Delete Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
