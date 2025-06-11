@@ -1,4 +1,5 @@
 ﻿using KarateBusiness;
+using System;
 using System.Windows.Forms;
 
 namespace KarateSystem.People.uc_Controls
@@ -67,10 +68,10 @@ namespace KarateSystem.People.uc_Controls
             switch (cmbFilterBy.Text)
             {
                 case "Id":
-                    uc_PersonInfoCard1.LoadPersonInfo(_PersonId);
+                    uc_PersonInfoCard1.LoadPersonInfo(Convert.ToInt16(txtFilterValue.Text));
                     return;
                 case "National Number":
-                    uc_PersonInfoCard1.LoadPersonInfo(uc_PersonInfoCard1.SelectedPersonInfo.nationalNumber);
+                    uc_PersonInfoCard1.LoadPersonInfo(txtFilterValue.Text);
                     return;
             }
 

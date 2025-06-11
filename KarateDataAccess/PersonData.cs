@@ -128,12 +128,12 @@ namespace KarateDataAccess
         public static bool Get(string nationalNumber, ref int personId, ref string firstName, ref string secondName, ref string thirdName, ref string lastName, ref DateTime dateOfBirth, ref byte gender, ref string address, ref string phone, ref string email, ref int countryId, ref string imagePath)
         {
             bool IsFound = false;
-            string query = "select * from People  WHERE NationalNo=@NationalNo;";
+            string query = "select * from People  WHERE NationalNumber=@nationalNumber;";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@NationalNo", nationalNumber);
+                    command.Parameters.AddWithValue("@nationalNumber", nationalNumber);
                     try
                     {
                         connection.Open();

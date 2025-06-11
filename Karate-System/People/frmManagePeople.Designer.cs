@@ -42,9 +42,11 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnFind = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllPeople)).BeginInit();
             this.cmsManagePeople.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFind)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvAllPeople
@@ -218,12 +220,27 @@
             this.guna2HtmlLabel1.TabIndex = 11;
             this.guna2HtmlLabel1.Text = "Manage People";
             // 
+            // btnFind
+            // 
+            this.btnFind.BackColor = System.Drawing.Color.Transparent;
+            this.btnFind.Image = ((System.Drawing.Image)(resources.GetObject("btnFind.Image")));
+            this.btnFind.ImageRotate = 0F;
+            this.btnFind.Location = new System.Drawing.Point(1315, 272);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnFind.Size = new System.Drawing.Size(81, 65);
+            this.btnFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnFind.TabIndex = 19;
+            this.btnFind.TabStop = false;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
             // frmManagePeople
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1509, 833);
+            this.Controls.Add(this.btnFind);
             this.Controls.Add(this.dgvAllPeople);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -240,6 +257,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllPeople)).EndInit();
             this.cmsManagePeople.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFind)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,5 +278,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox btnFind;
     }
 }
