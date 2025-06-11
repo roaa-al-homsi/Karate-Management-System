@@ -70,6 +70,7 @@
             this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnAdd.TabIndex = 5;
             this.btnAdd.TabStop = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnFind
             // 
@@ -83,6 +84,7 @@
             this.btnFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnFind.TabIndex = 4;
             this.btnFind.TabStop = false;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // txtFilterValue
             // 
@@ -106,6 +108,7 @@
             this.txtFilterValue.SelectedText = "";
             this.txtFilterValue.Size = new System.Drawing.Size(195, 36);
             this.txtFilterValue.TabIndex = 2;
+            this.txtFilterValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterValue_KeyPress);
             // 
             // cmbFilterBy
             // 
@@ -127,6 +130,7 @@
             this.cmbFilterBy.Name = "cmbFilterBy";
             this.cmbFilterBy.Size = new System.Drawing.Size(195, 36);
             this.cmbFilterBy.TabIndex = 1;
+            this.cmbFilterBy.SelectedIndexChanged += new System.EventHandler(this.cmbFilterBy_SelectedIndexChanged);
             // 
             // guna2HtmlLabel1
             // 
@@ -139,9 +143,9 @@
             // 
             // uc_PersonInfoCard1
             // 
-            this.uc_PersonInfoCard1.Location = new System.Drawing.Point(3, 134);
+            this.uc_PersonInfoCard1.Location = new System.Drawing.Point(3, 159);
             this.uc_PersonInfoCard1.Name = "uc_PersonInfoCard1";
-            this.uc_PersonInfoCard1.Size = new System.Drawing.Size(728, 389);
+            this.uc_PersonInfoCard1.Size = new System.Drawing.Size(726, 366);
             this.uc_PersonInfoCard1.TabIndex = 2;
             // 
             // uc_PersonInfoWithFilter
@@ -152,6 +156,7 @@
             this.Controls.Add(this.gbFilter);
             this.Name = "uc_PersonInfoWithFilter";
             this.Size = new System.Drawing.Size(729, 528);
+            this.Load += new System.EventHandler(this.uc_PersonInfoWithFilter_Load);
             this.gbFilter.ResumeLayout(false);
             this.gbFilter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
