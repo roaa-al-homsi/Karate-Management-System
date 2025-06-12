@@ -37,13 +37,13 @@ namespace KarateSystem.Users
                 dgvAllUsers.Columns[0].Width = 110;
 
                 //FullName
-                dgvAllUsers.Columns[0].Width = 150;
+                dgvAllUsers.Columns[1].Width = 150;
 
                 //username
-                dgvAllUsers.Columns[0].Width = 120;
+                dgvAllUsers.Columns[2].Width = 120;
 
                 //IsActive
-                dgvAllUsers.Columns[0].Width = 110;
+                dgvAllUsers.Columns[3].Width = 120;
 
             }
         }
