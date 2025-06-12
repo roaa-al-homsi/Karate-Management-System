@@ -33,6 +33,7 @@ namespace KarateSystem.People
             _personId = personId;
             _mode = Mode.Update;
 
+
         }
         private void frmAddUpdatePerson_Load(object sender, EventArgs e)
         {
@@ -100,6 +101,7 @@ namespace KarateSystem.People
                 this.Close();
                 return;
             }
+            labPersonId.Text = _person.id.ToString();
             txtFirstName.Text = _person.firstName;
             txtSecondName.Text = _person.secondName;
             txtLastName.Text = _person.lastName;

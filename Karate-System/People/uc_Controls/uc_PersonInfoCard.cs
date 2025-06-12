@@ -97,8 +97,10 @@ namespace KarateSystem.People.uc_Controls
 
         private void linkLabEdit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmAddUpdatePerson frmAddUpdatePerson = new frmAddUpdatePerson(_personId);
+            frmAddUpdatePerson frmAddUpdatePerson = new frmAddUpdatePerson(SelectedPersonInfo.id);
             frmAddUpdatePerson.ShowDialog();
+
+
         }
     }
 }
