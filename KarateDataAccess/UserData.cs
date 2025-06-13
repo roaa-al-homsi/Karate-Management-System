@@ -114,10 +114,34 @@ namespace KarateDataAccess
         {
             return GenericData.Exist("select Found=1 from Users where id= @id", "@id", id);
         }
-
         static public bool ExistByPersonId(int personId)
         {
             return GenericData.Exist("select Found=1 from Users where PersonId= @personId", "@personId", personId);
+        }
+        static public bool ChangePassword(int userId, string newPassword)
+        {
+            int rowsAffected = 0;
+            string query = "update Users set Password=@newPassword WHERE id=@id;";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@id", userId);
+                    command.Parameters.AddWithValue("@newPassword", newPassword);
+
+                    try
+                    {
+                        connection.Open();
+                        rowsAffected = command.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        GenericData.LogException(ex.Message, EventLogEntryType.Error);
+                    }
+                }
+            }
+
+            return rowsAffected > 0;
         }
     }
 

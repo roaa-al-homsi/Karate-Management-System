@@ -137,5 +137,12 @@ namespace KarateSystem.Users
             frmManagementUsers_Load(null, null);
 
         }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChangePassword frmChangePassword = new frmChangePassword(Convert.ToInt32(dgvAllUsers.CurrentRow.Cells[0].Value));
+            frmChangePassword.ShowDialog();
+            frmManagementUsers_Load(null, null);
+        }
     }
 }

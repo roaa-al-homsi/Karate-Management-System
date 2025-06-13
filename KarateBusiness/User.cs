@@ -97,6 +97,11 @@ namespace KarateBusiness
             }
             return null;
         }
+
+        public bool ChangePassword()
+        {
+            return UserData.ChangePassword(this.id, this.password);
+        }
     }
 
 
