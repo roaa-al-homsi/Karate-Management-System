@@ -288,6 +288,7 @@
             this.btnMembers.TabIndex = 15;
             this.btnMembers.Tag = "Members";
             this.btnMembers.Text = "Members";
+            this.btnMembers.Click += new System.EventHandler(this.btnMembers_Click);
             // 
             // btnManagePeople
             // 
