@@ -67,6 +67,11 @@ namespace KarateBusiness
         {
             return UserData.Exist(id);
         }
+
+        public static bool ExistByPersonId(int personId)
+        {
+            return UserData.ExistByPersonId(personId);
+        }
         public static bool Delete(int id)
         {
             if (!Exist(id))

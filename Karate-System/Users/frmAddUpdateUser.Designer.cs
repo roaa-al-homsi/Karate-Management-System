@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddUpdateUser));
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.tcAddUser = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpPersonInfo = new System.Windows.Forms.TabPage();
-            this.tpUserInfo = new System.Windows.Forms.TabPage();
+            this.btnNext = new Guna.UI2.WinForms.Guna2Button();
             this.uc_PersonInfoWithFilter1 = new KarateSystem.People.uc_Controls.uc_PersonInfoWithFilter();
+            this.tpUserInfo = new System.Windows.Forms.TabPage();
             this.panelContainerUserInfo = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.chkIsActive = new Guna.UI2.WinForms.Guna2CustomCheckBox();
@@ -47,12 +49,13 @@
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnNext = new Guna.UI2.WinForms.Guna2Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tcAddUser.SuspendLayout();
             this.tpPersonInfo.SuspendLayout();
             this.tpUserInfo.SuspendLayout();
             this.panelContainerUserInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
@@ -73,6 +76,7 @@
             this.btnSave.Size = new System.Drawing.Size(100, 45);
             this.btnSave.TabIndex = 126;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -92,6 +96,7 @@
             this.btnCancel.Size = new System.Drawing.Size(100, 45);
             this.btnCancel.TabIndex = 127;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // tcAddUser
             // 
@@ -134,6 +139,35 @@
             this.tpPersonInfo.Text = "Person";
             this.tpPersonInfo.UseVisualStyleBackColor = true;
             // 
+            // btnNext
+            // 
+            this.btnNext.AutoRoundedCorners = true;
+            this.btnNext.BorderRadius = 21;
+            this.btnNext.CheckedState.CustomBorderColor = System.Drawing.Color.HotPink;
+            this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNext.FillColor = System.Drawing.Color.Black;
+            this.btnNext.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
+            this.btnNext.Location = new System.Drawing.Point(733, 546);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(100, 45);
+            this.btnNext.TabIndex = 129;
+            this.btnNext.Text = "Next";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // uc_PersonInfoWithFilter1
+            // 
+            this.uc_PersonInfoWithFilter1.FilterEnable = true;
+            this.uc_PersonInfoWithFilter1.Location = new System.Drawing.Point(6, 33);
+            this.uc_PersonInfoWithFilter1.Name = "uc_PersonInfoWithFilter1";
+            this.uc_PersonInfoWithFilter1.ShowAddPerson = true;
+            this.uc_PersonInfoWithFilter1.Size = new System.Drawing.Size(729, 528);
+            this.uc_PersonInfoWithFilter1.TabIndex = 0;
+            // 
             // tpUserInfo
             // 
             this.tpUserInfo.Controls.Add(this.panelContainerUserInfo);
@@ -144,15 +178,6 @@
             this.tpUserInfo.TabIndex = 1;
             this.tpUserInfo.Text = "User";
             this.tpUserInfo.UseVisualStyleBackColor = true;
-            // 
-            // uc_PersonInfoWithFilter1
-            // 
-            this.uc_PersonInfoWithFilter1.FilterEnable = true;
-            this.uc_PersonInfoWithFilter1.Location = new System.Drawing.Point(6, 33);
-            this.uc_PersonInfoWithFilter1.Name = "uc_PersonInfoWithFilter1";
-            this.uc_PersonInfoWithFilter1.ShowAddPerson = true;
-            this.uc_PersonInfoWithFilter1.Size = new System.Drawing.Size(729, 528);
-            this.uc_PersonInfoWithFilter1.TabIndex = 0;
             // 
             // panelContainerUserInfo
             // 
@@ -179,9 +204,9 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(47, 439);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(47, 424);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(196, 36);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(109, 36);
             this.guna2HtmlLabel4.TabIndex = 168;
             this.guna2HtmlLabel4.Text = "Is Active: ";
             // 
@@ -192,9 +217,9 @@
             this.chkIsActive.CheckedState.BorderRadius = 2;
             this.chkIsActive.CheckedState.BorderThickness = 0;
             this.chkIsActive.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chkIsActive.Location = new System.Drawing.Point(274, 440);
+            this.chkIsActive.Location = new System.Drawing.Point(274, 439);
             this.chkIsActive.Name = "chkIsActive";
-            this.chkIsActive.Size = new System.Drawing.Size(62, 38);
+            this.chkIsActive.Size = new System.Drawing.Size(31, 21);
             this.chkIsActive.TabIndex = 167;
             this.chkIsActive.Text = "Is Active";
             this.chkIsActive.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -229,6 +254,7 @@
             this.txtConfirmPassword.Size = new System.Drawing.Size(200, 36);
             this.txtConfirmPassword.TabIndex = 166;
             this.txtConfirmPassword.UseSystemPasswordChar = true;
+            this.txtConfirmPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtConfirmPassword_Validating);
             // 
             // guna2HtmlLabel1
             // 
@@ -333,6 +359,7 @@
             this.txtUserName.SelectedText = "";
             this.txtUserName.Size = new System.Drawing.Size(200, 36);
             this.txtUserName.TabIndex = 152;
+            this.txtUserName.Validating += new System.ComponentModel.CancelEventHandler(this.txtUserName_Validating);
             // 
             // guna2HtmlLabel9
             // 
@@ -359,24 +386,9 @@
             this.labUser.Text = "User Id:";
             this.labUser.Visible = false;
             // 
-            // btnNext
+            // errorProvider1
             // 
-            this.btnNext.AutoRoundedCorners = true;
-            this.btnNext.BorderRadius = 21;
-            this.btnNext.CheckedState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNext.FillColor = System.Drawing.Color.Black;
-            this.btnNext.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnNext.Location = new System.Drawing.Point(733, 546);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(100, 45);
-            this.btnNext.TabIndex = 129;
-            this.btnNext.Text = "Next";
+            this.errorProvider1.ContainerControl = this;
             // 
             // frmAddUpdateUser
             // 
@@ -388,6 +400,7 @@
             this.Controls.Add(this.btnCancel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAddUpdateUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddUpdateUser";
             this.Load += new System.EventHandler(this.frmAddUpdateUser_Load);
             this.tcAddUser.ResumeLayout(false);
@@ -395,6 +408,7 @@
             this.tpUserInfo.ResumeLayout(false);
             this.panelContainerUserInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -419,5 +433,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtUserName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel labUser;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

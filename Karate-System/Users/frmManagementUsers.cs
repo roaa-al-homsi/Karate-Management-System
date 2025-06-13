@@ -100,8 +100,8 @@ namespace KarateSystem.Users
 
         private void updateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAddUpdatePerson frmAddUpdatePerson = new frmAddUpdatePerson((int)dgvAllUsers.CurrentRow.Cells[2].Value);
-            frmAddUpdatePerson.ShowDialog();
+            frmAddUpdateUser frmAddUpdateUser = new frmAddUpdateUser((int)dgvAllUsers.CurrentRow.Cells[0].Value);
+            frmAddUpdateUser.ShowDialog();
             frmManagementUsers_Load(null, null);
 
         }
@@ -129,6 +129,14 @@ namespace KarateSystem.Users
                     MessageBox.Show("Delete Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateUser frmAddUpdateUser = new frmAddUpdateUser();
+            frmAddUpdateUser.ShowDialog();
+            frmManagementUsers_Load(null, null);
+
         }
     }
 }
