@@ -110,6 +110,12 @@
     <Compile Include="Users\frmManagementUsers.Designer.cs">
       <DependentUpon>frmManagementUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users\uc_UserInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\uc_UserInfoCard.Designer.cs">
+      <DependentUpon>uc_UserInfoCard.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Users\frmManagementUsers.resx">
       <DependentUpon>frmManagementUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\uc_UserInfoCard.resx">
+      <DependentUpon>uc_UserInfoCard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
