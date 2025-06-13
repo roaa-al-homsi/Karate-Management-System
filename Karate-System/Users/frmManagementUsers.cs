@@ -1,5 +1,4 @@
 ﻿using KarateBusiness;
-using KarateSystem.People;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -108,8 +107,8 @@ namespace KarateSystem.Users
 
         private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmShowPersonInfo frmShowPersonInfo = new frmShowPersonInfo((int)dgvAllUsers.CurrentRow.Cells[2].Value);
-            frmShowPersonInfo.ShowDialog();
+            frmShowUserDetails frmShowUserDetails = new frmShowUserDetails((int)dgvAllUsers.CurrentRow.Cells[0].Value);
+            frmShowUserDetails.ShowDialog();
             frmManagementUsers_Load(null, null);
 
 

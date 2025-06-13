@@ -110,6 +110,12 @@
     <Compile Include="Users\frmManagementUsers.Designer.cs">
       <DependentUpon>frmManagementUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users\frmShowUserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmShowUserDetails.Designer.cs">
+      <DependentUpon>frmShowUserDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\uc_UserInfoCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Users\frmManagementUsers.resx">
       <DependentUpon>frmManagementUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmShowUserDetails.resx">
+      <DependentUpon>frmShowUserDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\uc_UserInfoCard.resx">
       <DependentUpon>uc_UserInfoCard.cs</DependentUpon>
