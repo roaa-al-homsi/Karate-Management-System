@@ -47,12 +47,19 @@ namespace KarateSystem.Members
 
             }
         }
-        private void frmManageMembers_Load(object sender, EventArgs e)
+
+        private void _ResetDefaultValues()
         {
+            cmbFilterBy.SelectedIndex = 0;
+            txtFilterBy.Visible = (cmbFilterBy.SelectedIndex != 0);
             _dtAllMembers = Member.All();
             dgvAllMembers.DataSource = _dtAllMembers;
             _ChangeDesignDgvMembers();
             _FillCmbFilterBy();
+        }
+        private void frmManageMembers_Load(object sender, EventArgs e)
+        {
+            _ResetDefaultValues();
         }
 
         private void cmbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
