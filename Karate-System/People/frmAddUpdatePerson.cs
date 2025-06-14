@@ -248,11 +248,7 @@ namespace KarateSystem.People
         }
         private void txtEmail_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtEmail.Text))
-            {
-                return;
 
-            }
             if (!Validation.ValidateEmail(txtEmail.Text.Trim()))
             {
                 e.Cancel = true;

@@ -87,7 +87,8 @@
             this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
-            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Text = "Update Member";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
@@ -165,6 +166,7 @@
             this.btnAddMember.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAddMember.Size = new System.Drawing.Size(89, 65);
             this.btnAddMember.TabIndex = 25;
+            this.btnAddMember.Click += new System.EventHandler(this.btnAddMember_Click);
             // 
             // txtFilterBy
             // 

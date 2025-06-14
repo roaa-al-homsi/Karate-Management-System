@@ -121,5 +121,20 @@ namespace KarateSystem.Members
             frmShowMemberDetails frmShowMemberDetails = new frmShowMemberDetails((int)dgvAllMembers.CurrentRow.Cells[0].Value);
             frmShowMemberDetails.ShowDialog();
         }
+
+        private void btnAddMember_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateMember frmAddUpdateMember = new frmAddUpdateMember();
+            frmAddUpdateMember.ShowDialog();
+            frmManageMembers_Load(null, null);
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            frmAddUpdateMember frmAddUpdateMember = new frmAddUpdateMember((int)dgvAllMembers.CurrentRow.Cells[0].Value);
+            frmAddUpdateMember.ShowDialog();
+            frmManageMembers_Load(null, null);
+        }
     }
 }

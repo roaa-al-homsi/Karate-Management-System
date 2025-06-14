@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members\\frmmanagemembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members\\frmmanagemembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members\\frmaddupdatemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members\\frmaddupdatemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members\\frmmanagemembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members\\frmmanagemembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members\\frmaddupdatemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members\\frmaddupdatemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmManageMembers.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmManageMembers.cs",
-              "RelativeDocumentMoniker": "Members\\frmManageMembers.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmManageMembers.cs",
-              "RelativeToolTip": "Members\\frmManageMembers.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAAHgAAAB9AAAAAAAAAA==",
+              "Title": "frmAddUpdateMember.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmAddUpdateMember.cs",
+              "RelativeDocumentMoniker": "Members\\frmAddUpdateMember.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmAddUpdateMember.cs",
+              "RelativeToolTip": "Members\\frmAddUpdateMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T18:48:32.245Z",
+              "WhenOpened": "2025-06-14T19:03:45.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmManageMembers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmManageMembers.cs",
-              "RelativeDocumentMoniker": "Members\\frmManageMembers.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmManageMembers.cs [Design]",
-              "RelativeToolTip": "Members\\frmManageMembers.cs [Design]",
+              "Title": "frmAddUpdateMember.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmAddUpdateMember.cs",
+              "RelativeDocumentMoniker": "Members\\frmAddUpdateMember.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmAddUpdateMember.cs [Design]",
+              "RelativeToolTip": "Members\\frmAddUpdateMember.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T18:48:19.058Z",
+              "WhenOpened": "2025-06-14T18:56:27.899Z",
               "EditorCaption": " [Design]"
             }
           ]

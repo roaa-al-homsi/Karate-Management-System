@@ -67,6 +67,10 @@ namespace KarateBusiness
         {
             return MemberData.Exist(id);
         }
+        public static bool ExistByPersonId(int personId)
+        {
+            return MemberData.ExistByPersonId(personId);
+        }
         public static bool Delete(int id)
         {
             if (!Exist(id))
@@ -92,6 +96,10 @@ namespace KarateBusiness
             }
             return null;
         }
+
+
+
+
     }
 
 
