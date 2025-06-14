@@ -12,7 +12,7 @@ namespace KarateBusiness
         public string emergencyContactInfo { get; set; }
         public int lastBeltRank { get; set; }
         public bool isActive { get; set; }
-
+        public Person personInfo { get; private set; }
         public Member()
         {
             this.id = 0;
@@ -20,7 +20,7 @@ namespace KarateBusiness
             this.emergencyContactInfo = string.Empty;
             this.lastBeltRank = 0;
             this.isActive = false;
-
+            this.personInfo = new Person();
             _mode = Mode.Add;
         }
         private Member(int id, int personId, string emergencyContactInfo, int lastBeltRank, bool isActive)
@@ -30,7 +30,7 @@ namespace KarateBusiness
             this.emergencyContactInfo = emergencyContactInfo;
             this.lastBeltRank = lastBeltRank;
             this.isActive = isActive;
-
+            this.personInfo = Person.Find(personId);
 
             _mode = Mode.Update;
         }

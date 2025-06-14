@@ -66,6 +66,12 @@
     <Compile Include="Members\frmManageMembers.Designer.cs">
       <DependentUpon>frmManageMembers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Members\uc\uc_MemberInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Members\uc\uc_MemberInfoCard.Designer.cs">
+      <DependentUpon>uc_MemberInfoCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="People\frmAddUpdatePerson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Members\frmManageMembers.resx">
       <DependentUpon>frmManageMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\uc\uc_MemberInfoCard.resx">
+      <DependentUpon>uc_MemberInfoCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmAddUpdatePerson.resx">
       <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>
