@@ -136,5 +136,6 @@ namespace KarateSystem.Members
             frmAddUpdateMember.ShowDialog();
             frmManageMembers_Load(null, null);
         }
+
     }
 }

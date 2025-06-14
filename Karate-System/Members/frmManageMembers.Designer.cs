@@ -32,9 +32,7 @@
             this.dgvAllMembers = new System.Windows.Forms.DataGridView();
             this.cmsManagePeople = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnFind = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,7 +43,6 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllMembers)).BeginInit();
             this.cmsManagePeople.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnFind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +65,6 @@
             this.cmsManagePeople.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsManagePeople.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateToolStripMenuItem,
-            this.deleteToolStripMenuItem,
             this.showDetailsToolStripMenuItem});
             this.cmsManagePeople.Name = "cmsManagePeople";
             this.cmsManagePeople.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -80,7 +76,7 @@
             this.cmsManagePeople.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePeople.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePeople.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePeople.Size = new System.Drawing.Size(229, 110);
+            this.cmsManagePeople.Size = new System.Drawing.Size(229, 56);
             // 
             // updateToolStripMenuItem
             // 
@@ -90,13 +86,6 @@
             this.updateToolStripMenuItem.Text = "Update Member";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            // 
             // showDetailsToolStripMenuItem
             // 
             this.showDetailsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showDetailsToolStripMenuItem.Image")));
@@ -104,19 +93,6 @@
             this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
             this.showDetailsToolStripMenuItem.Text = "Show Member Details";
             this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
-            // 
-            // btnFind
-            // 
-            this.btnFind.BackColor = System.Drawing.Color.Transparent;
-            this.btnFind.Image = ((System.Drawing.Image)(resources.GetObject("btnFind.Image")));
-            this.btnFind.ImageRotate = 0F;
-            this.btnFind.Location = new System.Drawing.Point(1157, 296);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnFind.Size = new System.Drawing.Size(81, 65);
-            this.btnFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnFind.TabIndex = 29;
-            this.btnFind.TabStop = false;
             // 
             // guna2PictureBox1
             // 
@@ -161,7 +137,7 @@
             this.btnAddMember.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMember.Image")));
             this.btnAddMember.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnAddMember.ImageRotate = 0F;
-            this.btnAddMember.Location = new System.Drawing.Point(1232, 296);
+            this.btnAddMember.Location = new System.Drawing.Point(1261, 297);
             this.btnAddMember.Name = "btnAddMember";
             this.btnAddMember.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAddMember.Size = new System.Drawing.Size(89, 65);
@@ -238,7 +214,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1509, 833);
             this.Controls.Add(this.dgvAllMembers);
-            this.Controls.Add(this.btnFind);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.labCountRecords);
@@ -253,7 +228,6 @@
             this.Load += new System.EventHandler(this.frmManageMembers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllMembers)).EndInit();
             this.cmsManagePeople.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnFind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -265,9 +239,7 @@
         private System.Windows.Forms.DataGridView dgvAllMembers;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip cmsManagePeople;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showDetailsToolStripMenuItem;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox btnFind;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel labCountRecords;

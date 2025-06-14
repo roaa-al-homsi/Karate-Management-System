@@ -114,22 +114,6 @@ namespace KarateSystem.Users
 
         }
 
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are you sure delete this user?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-            {
-                if (User.Delete(Convert.ToInt32(dgvAllUsers.CurrentRow.Cells[0].Value)))
-                {
-                    MessageBox.Show("Delete Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    frmManagementUsers_Load(null, null);
-                }
-                else
-                {
-                    MessageBox.Show("Delete Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
         private void btnAddUser_Click(object sender, EventArgs e)
         {
             frmAddUpdateUser frmAddUpdateUser = new frmAddUpdateUser();
@@ -143,6 +127,22 @@ namespace KarateSystem.Users
             frmChangePassword frmChangePassword = new frmChangePassword(Convert.ToInt32(dgvAllUsers.CurrentRow.Cells[0].Value));
             frmChangePassword.ShowDialog();
             frmManagementUsers_Load(null, null);
+        }
+
+        private void deleteToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure delete this user?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                if (User.Delete(Convert.ToInt32(dgvAllUsers.CurrentRow.Cells[0].Value)))
+                {
+                    MessageBox.Show("Delete Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmManagementUsers_Load(null, null);
+                }
+                else
+                {
+                    MessageBox.Show("Delete Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
