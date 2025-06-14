@@ -115,5 +115,11 @@ namespace KarateSystem.Members
             }
             labCountRecords.Text = dgvAllMembers.RowCount.ToString();
         }
+
+        private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowMemberDetails frmShowMemberDetails = new frmShowMemberDetails((int)dgvAllMembers.CurrentRow.Cells[0].Value);
+            frmShowMemberDetails.ShowDialog();
+        }
     }
 }
