@@ -1,4 +1,5 @@
 ﻿using KarateBusiness;
+using System;
 using System.Windows.Forms;
 
 namespace KarateSystem.Members.uc
@@ -45,5 +46,10 @@ namespace KarateSystem.Members.uc
             _LoadDataToForm();
         }
 
+        private void linkLabEditMember_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmAddUpdateMember frmAddUpdateMember = new frmAddUpdateMember(Convert.ToInt16(txtMemberId.Text));
+            frmAddUpdateMember.ShowDialog();
+        }
     }
 }
