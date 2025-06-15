@@ -10,13 +10,13 @@ namespace KarateBusiness
         public int id { get; set; }
         public int personId { get; set; }
         public string qualifications { get; set; }
-
+        public Person personInfo { get; private set; }
         public Instructor()
         {
             this.id = 0;
             this.personId = -1;
             this.qualifications = string.Empty;
-
+            this.personInfo = new Person();
             _mode = Mode.Add;
         }
         private Instructor(int id, int personId, string qualifications)
@@ -24,7 +24,7 @@ namespace KarateBusiness
             this.id = id;
             this.personId = personId;
             this.qualifications = qualifications;
-
+            this.personInfo = Person.Find(personId);
 
             _mode = Mode.Update;
         }
@@ -60,6 +60,11 @@ namespace KarateBusiness
         public static bool Exist(int id)
         {
             return InstructorData.Exist(id);
+        }
+
+        public static bool ExistByPersonId(int personId)
+        {
+            return InstructorData.ExistByPersonId(personId);
         }
         public static bool Delete(int id)
         {

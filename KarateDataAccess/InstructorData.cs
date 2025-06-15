@@ -109,7 +109,10 @@ namespace KarateDataAccess
             return GenericData.Exist("select Found=1 from Instructors where id= @id", "@id", id);
         }
 
-
+        static public bool ExistByPersonId(int personId)
+        {
+            return GenericData.Exist("select Found=1 from Instructors where PersonId= @personId", "@personId", personId);
+        }
     }
 
 

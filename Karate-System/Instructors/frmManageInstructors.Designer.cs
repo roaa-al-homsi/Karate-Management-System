@@ -80,7 +80,7 @@
             this.cmsManageInstructors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageInstructors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageInstructors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageInstructors.Size = new System.Drawing.Size(235, 108);
+            this.cmsManageInstructors.Size = new System.Drawing.Size(235, 136);
             // 
             // updateToolStripMenuItem
             // 
@@ -88,6 +88,7 @@
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.updateToolStripMenuItem.Text = "Update Instructor";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // showDetailsToolStripMenuItem
             // 
@@ -158,6 +159,7 @@
             this.btnAddInstructor.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAddInstructor.Size = new System.Drawing.Size(89, 65);
             this.btnAddInstructor.TabIndex = 34;
+            this.btnAddInstructor.Click += new System.EventHandler(this.btnAddInstructor_Click);
             // 
             // txtFilterBy
             // 

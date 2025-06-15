@@ -108,5 +108,19 @@ namespace KarateSystem.Instructors
                     break;
             }
         }
+
+        private void btnAddInstructor_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateInstructor frmAddUpdateInstructor = new frmAddUpdateInstructor();
+            frmAddUpdateInstructor.ShowDialog();
+            frmManageInstructors_Load(null, null);
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateInstructor frmAddUpdateInstructor = new frmAddUpdateInstructor((int)dgvAllInstructor.CurrentRow.Cells[0].Value);
+            frmAddUpdateInstructor.ShowDialog();
+            frmManageInstructors_Load(null, null);
+        }
     }
 }

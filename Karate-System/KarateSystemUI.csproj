@@ -60,6 +60,12 @@
     </Compile>
     <Compile Include="GlobalClasses\Util.cs" />
     <Compile Include="GlobalClasses\Validation.cs" />
+    <Compile Include="Instructors\frmAddUpdateInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructors\frmAddUpdateInstructor.Designer.cs">
+      <DependentUpon>frmAddUpdateInstructor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Instructors\frmManageInstructors.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </Compile>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\frmAddUpdateInstructor.resx">
+      <DependentUpon>frmAddUpdateInstructor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Instructors\frmManageInstructors.resx">
       <DependentUpon>frmManageInstructors.cs</DependentUpon>
