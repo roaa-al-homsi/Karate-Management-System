@@ -78,6 +78,7 @@
             this.linkLabEditInstructor.TabIndex = 40;
             this.linkLabEditInstructor.TabStop = true;
             this.linkLabEditInstructor.Text = "Edit Instructor Info";
+            this.linkLabEditInstructor.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabEditInstructor_LinkClicked);
             // 
             // guna2PictureBox2
             // 

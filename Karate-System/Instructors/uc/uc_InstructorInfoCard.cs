@@ -60,5 +60,12 @@ namespace KarateSystem.Instructors.uc
                 e.Handled = true;
             }
         }
+
+        private void linkLabEditInstructor_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmAddUpdateInstructor frmAddUpdateInstructor = new frmAddUpdateInstructor(_instructorId);
+            frmAddUpdateInstructor.ShowDialog();
+
+        }
     }
 }
