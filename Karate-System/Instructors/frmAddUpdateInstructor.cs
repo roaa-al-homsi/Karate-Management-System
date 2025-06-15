@@ -135,5 +135,10 @@ namespace KarateSystem.Instructors
             tpInstructorInfo.Enabled = true;
             tcInstructor.SelectedTab = tcInstructor.TabPages["tpInstructorInfo"];
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
