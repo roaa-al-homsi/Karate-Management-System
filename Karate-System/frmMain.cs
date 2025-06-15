@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using KarateSystem.Instructors;
 using KarateSystem.Members;
 using KarateSystem.People;
 using KarateSystem.Users;
@@ -102,6 +103,12 @@ namespace KarateSystem
         {
             btnTitle.Image = btnMembers.Image;
             OpenChildFormAsync(new frmManageMembers(this), sender);
+        }
+
+        private void btnInstructors_Click(object sender, System.EventArgs e)
+        {
+            btnTitle.Image = btnInstructors.Image;
+            OpenChildFormAsync(new frmManageInstructors(this), sender);
         }
     }
 }
