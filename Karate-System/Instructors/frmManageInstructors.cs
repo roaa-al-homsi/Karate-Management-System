@@ -122,5 +122,12 @@ namespace KarateSystem.Instructors
             frmAddUpdateInstructor.ShowDialog();
             frmManageInstructors_Load(null, null);
         }
+
+        private void addNewInstructorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateInstructor frmAddUpdateInstructor = new frmAddUpdateInstructor();
+            frmAddUpdateInstructor.ShowDialog();
+            frmManageInstructors_Load(null, null);
+        }
     }
 }

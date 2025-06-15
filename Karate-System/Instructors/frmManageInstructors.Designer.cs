@@ -103,6 +103,7 @@
             this.addNewInstructorToolStripMenuItem.Name = "addNewInstructorToolStripMenuItem";
             this.addNewInstructorToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.addNewInstructorToolStripMenuItem.Text = "Add New Instructor";
+            this.addNewInstructorToolStripMenuItem.Click += new System.EventHandler(this.addNewInstructorToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
