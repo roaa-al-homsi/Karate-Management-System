@@ -72,6 +72,12 @@
     <Compile Include="Instructors\frmManageInstructors.Designer.cs">
       <DependentUpon>frmManageInstructors.cs</DependentUpon>
     </Compile>
+    <Compile Include="Instructors\frmShowInstructorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructors\frmShowInstructorDetails.Designer.cs">
+      <DependentUpon>frmShowInstructorDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Instructors\uc\uc_InstructorInfoCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Instructors\frmManageInstructors.resx">
       <DependentUpon>frmManageInstructors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\frmShowInstructorDetails.resx">
+      <DependentUpon>frmShowInstructorDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Instructors\uc\uc_InstructorInfoCard.resx">
       <DependentUpon>uc_InstructorInfoCard.cs</DependentUpon>
