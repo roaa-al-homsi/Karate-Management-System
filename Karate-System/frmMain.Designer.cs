@@ -224,6 +224,7 @@
             this.btnMembersInstructors.TabIndex = 18;
             this.btnMembersInstructors.Tag = "Members Instructors";
             this.btnMembersInstructors.Text = "Members Instructors";
+            this.btnMembersInstructors.Click += new System.EventHandler(this.btnMembersInstructors_Click);
             // 
             // btnManageUsers
             // 

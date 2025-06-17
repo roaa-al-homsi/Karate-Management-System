@@ -114,6 +114,12 @@
     <Compile Include="Members\uc\uc_MemberInfoCard.Designer.cs">
       <DependentUpon>uc_MemberInfoCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Members_Instructors\frmManageMembersInstructors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members_Instructors\frmManageMembersInstructors.Designer.cs">
+      <DependentUpon>frmManageMembersInstructors.cs</DependentUpon>
+    </Compile>
     <Compile Include="People\frmAddUpdatePerson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Members\uc\uc_MemberInfoCard.resx">
       <DependentUpon>uc_MemberInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members_Instructors\frmManageMembersInstructors.resx">
+      <DependentUpon>frmManageMembersInstructors.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmAddUpdatePerson.resx">
       <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>
