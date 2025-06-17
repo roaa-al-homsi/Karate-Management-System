@@ -35,12 +35,22 @@ namespace KarateSystem.Instructors
             _dtMembersByInstructorId = MemberInstructor.GetAllMembersBySpecificInstructor(_instructorId);
             dgvMembers.DataSource = _dtMembersByInstructorId;
             _ChangeDesignDgvMembers();
+            labCountRecords.Text = dgvMembers.RowCount.ToString();
         }
 
         private void toolStripMenuMemberDetails_Click(object sender, System.EventArgs e)
         {
             frmShowMemberDetails frmShowMemberDetails = new frmShowMemberDetails((int)dgvMembers.CurrentRow.Cells[0].Value);
             frmShowMemberDetails.ShowDialog();
+            frmShowTrainedMembers_Load(null, null);
+        }
+
+        private void updateMemberToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmAddUpdateMember frmAddUpdateMember = new frmAddUpdateMember((int)dgvMembers.CurrentRow.Cells[0].Value);
+            frmAddUpdateMember.ShowDialog();
+            frmShowTrainedMembers_Load(null, null);
+
         }
     }
 }
