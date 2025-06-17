@@ -193,7 +193,7 @@
             this.panelContainerUserInfo.Controls.Add(this.guna2HtmlLabel9);
             this.panelContainerUserInfo.Controls.Add(this.labUser);
             this.panelContainerUserInfo.FillColor = System.Drawing.Color.AliceBlue;
-            this.panelContainerUserInfo.Location = new System.Drawing.Point(182, 22);
+            this.panelContainerUserInfo.Location = new System.Drawing.Point(6, 6);
             this.panelContainerUserInfo.Name = "panelContainerUserInfo";
             this.panelContainerUserInfo.Size = new System.Drawing.Size(512, 520);
             this.panelContainerUserInfo.TabIndex = 151;
@@ -310,6 +310,7 @@
             // picUser
             // 
             this.picUser.BackColor = System.Drawing.Color.Transparent;
+            this.picUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picUser.FillColor = System.Drawing.Color.DimGray;
             this.picUser.Image = ((System.Drawing.Image)(resources.GetObject("picUser.Image")));
             this.picUser.ImageRotate = 0F;

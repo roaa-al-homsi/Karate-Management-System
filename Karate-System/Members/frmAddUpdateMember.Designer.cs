@@ -98,7 +98,7 @@
             this.panelContainerMemberInfo.Controls.Add(this.labMemberId);
             this.panelContainerMemberInfo.Controls.Add(this.labMember);
             this.panelContainerMemberInfo.FillColor = System.Drawing.Color.White;
-            this.panelContainerMemberInfo.Location = new System.Drawing.Point(182, 3);
+            this.panelContainerMemberInfo.Location = new System.Drawing.Point(6, 6);
             this.panelContainerMemberInfo.Name = "panelContainerMemberInfo";
             this.panelContainerMemberInfo.Size = new System.Drawing.Size(512, 588);
             this.panelContainerMemberInfo.TabIndex = 151;
@@ -201,6 +201,7 @@
             // picMember
             // 
             this.picMember.BackColor = System.Drawing.Color.Transparent;
+            this.picMember.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picMember.FillColor = System.Drawing.Color.DimGray;
             this.picMember.Image = ((System.Drawing.Image)(resources.GetObject("picMember.Image")));
             this.picMember.ImageRotate = 0F;

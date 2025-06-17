@@ -143,7 +143,7 @@
             this.panelContainerMemberInfo.Controls.Add(this.labInstructorId);
             this.panelContainerMemberInfo.Controls.Add(this.labMember);
             this.panelContainerMemberInfo.FillColor = System.Drawing.Color.White;
-            this.panelContainerMemberInfo.Location = new System.Drawing.Point(182, 3);
+            this.panelContainerMemberInfo.Location = new System.Drawing.Point(6, 6);
             this.panelContainerMemberInfo.Name = "panelContainerMemberInfo";
             this.panelContainerMemberInfo.Size = new System.Drawing.Size(512, 505);
             this.panelContainerMemberInfo.TabIndex = 151;
@@ -165,7 +165,7 @@
             this.txtQualifications.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtQualifications.ForeColor = System.Drawing.Color.Black;
             this.txtQualifications.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQualifications.Location = new System.Drawing.Point(99, 383);
+            this.txtQualifications.Location = new System.Drawing.Point(177, 291);
             this.txtQualifications.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtQualifications.Name = "txtQualifications";
             this.txtQualifications.PlaceholderText = "";
@@ -180,7 +180,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(168, 340);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(14, 291);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(179, 36);
             this.guna2HtmlLabel2.TabIndex = 158;
@@ -189,10 +189,11 @@
             // picInstructor
             // 
             this.picInstructor.BackColor = System.Drawing.Color.Transparent;
+            this.picInstructor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picInstructor.FillColor = System.Drawing.Color.DimGray;
             this.picInstructor.Image = ((System.Drawing.Image)(resources.GetObject("picInstructor.Image")));
             this.picInstructor.ImageRotate = 0F;
-            this.picInstructor.Location = new System.Drawing.Point(130, 5);
+            this.picInstructor.Location = new System.Drawing.Point(130, 3);
             this.picInstructor.Name = "picInstructor";
             this.picInstructor.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.picInstructor.Size = new System.Drawing.Size(217, 200);
@@ -206,7 +207,7 @@
             this.labInstructorId.BackColor = System.Drawing.Color.Transparent;
             this.labInstructorId.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labInstructorId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labInstructorId.Location = new System.Drawing.Point(280, 263);
+            this.labInstructorId.Location = new System.Drawing.Point(177, 223);
             this.labInstructorId.Name = "labInstructorId";
             this.labInstructorId.Size = new System.Drawing.Size(95, 32);
             this.labInstructorId.TabIndex = 146;
@@ -219,7 +220,7 @@
             this.labMember.BackColor = System.Drawing.Color.Transparent;
             this.labMember.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labMember.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labMember.Location = new System.Drawing.Point(117, 263);
+            this.labMember.Location = new System.Drawing.Point(14, 223);
             this.labMember.Name = "labMember";
             this.labMember.Size = new System.Drawing.Size(157, 32);
             this.labMember.TabIndex = 154;
