@@ -43,6 +43,7 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.showTrainedMembersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllInstructor)).BeginInit();
             this.cmsManageInstructors.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -69,7 +70,8 @@
             this.updateToolStripMenuItem,
             this.showDetailsToolStripMenuItem,
             this.addNewInstructorToolStripMenuItem,
-            this.deleteToolStripMenuItem});
+            this.deleteToolStripMenuItem,
+            this.showTrainedMembersToolStripMenuItem});
             this.cmsManageInstructors.Name = "cmsManagePeople";
             this.cmsManageInstructors.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.cmsManageInstructors.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -80,13 +82,13 @@
             this.cmsManageInstructors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageInstructors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageInstructors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageInstructors.Size = new System.Drawing.Size(235, 136);
+            this.cmsManageInstructors.Size = new System.Drawing.Size(238, 162);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
             this.updateToolStripMenuItem.Text = "Update Instructor";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
@@ -94,7 +96,7 @@
             // 
             this.showDetailsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showDetailsToolStripMenuItem.Image")));
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
             this.showDetailsToolStripMenuItem.Text = "Show Instructor Details";
             this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
             // 
@@ -102,7 +104,7 @@
             // 
             this.addNewInstructorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewInstructorToolStripMenuItem.Image")));
             this.addNewInstructorToolStripMenuItem.Name = "addNewInstructorToolStripMenuItem";
-            this.addNewInstructorToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.addNewInstructorToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
             this.addNewInstructorToolStripMenuItem.Text = "Add New Instructor";
             this.addNewInstructorToolStripMenuItem.Click += new System.EventHandler(this.addNewInstructorToolStripMenuItem_Click);
             // 
@@ -110,7 +112,7 @@
             // 
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // guna2PictureBox1
@@ -227,6 +229,12 @@
             this.guna2HtmlLabel1.TabIndex = 30;
             this.guna2HtmlLabel1.Text = "Manage Instructors";
             // 
+            // showTrainedMembersToolStripMenuItem
+            // 
+            this.showTrainedMembersToolStripMenuItem.Name = "showTrainedMembersToolStripMenuItem";
+            this.showTrainedMembersToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
+            this.showTrainedMembersToolStripMenuItem.Text = "Show Trained Members";
+            // 
             // frmManageInstructors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -269,5 +277,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private System.Windows.Forms.ToolStripMenuItem showTrainedMembersToolStripMenuItem;
     }
 }

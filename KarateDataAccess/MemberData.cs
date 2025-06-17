@@ -120,6 +120,11 @@ namespace KarateDataAccess
             return GenericData.Exist("select Found=1 from Members where PersonId= @personId", "@personId", personId);
         }
 
+
+        static public DataTable GetAllMembersBySpecificInstructor()
+        {
+            return GenericData.All("select * from view_Member_Info ");
+        }
     }
 
 }
