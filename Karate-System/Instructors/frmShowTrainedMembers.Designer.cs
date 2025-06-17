@@ -36,8 +36,11 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.cmsMember = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.toolStripMenuMemberDetails = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.cmsMember.SuspendLayout();
             this.SuspendLayout();
             // 
             // uc_InstructorInfoCard1
@@ -53,6 +56,7 @@
             this.dgvMembers.AllowUserToAddRows = false;
             this.dgvMembers.AllowUserToDeleteRows = false;
             this.dgvMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMembers.ContextMenuStrip = this.cmsMember;
             this.dgvMembers.Location = new System.Drawing.Point(12, 629);
             this.dgvMembers.Name = "dgvMembers";
             this.dgvMembers.ReadOnly = true;
@@ -122,6 +126,30 @@
             this.guna2HtmlLabel2.TabIndex = 39;
             this.guna2HtmlLabel2.Text = "Trained Members By Instructor";
             // 
+            // cmsMember
+            // 
+            this.cmsMember.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmsMember.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuMemberDetails});
+            this.cmsMember.Name = "cmsMember";
+            this.cmsMember.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.cmsMember.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.cmsMember.RenderStyle.ColorTable = null;
+            this.cmsMember.RenderStyle.RoundedEdges = true;
+            this.cmsMember.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.cmsMember.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmsMember.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.cmsMember.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.cmsMember.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cmsMember.Size = new System.Drawing.Size(211, 56);
+            // 
+            // toolStripMenuMemberDetails
+            // 
+            this.toolStripMenuMemberDetails.Name = "toolStripMenuMemberDetails";
+            this.toolStripMenuMemberDetails.Size = new System.Drawing.Size(210, 24);
+            this.toolStripMenuMemberDetails.Text = "Member Details";
+            this.toolStripMenuMemberDetails.Click += new System.EventHandler(this.toolStripMenuMemberDetails_Click);
+            // 
             // frmShowTrainedMembers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -141,6 +169,7 @@
             this.Load += new System.EventHandler(this.frmShowTrainedMembers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            this.cmsMember.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -154,5 +183,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel labCountRecords;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip cmsMember;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuMemberDetails;
     }
 }

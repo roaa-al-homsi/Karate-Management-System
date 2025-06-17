@@ -143,6 +143,32 @@ namespace KarateDataAccess
             }
             return Id;
         }
+
+        static public DataTable GetAllBySpecificField<T>(string query, string ParameterName, T ParameterValue)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue(ParameterName, ParameterValue);
+                        using (SqlDataReader Reader = command.ExecuteReader())
+                        {
+                            if (Reader.HasRows)
+                            {
+                                dt.Load(Reader);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex) { LogException(ex.Message, EventLogEntryType.Error); }
+            return dt;
+        }
+
     }
 
 }

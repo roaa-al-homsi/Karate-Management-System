@@ -35,6 +35,7 @@
             this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewInstructorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showTrainedMembersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -43,7 +44,6 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.showTrainedMembersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllInstructor)).BeginInit();
             this.cmsManageInstructors.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -114,6 +114,13 @@
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
+            // 
+            // showTrainedMembersToolStripMenuItem
+            // 
+            this.showTrainedMembersToolStripMenuItem.Name = "showTrainedMembersToolStripMenuItem";
+            this.showTrainedMembersToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
+            this.showTrainedMembersToolStripMenuItem.Text = "Show Trained Members";
+            this.showTrainedMembersToolStripMenuItem.Click += new System.EventHandler(this.showTrainedMembersToolStripMenuItem_Click);
             // 
             // guna2PictureBox1
             // 
@@ -228,12 +235,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(343, 75);
             this.guna2HtmlLabel1.TabIndex = 30;
             this.guna2HtmlLabel1.Text = "Manage Instructors";
-            // 
-            // showTrainedMembersToolStripMenuItem
-            // 
-            this.showTrainedMembersToolStripMenuItem.Name = "showTrainedMembersToolStripMenuItem";
-            this.showTrainedMembersToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
-            this.showTrainedMembersToolStripMenuItem.Text = "Show Trained Members";
             // 
             // frmManageInstructors
             // 

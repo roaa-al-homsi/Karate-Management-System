@@ -94,6 +94,12 @@ namespace KarateBusiness
             }
             return null;
         }
+
+        static public DataTable GetAllMembersBySpecificInstructor(int instructorId)
+        {
+            return MemberInstructorsData.GetAllMembersBySpecificInstructor(instructorId);
+        }
+
     }
 
 

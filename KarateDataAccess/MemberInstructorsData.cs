@@ -111,6 +111,12 @@ namespace KarateDataAccess
         {
             return GenericData.Exist("select Found=1 from MemberInstructors where id= @id", "@id", id);
         }
+        static public DataTable GetAllMembersBySpecificInstructor(int instructorId)
+        {
+            return GenericData.GetAllBySpecificField("EXEC sp_GetMembersByInstructor @InstructorId", "@InstructorId", instructorId);
+        }
+
+
 
     }
 
