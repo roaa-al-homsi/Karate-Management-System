@@ -12,6 +12,9 @@ namespace KarateBusiness
         public int memberId { get; set; }
         public int instructorId { get; set; }
         public DateTime assignDate { get; set; }
+        public Member memberInfo { get; private set; }
+        public Instructor instructorInfo { get; private set; }
+
 
         public MemberInstructor()
         {
@@ -19,7 +22,8 @@ namespace KarateBusiness
             this.memberId = -1;
             this.instructorId = -1;
             this.assignDate = DateTime.MinValue;
-
+            this.memberInfo = new Member();
+            this.instructorInfo = new Instructor();
             _mode = Mode.Add;
         }
         private MemberInstructor(int id, int memberId, int instructorId, DateTime assignDate)
@@ -28,7 +32,8 @@ namespace KarateBusiness
             this.memberId = memberId;
             this.instructorId = instructorId;
             this.assignDate = assignDate;
-
+            this.memberInfo = Member.Find(memberId);
+            this.instructorInfo = Instructor.Find(instructorId);
 
             _mode = Mode.Update;
         }
