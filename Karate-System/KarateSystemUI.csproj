@@ -120,6 +120,12 @@
     <Compile Include="Members\uc\uc_MemberInfoWithFilter.Designer.cs">
       <DependentUpon>uc_MemberInfoWithFilter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Members_Instructors\frmAddUpdateMembersInstructors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members_Instructors\frmAddUpdateMembersInstructors.Designer.cs">
+      <DependentUpon>frmAddUpdateMembersInstructors.cs</DependentUpon>
+    </Compile>
     <Compile Include="Members_Instructors\frmManageMembersInstructors.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Members\uc\uc_MemberInfoWithFilter.resx">
       <DependentUpon>uc_MemberInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members_Instructors\frmAddUpdateMembersInstructors.resx">
+      <DependentUpon>frmAddUpdateMembersInstructors.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Members_Instructors\frmManageMembersInstructors.resx">
       <DependentUpon>frmManageMembersInstructors.cs</DependentUpon>
