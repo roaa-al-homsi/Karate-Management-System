@@ -24,6 +24,8 @@ namespace KarateSystem.Members_Instructors.uc
         {
             uc_MemberInfoCard1.LoadMemberInfo(_memberInstructor.memberId);
             uc_InstructorInfoCard1.LoadInstructorInfo(_memberInstructor.instructorId);
+            txtMemberInstructorId.Text = _memberInstructor.id.ToString();
+            dtpAssignDate.Value = _memberInstructor.assignDate;
         }
         public void LoadMemberInstructorInfo(int memberInstructorId)
         {
