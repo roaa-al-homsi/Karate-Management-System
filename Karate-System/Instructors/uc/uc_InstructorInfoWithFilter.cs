@@ -9,8 +9,8 @@ namespace KarateSystem.Instructors.uc
         private int _instructorId;
         public int InstructorId
         {
-            get { return _instructorId; }
-            set { _instructorId = value; }
+            get { return uc_InstructorInfoCard1.InstructorId; }
+
         }
         public Instructor InstructorSelected
         {
@@ -21,7 +21,7 @@ namespace KarateSystem.Instructors.uc
         public bool FilterEnabled
         {
             get { return _filterEnabled; }
-            set { _filterEnabled = value; }
+            set { gbFilter.Enabled = value; }
         }
         private bool _showAddInstructor;
         public bool ShowAddInstructor

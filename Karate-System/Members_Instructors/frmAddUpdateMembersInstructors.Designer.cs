@@ -121,7 +121,7 @@
             // 
             this.uc_MemberInfoWithFilter1.FilterEnabled = false;
             this.uc_MemberInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
-            this.uc_MemberInfoWithFilter1.MemberId = -1;
+          
             this.uc_MemberInfoWithFilter1.Name = "uc_MemberInfoWithFilter1";
             this.uc_MemberInfoWithFilter1.ShowAddPerson = true;
             this.uc_MemberInfoWithFilter1.Size = new System.Drawing.Size(729, 734);
@@ -130,7 +130,7 @@
             // uc_InstructorInfoWithFilter1
             // 
             this.uc_InstructorInfoWithFilter1.FilterEnabled = false;
-            this.uc_InstructorInfoWithFilter1.InstructorId = 0;
+          
             this.uc_InstructorInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
             this.uc_InstructorInfoWithFilter1.Name = "uc_InstructorInfoWithFilter1";
             this.uc_InstructorInfoWithFilter1.ShowAddInstructor = false;

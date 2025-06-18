@@ -9,15 +9,15 @@ namespace KarateSystem.Members.uc
         private int _memberId = -1;
         public int MemberId
         {
-            get { return _memberId; }
-            set { _memberId = value; }
+            get { return uc_MemberInfoCard1.MemberId; }
+
         }
 
         private bool _filterEnabled;
         public bool FilterEnabled
         {
             get { return _filterEnabled; }
-            set { _filterEnabled = value; }
+            set { gbFilter.Enabled = value; }
         }
 
         private bool _showAddPerson = true;

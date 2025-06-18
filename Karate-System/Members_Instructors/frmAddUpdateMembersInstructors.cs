@@ -44,6 +44,8 @@ namespace KarateSystem.Members_Instructors
                 this.Text = "Add New Member-Instructor";
                 labTitle.Text = "Add New Member-Instructor";
                 tpInstructor.Enabled = false;
+                uc_InstructorInfoWithFilter1.FilterEnabled = true;
+                uc_MemberInfoWithFilter1.FilterEnabled = true;
                 return;
             }
             this.Text = "Update Member-Instructor";

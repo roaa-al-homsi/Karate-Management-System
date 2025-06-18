@@ -39,7 +39,11 @@ namespace KarateDataAccess
         public static bool Update(int id, int memberId, int instructorId, DateTime assignDate)
         {
             int RowsAffected = 0;
-            string query = "update MemberInstructors memberId = @memberId,instructorId = @instructorId,assignDate = @assignDate  WHERE id=@id;";
+            string query = @"update MemberInstructors set
+               memberId = @memberId,
+               instructorId = @instructorId,
+               assignDate = @assignDate 
+              WHERE id=@id;";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
