@@ -66,7 +66,9 @@ namespace KarateSystem.Members.uc
                 MessageBox.Show("Some Fields are not valid , put mouse on red icons to read requirement..", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             uc_MemberInfoCard1.LoadMemberInfo(Convert.ToInt32(txtFilterValue.Text));
+            _memberId = uc_MemberInfoCard1.MemberId;
         }
 
         private void uc_MemberInfoWithFilter_Load(object sender, EventArgs e)
@@ -90,6 +92,15 @@ namespace KarateSystem.Members.uc
             txtFilterValue.Text = memberId.ToString();
             uc_MemberInfoCard1.LoadMemberInfo(memberId);
             FilterEnabled = false;
+        }
+
+        private void txtFilterValue_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtFilterValue.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(txtFilterValue, "This field is required!!");
+            }
         }
     }
 }

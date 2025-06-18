@@ -48,7 +48,7 @@ namespace KarateSystem.Instructors.uc
         private void btnFind_Click(object sender, System.EventArgs e)
         {
             uc_InstructorInfoCard1.LoadInstructorInfo(Convert.ToInt32(txtFilterValue.Text));
-
+            _instructorId = uc_InstructorInfoCard1.InstructorId;
         }
 
         private void uc_InstructorInfoWithFilter_Load(object sender, EventArgs e)
@@ -76,6 +76,15 @@ namespace KarateSystem.Instructors.uc
             txtFilterValue.Text = instructorId.ToString();
             uc_InstructorInfoCard1.LoadInstructorInfo(instructorId);
             FilterEnabled = false;
+        }
+
+        private void txtFilterValue_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtFilterValue.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(txtFilterValue, "This field is required!!");
+            }
         }
     }
 }

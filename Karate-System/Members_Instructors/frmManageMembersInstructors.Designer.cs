@@ -38,7 +38,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnAddInstructor = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnAddMemberInstructor = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtFilterBy = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -80,34 +80,35 @@
             this.cmsManageInstructors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageInstructors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageInstructors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageInstructors.Size = new System.Drawing.Size(169, 108);
+            this.cmsManageInstructors.Size = new System.Drawing.Size(215, 136);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.updateToolStripMenuItem.Text = "Edit";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // showDetailsToolStripMenuItem
             // 
             this.showDetailsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showDetailsToolStripMenuItem.Image")));
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.showDetailsToolStripMenuItem.Text = "Show Details";
             // 
             // addNewInstructorToolStripMenuItem
             // 
             this.addNewInstructorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewInstructorToolStripMenuItem.Image")));
             this.addNewInstructorToolStripMenuItem.Name = "addNewInstructorToolStripMenuItem";
-            this.addNewInstructorToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.addNewInstructorToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.addNewInstructorToolStripMenuItem.Text = "Add New ";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // guna2PictureBox1
@@ -146,18 +147,19 @@
             this.labCountRecords.Text = "??";
             this.labCountRecords.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnAddInstructor
+            // btnAddMemberInstructor
             // 
-            this.btnAddInstructor.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddInstructor.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddInstructor.Image = ((System.Drawing.Image)(resources.GetObject("btnAddInstructor.Image")));
-            this.btnAddInstructor.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnAddInstructor.ImageRotate = 0F;
-            this.btnAddInstructor.Location = new System.Drawing.Point(1176, 331);
-            this.btnAddInstructor.Name = "btnAddInstructor";
-            this.btnAddInstructor.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddInstructor.Size = new System.Drawing.Size(71, 65);
-            this.btnAddInstructor.TabIndex = 43;
+            this.btnAddMemberInstructor.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddMemberInstructor.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddMemberInstructor.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMemberInstructor.Image")));
+            this.btnAddMemberInstructor.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnAddMemberInstructor.ImageRotate = 0F;
+            this.btnAddMemberInstructor.Location = new System.Drawing.Point(1176, 331);
+            this.btnAddMemberInstructor.Name = "btnAddMemberInstructor";
+            this.btnAddMemberInstructor.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddMemberInstructor.Size = new System.Drawing.Size(71, 65);
+            this.btnAddMemberInstructor.TabIndex = 43;
+            this.btnAddMemberInstructor.Click += new System.EventHandler(this.btnAddMemberInstructor_Click);
             // 
             // txtFilterBy
             // 
@@ -232,7 +234,7 @@
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.labCountRecords);
-            this.Controls.Add(this.btnAddInstructor);
+            this.Controls.Add(this.btnAddMemberInstructor);
             this.Controls.Add(this.txtFilterBy);
             this.Controls.Add(this.cmbFilterBy);
             this.Controls.Add(this.guna2HtmlLabel2);
@@ -260,7 +262,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel labCountRecords;
-        private Guna.UI2.WinForms.Guna2ImageButton btnAddInstructor;
+        private Guna.UI2.WinForms.Guna2ImageButton btnAddMemberInstructor;
         private Guna.UI2.WinForms.Guna2TextBox txtFilterBy;
         private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;

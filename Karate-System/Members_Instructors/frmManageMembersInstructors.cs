@@ -106,5 +106,19 @@ namespace KarateSystem.Members_Instructors
             }
             labCountRecords.Text = dgvAllMembersInstructors.RowCount.ToString();
         }
+
+        private void btnAddMemberInstructor_Click(object sender, System.EventArgs e)
+        {
+            frmAddUpdateMembersInstructors frmAddUpdateMembersInstructors = new frmAddUpdateMembersInstructors();
+            frmAddUpdateMembersInstructors.ShowDialog();
+            frmManageMembersInstructors_Load(null, null);
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmAddUpdateMembersInstructors frmAddUpdateMembersInstructors = new frmAddUpdateMembersInstructors((int)dgvAllMembersInstructors.CurrentRow.Cells[0].Value);
+            frmAddUpdateMembersInstructors.ShowDialog();
+            frmManageMembersInstructors_Load(null, null);
+        }
     }
 }

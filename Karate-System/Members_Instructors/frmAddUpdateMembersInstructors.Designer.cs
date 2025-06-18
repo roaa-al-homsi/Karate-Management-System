@@ -315,6 +315,7 @@
             this.Controls.Add(this.tcMemberInstructor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAddUpdateMembersInstructors";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmAddUpdateMembersInstructors";
             this.Load += new System.EventHandler(this.frmAddUpdateMembersInstructors_Load);
             this.tcMemberInstructor.ResumeLayout(false);

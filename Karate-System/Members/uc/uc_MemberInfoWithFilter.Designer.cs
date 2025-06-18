@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_MemberInfoWithFilter));
             this.gbFilter = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnAdd = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -35,9 +36,11 @@
             this.txtFilterValue = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.uc_MemberInfoCard1 = new KarateSystem.Members.uc.uc_MemberInfoCard();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbFilter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFind)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // gbFilter
@@ -107,6 +110,7 @@
             this.txtFilterValue.Size = new System.Drawing.Size(195, 36);
             this.txtFilterValue.TabIndex = 2;
             this.txtFilterValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterValue_KeyPress);
+            this.txtFilterValue.Validating += new System.ComponentModel.CancelEventHandler(this.txtFilterValue_Validating);
             // 
             // guna2HtmlLabel1
             // 
@@ -126,6 +130,10 @@
             this.uc_MemberInfoCard1.Size = new System.Drawing.Size(727, 602);
             this.uc_MemberInfoCard1.TabIndex = 3;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // uc_MemberInfoWithFilter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -139,6 +147,7 @@
             this.gbFilter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFind)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -151,5 +160,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtFilterValue;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private uc_MemberInfoCard uc_MemberInfoCard1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

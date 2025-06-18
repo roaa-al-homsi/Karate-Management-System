@@ -43,6 +43,7 @@ namespace KarateSystem.Members.uc
                 return;
             }
             _memberId = memberId;
+
             _LoadDataToForm();
         }
 

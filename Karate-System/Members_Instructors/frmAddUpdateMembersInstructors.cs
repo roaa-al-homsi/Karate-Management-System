@@ -48,6 +48,8 @@ namespace KarateSystem.Members_Instructors
             }
             this.Text = "Update Member-Instructor";
             labTitle.Text = "Update Member-Instructor";
+            uc_InstructorInfoWithFilter1.FilterEnabled = false;
+            uc_MemberInfoWithFilter1.FilterEnabled = false;
             _LoadMembersInstructorDataToForm();
         }
         private void frmAddUpdateMembersInstructors_Load(object sender, EventArgs e)
@@ -87,6 +89,7 @@ namespace KarateSystem.Members_Instructors
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+
             if (uc_MemberInfoWithFilter1.MemberId == -1)
             {
                 MessageBox.Show("You can't add a instructor without choose a member first!!.., Please choose a member.");
