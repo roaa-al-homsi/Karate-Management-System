@@ -109,7 +109,7 @@ namespace KarateDataAccess
         }
         static public bool Delete(int id)
         {
-            return GenericData.Delete("delete MemberInstructors where id = @id", "@id", id);
+            return GenericData.Delete("delete MemberInstructors where Id = @id", "@id", id);
         }
         static public bool Exist(int id)
         {

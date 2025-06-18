@@ -133,5 +133,22 @@ namespace KarateSystem.Members_Instructors
             frmAddUpdateMembersInstructors.ShowDialog();
             frmManageMembersInstructors_Load(null, null);
         }
+
+        private void deleteToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want delete this record ? ", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                if (MemberInstructor.Delete((int)dgvAllMembersInstructors.CurrentRow.Cells[0].Value))
+                {
+                    MessageBox.Show("Delete Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmManageMembersInstructors_Load(null, null);
+                }
+                else
+                {
+                    MessageBox.Show("Delete Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+        }
     }
 }

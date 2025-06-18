@@ -3,12 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members_instructors\\frmaddupdatemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members_instructors\\frmaddupdatemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members_instructors\\frmmanagemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members_instructors\\frmmanagemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members_instructors\\frmaddupdatemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members_instructors\\frmaddupdatemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\members_instructors\\frmmanagemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members_instructors\\frmmanagemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{147EF04C-73B8-40EE-8521-B6782C22469C}|..\\KarateDataAccess\\KarateDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karatedataaccess\\memberinstructorsdata.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +29,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmAddUpdateMembersInstructors.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmAddUpdateMembersInstructors.cs",
-              "RelativeDocumentMoniker": "Members_Instructors\\frmAddUpdateMembersInstructors.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmAddUpdateMembersInstructors.cs \u2B24",
-              "RelativeToolTip": "Members_Instructors\\frmAddUpdateMembersInstructors.cs \u2B24",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAADIAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MemberInstructorsData.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\KarateDataAccess\\MemberInstructorsData.cs",
+              "RelativeDocumentMoniker": "..\\KarateDataAccess\\MemberInstructorsData.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\KarateDataAccess\\MemberInstructorsData.cs",
+              "RelativeToolTip": "..\\KarateDataAccess\\MemberInstructorsData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T19:44:42.609Z",
+              "WhenOpened": "2025-06-18T19:56:24.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmManageMembersInstructors.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmManageMembersInstructors.cs",
+              "RelativeDocumentMoniker": "Members_Instructors\\frmManageMembersInstructors.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmManageMembersInstructors.cs",
+              "RelativeToolTip": "Members_Instructors\\frmManageMembersInstructors.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAIoAAACiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T19:48:06.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmAddUpdateMembersInstructors.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmAddUpdateMembersInstructors.cs",
-              "RelativeDocumentMoniker": "Members_Instructors\\frmAddUpdateMembersInstructors.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmAddUpdateMembersInstructors.cs [Design] \u2B24",
-              "RelativeToolTip": "Members_Instructors\\frmAddUpdateMembersInstructors.cs [Design] \u2B24",
+              "Title": "frmManageMembersInstructors.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmManageMembersInstructors.cs",
+              "RelativeDocumentMoniker": "Members_Instructors\\frmManageMembersInstructors.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmManageMembersInstructors.cs [Design]",
+              "RelativeToolTip": "Members_Instructors\\frmManageMembersInstructors.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T19:44:38.493Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-18T19:48:03.381Z"
             }
           ]
         }
