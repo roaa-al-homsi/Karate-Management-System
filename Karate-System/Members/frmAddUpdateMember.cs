@@ -10,6 +10,8 @@ namespace KarateSystem.Members
 {
     public partial class frmAddUpdateMember : Form
     {
+        public delegate void DataBackEventHandler(object sender, int personId);
+        public event DataBackEventHandler DataBackMember;
         private enum mode { Add = 1, Update = 2 }
         private mode _mode;
         private int _memberId = -1;
@@ -138,8 +140,9 @@ namespace KarateSystem.Members
             {
                 labMemberId.Text = _member.id.ToString();
                 _mode = mode.Update;
-                this.Text = "Update A Person";
+                this.Text = "Update A Member";
                 MessageBox.Show("Data Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DataBackMember.Invoke(this, _memberId);
             }
             else
             {
