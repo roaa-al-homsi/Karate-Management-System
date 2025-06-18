@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members_instructors\\frmaddupdatemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members_instructors\\frmaddupdatemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\instructors\\uc\\uc_instructorinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:instructors\\uc\\uc_instructorinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\instructors\\uc\\uc_instructorinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:instructors\\uc\\uc_instructorinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members\\uc\\uc_memberinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members\\uc\\uc_memberinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\instructors\\frmaddupdateinstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:instructors\\frmaddupdateinstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\instructors\\frmaddupdateinstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:instructors\\frmaddupdateinstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members\\uc\\uc_memberinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members\\uc\\uc_memberinfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,14 +42,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmAddUpdateMembersInstructors.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmAddUpdateMembersInstructors.cs",
-              "RelativeDocumentMoniker": "Members_Instructors\\frmAddUpdateMembersInstructors.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmAddUpdateMembersInstructors.cs [Design] \u2B24",
-              "RelativeToolTip": "Members_Instructors\\frmAddUpdateMembersInstructors.cs [Design] \u2B24",
+              "DocumentIndex": 4,
+              "Title": "frmAddUpdateInstructor.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Instructors\\frmAddUpdateInstructor.cs",
+              "RelativeDocumentMoniker": "Instructors\\frmAddUpdateInstructor.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Instructors\\frmAddUpdateInstructor.cs",
+              "RelativeToolTip": "Instructors\\frmAddUpdateInstructor.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAGEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T00:08:17.475Z",
+              "WhenOpened": "2025-06-18T00:27:25.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmAddUpdateInstructor.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Instructors\\frmAddUpdateInstructor.cs",
+              "RelativeDocumentMoniker": "Instructors\\frmAddUpdateInstructor.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Instructors\\frmAddUpdateInstructor.cs [Design]",
+              "RelativeToolTip": "Instructors\\frmAddUpdateInstructor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T00:27:23.691Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "uc_MemberInfoWithFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\uc\\uc_MemberInfoWithFilter.cs",
+              "RelativeDocumentMoniker": "Members\\uc\\uc_MemberInfoWithFilter.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\uc\\uc_MemberInfoWithFilter.cs",
+              "RelativeToolTip": "Members\\uc\\uc_MemberInfoWithFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T00:17:31.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "uc_InstructorInfoWithFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Instructors\\uc\\uc_InstructorInfoWithFilter.cs",
+              "RelativeDocumentMoniker": "Instructors\\uc\\uc_InstructorInfoWithFilter.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Instructors\\uc\\uc_InstructorInfoWithFilter.cs",
+              "RelativeToolTip": "Instructors\\uc\\uc_InstructorInfoWithFilter.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAASwEQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T00:17:14.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "uc_InstructorInfoWithFilter.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Instructors\\uc\\uc_InstructorInfoWithFilter.cs",
+              "RelativeDocumentMoniker": "Instructors\\uc\\uc_InstructorInfoWithFilter.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Instructors\\uc\\uc_InstructorInfoWithFilter.cs [Design]",
+              "RelativeToolTip": "Instructors\\uc\\uc_InstructorInfoWithFilter.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T00:15:57.419Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "uc_MemberInfoWithFilter.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\uc\\uc_MemberInfoWithFilter.cs",
+              "RelativeDocumentMoniker": "Members\\uc\\uc_MemberInfoWithFilter.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\uc\\uc_MemberInfoWithFilter.cs [Design]",
+              "RelativeToolTip": "Members\\uc\\uc_MemberInfoWithFilter.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T00:15:21.653Z",
               "EditorCaption": " [Design]"
             }
           ]

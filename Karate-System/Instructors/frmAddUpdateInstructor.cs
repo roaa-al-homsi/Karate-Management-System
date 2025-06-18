@@ -8,6 +8,8 @@ namespace KarateSystem.Instructors
 {
     public partial class frmAddUpdateInstructor : Form
     {
+        public delegate void frmAddUpdateInstructorEventHandler(object sender, int instructorId);
+        public event frmAddUpdateInstructorEventHandler DataBackInstructor;
         private enum mode { Add = 0, Update = 1 }
         private mode _mode = mode.Add;
 
@@ -93,11 +95,12 @@ namespace KarateSystem.Instructors
             _FillInstructorWithData();
             if (_instructor.Save())
             {
-
+                _instructorId = _instructor.id;
                 labInstructorId.Text = _instructor.id.ToString();
                 _mode = mode.Update;
                 this.Text = "Update A Instructor";
                 MessageBox.Show("Data Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DataBackInstructor.Invoke(this, _instructorId);
             }
             else
             {

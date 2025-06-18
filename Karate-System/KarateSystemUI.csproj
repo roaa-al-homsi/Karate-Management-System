@@ -90,6 +90,12 @@
     <Compile Include="Instructors\uc\uc_InstructorInfoCard.Designer.cs">
       <DependentUpon>uc_InstructorInfoCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Instructors\uc\uc_InstructorInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructors\uc\uc_InstructorInfoWithFilter.Designer.cs">
+      <DependentUpon>uc_InstructorInfoWithFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Members\frmAddUpdateMember.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Instructors\uc\uc_InstructorInfoCard.resx">
       <DependentUpon>uc_InstructorInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\uc\uc_InstructorInfoWithFilter.resx">
+      <DependentUpon>uc_InstructorInfoWithFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Members\frmAddUpdateMember.resx">
       <DependentUpon>frmAddUpdateMember.cs</DependentUpon>
