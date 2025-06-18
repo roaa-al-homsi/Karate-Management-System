@@ -38,5 +38,11 @@ namespace KarateSystem.Members_Instructors.uc
             _memberInstructorId = memberInstructorId;
             _LoadDataToForm();
         }
+
+        private void linkLabEditMemberInstructor_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmAddUpdateMembersInstructors frmAddUpdateMembersInstructors = new frmAddUpdateMembersInstructors(MemberInstructorId);
+            frmAddUpdateMembersInstructors.ShowDialog();
+        }
     }
 }
