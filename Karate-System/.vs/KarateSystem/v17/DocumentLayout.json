@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members_instructors\\uc\\memberinstructorinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members_instructors\\uc\\memberinstructorinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members_instructors\\frmmanagemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members_instructors\\frmmanagemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members_instructors\\uc\\memberinstructorinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members_instructors\\uc\\memberinstructorinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members_instructors\\frmmanagemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members_instructors\\frmmanagemembersinstructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members_instructors\\frmshowmemberinstructordetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,27 +34,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MemberInstructorInfoCard.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\uc\\MemberInstructorInfoCard.cs",
-              "RelativeDocumentMoniker": "Members_Instructors\\uc\\MemberInstructorInfoCard.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\uc\\MemberInstructorInfoCard.cs",
-              "RelativeToolTip": "Members_Instructors\\uc\\MemberInstructorInfoCard.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "frmManageMembersInstructors.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmManageMembersInstructors.cs",
+              "RelativeDocumentMoniker": "Members_Instructors\\frmManageMembersInstructors.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmManageMembersInstructors.cs",
+              "RelativeToolTip": "Members_Instructors\\frmManageMembersInstructors.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAIA/wH0AAACmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T17:03:20.916Z",
+              "WhenOpened": "2025-06-18T17:14:38.592Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MemberInstructorInfoCard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\uc\\MemberInstructorInfoCard.cs",
-              "RelativeDocumentMoniker": "Members_Instructors\\uc\\MemberInstructorInfoCard.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\uc\\MemberInstructorInfoCard.cs [Design]",
-              "RelativeToolTip": "Members_Instructors\\uc\\MemberInstructorInfoCard.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "frmManageMembersInstructors.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmManageMembersInstructors.cs",
+              "RelativeDocumentMoniker": "Members_Instructors\\frmManageMembersInstructors.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmManageMembersInstructors.cs [Design]",
+              "RelativeToolTip": "Members_Instructors\\frmManageMembersInstructors.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T17:02:14.632Z",
+              "WhenOpened": "2025-06-18T17:14:34.254Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -65,7 +65,7 @@
               "RelativeDocumentMoniker": "Members_Instructors\\frmShowMemberInstructorDetails.cs",
               "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members_Instructors\\frmShowMemberInstructorDetails.cs",
               "RelativeToolTip": "Members_Instructors\\frmShowMemberInstructorDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBAAAACeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T16:51:39.015Z",
               "EditorCaption": ""

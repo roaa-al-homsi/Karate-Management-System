@@ -1,6 +1,6 @@
 ﻿namespace KarateSystem.Members_Instructors.uc
 {
-    partial class MemberInstructorInfoCard
+    partial class uc_MemberInstructorInfoCard
     {
         /// <summary> 
         /// Required designer variable.

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace KarateSystem.Members_Instructors.uc
 {
-    public partial class MemberInstructorInfoCard : UserControl
+    public partial class uc_MemberInstructorInfoCard : UserControl
     {
         private int _memberInstructorId = -1;
         public int MemberInstructorId
@@ -16,7 +16,7 @@ namespace KarateSystem.Members_Instructors.uc
         {
             get { return _memberInstructor; }
         }
-        public MemberInstructorInfoCard()
+        public uc_MemberInstructorInfoCard()
         {
             InitializeComponent();
         }

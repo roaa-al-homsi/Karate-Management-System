@@ -144,11 +144,11 @@
     <Compile Include="Members_Instructors\frmShowMemberInstructorDetails.Designer.cs">
       <DependentUpon>frmShowMemberInstructorDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Members_Instructors\uc\MemberInstructorInfoCard.cs">
+    <Compile Include="Members_Instructors\uc\uc_MemberInstructorInfoCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Members_Instructors\uc\MemberInstructorInfoCard.Designer.cs">
-      <DependentUpon>MemberInstructorInfoCard.cs</DependentUpon>
+    <Compile Include="Members_Instructors\uc\uc_MemberInstructorInfoCard.Designer.cs">
+      <DependentUpon>uc_MemberInstructorInfoCard.cs</DependentUpon>
     </Compile>
     <Compile Include="People\frmAddUpdatePerson.cs">
       <SubType>Form</SubType>
@@ -263,8 +263,8 @@
     <EmbeddedResource Include="Members_Instructors\frmShowMemberInstructorDetails.resx">
       <DependentUpon>frmShowMemberInstructorDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Members_Instructors\uc\MemberInstructorInfoCard.resx">
-      <DependentUpon>MemberInstructorInfoCard.cs</DependentUpon>
+    <EmbeddedResource Include="Members_Instructors\uc\uc_MemberInstructorInfoCard.resx">
+      <DependentUpon>uc_MemberInstructorInfoCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmAddUpdatePerson.resx">
       <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>

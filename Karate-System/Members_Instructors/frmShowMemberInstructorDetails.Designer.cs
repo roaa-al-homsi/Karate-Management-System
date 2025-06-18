@@ -30,22 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmShowMemberInstructorDetails));
             this.labTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.tcMemberInstructor = new Guna.UI2.WinForms.Guna2TabControl();
-            this.tpMember = new System.Windows.Forms.TabPage();
-            this.tpInstructor = new System.Windows.Forms.TabPage();
-            this.uc_MemberInfoCard1 = new KarateSystem.Members.uc.uc_MemberInfoCard();
-            this.uc_InstructorInfoCard1 = new KarateSystem.Instructors.uc.uc_InstructorInfoCard();
             this.panelLoginInfo = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.linkLabEditMemberInstructor = new System.Windows.Forms.LinkLabel();
             this.dtpAssignDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtMemberInstructorId = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.linkLabEditMemberInstructor = new System.Windows.Forms.LinkLabel();
-            this.tcMemberInstructor.SuspendLayout();
-            this.tpMember.SuspendLayout();
-            this.tpInstructor.SuspendLayout();
+            this.uc_MemberInstructorInfoCard1 = new KarateSystem.Members_Instructors.uc.uc_MemberInstructorInfoCard();
             this.panelLoginInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -63,73 +56,6 @@
             this.labTitle.TabIndex = 2;
             this.labTitle.Text = " Instructors-Members Details";
             // 
-            // tcMemberInstructor
-            // 
-            this.tcMemberInstructor.Controls.Add(this.tpMember);
-            this.tcMemberInstructor.Controls.Add(this.tpInstructor);
-            this.tcMemberInstructor.ItemSize = new System.Drawing.Size(180, 40);
-            this.tcMemberInstructor.Location = new System.Drawing.Point(3, 65);
-            this.tcMemberInstructor.Name = "tcMemberInstructor";
-            this.tcMemberInstructor.SelectedIndex = 0;
-            this.tcMemberInstructor.Size = new System.Drawing.Size(735, 657);
-            this.tcMemberInstructor.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.tcMemberInstructor.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.tcMemberInstructor.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tcMemberInstructor.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.tcMemberInstructor.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.tcMemberInstructor.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.tcMemberInstructor.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tcMemberInstructor.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tcMemberInstructor.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.tcMemberInstructor.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tcMemberInstructor.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.tcMemberInstructor.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.tcMemberInstructor.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tcMemberInstructor.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.tcMemberInstructor.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.tcMemberInstructor.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.tcMemberInstructor.TabIndex = 3;
-            this.tcMemberInstructor.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tcMemberInstructor.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
-            // 
-            // tpMember
-            // 
-            this.tpMember.Controls.Add(this.uc_MemberInfoCard1);
-            this.tpMember.Location = new System.Drawing.Point(4, 44);
-            this.tpMember.Name = "tpMember";
-            this.tpMember.Padding = new System.Windows.Forms.Padding(3);
-            this.tpMember.Size = new System.Drawing.Size(727, 609);
-            this.tpMember.TabIndex = 0;
-            this.tpMember.Text = "Member";
-            this.tpMember.UseVisualStyleBackColor = true;
-            // 
-            // tpInstructor
-            // 
-            this.tpInstructor.Controls.Add(this.uc_InstructorInfoCard1);
-            this.tpInstructor.Location = new System.Drawing.Point(4, 44);
-            this.tpInstructor.Name = "tpInstructor";
-            this.tpInstructor.Padding = new System.Windows.Forms.Padding(3);
-            this.tpInstructor.Size = new System.Drawing.Size(727, 609);
-            this.tpInstructor.TabIndex = 1;
-            this.tpInstructor.Text = "Instructor";
-            this.tpInstructor.UseVisualStyleBackColor = true;
-            // 
-            // uc_MemberInfoCard1
-            // 
-            this.uc_MemberInfoCard1.Location = new System.Drawing.Point(0, 0);
-            this.uc_MemberInfoCard1.MemberId = -1;
-            this.uc_MemberInfoCard1.Name = "uc_MemberInfoCard1";
-            this.uc_MemberInfoCard1.Size = new System.Drawing.Size(727, 602);
-            this.uc_MemberInfoCard1.TabIndex = 0;
-            // 
-            // uc_InstructorInfoCard1
-            // 
-            this.uc_InstructorInfoCard1.InstructorId = 0;
-            this.uc_InstructorInfoCard1.Location = new System.Drawing.Point(0, 0);
-            this.uc_InstructorInfoCard1.Name = "uc_InstructorInfoCard1";
-            this.uc_InstructorInfoCard1.Size = new System.Drawing.Size(729, 517);
-            this.uc_InstructorInfoCard1.TabIndex = 0;
-            // 
             // panelLoginInfo
             // 
             this.panelLoginInfo.BorderColor = System.Drawing.Color.Black;
@@ -145,6 +71,20 @@
             this.panelLoginInfo.Name = "panelLoginInfo";
             this.panelLoginInfo.Size = new System.Drawing.Size(731, 109);
             this.panelLoginInfo.TabIndex = 138;
+            // 
+            // linkLabEditMemberInstructor
+            // 
+            this.linkLabEditMemberInstructor.AutoSize = true;
+            this.linkLabEditMemberInstructor.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabEditMemberInstructor.DisabledLinkColor = System.Drawing.Color.Transparent;
+            this.linkLabEditMemberInstructor.Font = new System.Drawing.Font("Aldhabi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabEditMemberInstructor.Location = new System.Drawing.Point(513, 14);
+            this.linkLabEditMemberInstructor.Name = "linkLabEditMemberInstructor";
+            this.linkLabEditMemberInstructor.Size = new System.Drawing.Size(215, 35);
+            this.linkLabEditMemberInstructor.TabIndex = 40;
+            this.linkLabEditMemberInstructor.TabStop = true;
+            this.linkLabEditMemberInstructor.Text = "Edit Member-Instructor Info";
+            this.linkLabEditMemberInstructor.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabEditMemberInstructor_LinkClicked);
             // 
             // dtpAssignDate
             // 
@@ -238,35 +178,26 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Member-Instructor Id:";
             // 
-            // linkLabEditMemberInstructor
+            // uc_MemberInstructorInfoCard1
             // 
-            this.linkLabEditMemberInstructor.AutoSize = true;
-            this.linkLabEditMemberInstructor.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabEditMemberInstructor.DisabledLinkColor = System.Drawing.Color.Transparent;
-            this.linkLabEditMemberInstructor.Font = new System.Drawing.Font("Aldhabi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabEditMemberInstructor.Location = new System.Drawing.Point(513, 14);
-            this.linkLabEditMemberInstructor.Name = "linkLabEditMemberInstructor";
-            this.linkLabEditMemberInstructor.Size = new System.Drawing.Size(215, 35);
-            this.linkLabEditMemberInstructor.TabIndex = 40;
-            this.linkLabEditMemberInstructor.TabStop = true;
-            this.linkLabEditMemberInstructor.Text = "Edit Member-Instructor Info";
-            this.linkLabEditMemberInstructor.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabEditMemberInstructor_LinkClicked);
+            this.uc_MemberInstructorInfoCard1.Location = new System.Drawing.Point(3, 60);
+            this.uc_MemberInstructorInfoCard1.MemberInstructorId = -1;
+            this.uc_MemberInstructorInfoCard1.Name = "uc_MemberInstructorInfoCard1";
+            this.uc_MemberInstructorInfoCard1.Size = new System.Drawing.Size(742, 662);
+            this.uc_MemberInstructorInfoCard1.TabIndex = 41;
             // 
             // frmShowMemberInstructorDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(749, 837);
+            this.Controls.Add(this.uc_MemberInstructorInfoCard1);
             this.Controls.Add(this.panelLoginInfo);
-            this.Controls.Add(this.tcMemberInstructor);
             this.Controls.Add(this.labTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmShowMemberInstructorDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Member Instructor Details";
-            this.tcMemberInstructor.ResumeLayout(false);
-            this.tpMember.ResumeLayout(false);
-            this.tpInstructor.ResumeLayout(false);
             this.panelLoginInfo.ResumeLayout(false);
             this.panelLoginInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
@@ -278,11 +209,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel labTitle;
-        private Guna.UI2.WinForms.Guna2TabControl tcMemberInstructor;
-        private System.Windows.Forms.TabPage tpMember;
-        private Members.uc.uc_MemberInfoCard uc_MemberInfoCard1;
-        private System.Windows.Forms.TabPage tpInstructor;
-        private Instructors.uc.uc_InstructorInfoCard uc_InstructorInfoCard1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel panelLoginInfo;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpAssignDate;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
@@ -291,5 +217,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.LinkLabel linkLabEditMemberInstructor;
+        private uc.uc_MemberInstructorInfoCard uc_MemberInstructorInfoCard1;
     }
 }

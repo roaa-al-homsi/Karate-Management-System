@@ -120,5 +120,11 @@ namespace KarateSystem.Members_Instructors
             frmAddUpdateMembersInstructors.ShowDialog();
             frmManageMembersInstructors_Load(null, null);
         }
+
+        private void showDetailsToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmShowMemberInstructorDetails frmShowMemberInstructorDetails = new frmShowMemberInstructorDetails((int)dgvAllMembersInstructors.CurrentRow.Cells[0].Value);
+            frmShowMemberInstructorDetails.ShowDialog();
+        }
     }
 }
