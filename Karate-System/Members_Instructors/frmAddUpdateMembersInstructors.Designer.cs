@@ -31,20 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddUpdateMembersInstructors));
             this.tcMemberInstructor = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpMember = new System.Windows.Forms.TabPage();
-            this.tpInstructor = new System.Windows.Forms.TabPage();
-            this.labTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnNext = new Guna.UI2.WinForms.Guna2Button();
             this.uc_MemberInfoWithFilter1 = new KarateSystem.Members.uc.uc_MemberInfoWithFilter();
+            this.tpInstructor = new System.Windows.Forms.TabPage();
             this.uc_InstructorInfoWithFilter1 = new KarateSystem.Instructors.uc.uc_InstructorInfoWithFilter();
+            this.labTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.panelLoginInfo = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.dtpAssignDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtMemberInstructorId = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnNext = new Guna.UI2.WinForms.Guna2Button();
-            this.dtpAssignDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.tcMemberInstructor.SuspendLayout();
             this.tpMember.SuspendLayout();
             this.tpInstructor.SuspendLayout();
@@ -94,6 +94,35 @@
             this.tpMember.Text = "Member";
             this.tpMember.UseVisualStyleBackColor = true;
             // 
+            // btnNext
+            // 
+            this.btnNext.AutoRoundedCorners = true;
+            this.btnNext.BorderRadius = 21;
+            this.btnNext.CheckedState.CustomBorderColor = System.Drawing.Color.HotPink;
+            this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNext.FillColor = System.Drawing.Color.Black;
+            this.btnNext.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
+            this.btnNext.Location = new System.Drawing.Point(595, 667);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(100, 45);
+            this.btnNext.TabIndex = 138;
+            this.btnNext.Text = "Next";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // uc_MemberInfoWithFilter1
+            // 
+            this.uc_MemberInfoWithFilter1.FilterEnabled = false;
+            this.uc_MemberInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
+            this.uc_MemberInfoWithFilter1.Name = "uc_MemberInfoWithFilter1";
+            this.uc_MemberInfoWithFilter1.ShowAddPerson = true;
+            this.uc_MemberInfoWithFilter1.Size = new System.Drawing.Size(729, 734);
+            this.uc_MemberInfoWithFilter1.TabIndex = 0;
+            // 
             // tpInstructor
             // 
             this.tpInstructor.Controls.Add(this.uc_InstructorInfoWithFilter1);
@@ -105,37 +134,26 @@
             this.tpInstructor.Text = "Instructor";
             this.tpInstructor.UseVisualStyleBackColor = true;
             // 
+            // uc_InstructorInfoWithFilter1
+            // 
+            this.uc_InstructorInfoWithFilter1.FilterEnabled = false;
+            this.uc_InstructorInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
+            this.uc_InstructorInfoWithFilter1.Name = "uc_InstructorInfoWithFilter1";
+            this.uc_InstructorInfoWithFilter1.ShowAddInstructor = false;
+            this.uc_InstructorInfoWithFilter1.Size = new System.Drawing.Size(726, 645);
+            this.uc_InstructorInfoWithFilter1.TabIndex = 0;
+            // 
             // labTitle
             // 
             this.labTitle.AutoSize = false;
             this.labTitle.BackColor = System.Drawing.Color.Transparent;
             this.labTitle.Font = new System.Drawing.Font("Andalus", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labTitle.Location = new System.Drawing.Point(136, 12);
+            this.labTitle.Location = new System.Drawing.Point(166, 12);
             this.labTitle.Name = "labTitle";
             this.labTitle.Size = new System.Drawing.Size(483, 36);
             this.labTitle.TabIndex = 1;
             this.labTitle.Text = "Add New Instructors-Members";
-            // 
-            // uc_MemberInfoWithFilter1
-            // 
-            this.uc_MemberInfoWithFilter1.FilterEnabled = false;
-            this.uc_MemberInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
-          
-            this.uc_MemberInfoWithFilter1.Name = "uc_MemberInfoWithFilter1";
-            this.uc_MemberInfoWithFilter1.ShowAddPerson = true;
-            this.uc_MemberInfoWithFilter1.Size = new System.Drawing.Size(729, 734);
-            this.uc_MemberInfoWithFilter1.TabIndex = 0;
-            // 
-            // uc_InstructorInfoWithFilter1
-            // 
-            this.uc_InstructorInfoWithFilter1.FilterEnabled = false;
-          
-            this.uc_InstructorInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
-            this.uc_InstructorInfoWithFilter1.Name = "uc_InstructorInfoWithFilter1";
-            this.uc_InstructorInfoWithFilter1.ShowAddInstructor = false;
-            this.uc_InstructorInfoWithFilter1.Size = new System.Drawing.Size(726, 645);
-            this.uc_InstructorInfoWithFilter1.TabIndex = 0;
             // 
             // btnSave
             // 
@@ -191,6 +209,23 @@
             this.panelLoginInfo.Name = "panelLoginInfo";
             this.panelLoginInfo.Size = new System.Drawing.Size(421, 109);
             this.panelLoginInfo.TabIndex = 137;
+            // 
+            // dtpAssignDate
+            // 
+            this.dtpAssignDate.AutoRoundedCorners = true;
+            this.dtpAssignDate.BackColor = System.Drawing.Color.Transparent;
+            this.dtpAssignDate.Checked = true;
+            this.dtpAssignDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtpAssignDate.Font = new System.Drawing.Font("Andalus", 10.2F);
+            this.dtpAssignDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpAssignDate.Location = new System.Drawing.Point(199, 57);
+            this.dtpAssignDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpAssignDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpAssignDate.Name = "dtpAssignDate";
+            this.dtpAssignDate.Size = new System.Drawing.Size(200, 36);
+            this.dtpAssignDate.TabIndex = 12;
+            this.dtpAssignDate.UseTransparentBackground = true;
+            this.dtpAssignDate.Value = new System.DateTime(2025, 6, 18, 17, 49, 23, 364);
             // 
             // guna2PictureBox2
             // 
@@ -265,43 +300,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(196, 30);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Member-Instructor Id:";
-            // 
-            // btnNext
-            // 
-            this.btnNext.AutoRoundedCorners = true;
-            this.btnNext.BorderRadius = 21;
-            this.btnNext.CheckedState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNext.FillColor = System.Drawing.Color.Black;
-            this.btnNext.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnNext.Location = new System.Drawing.Point(595, 667);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(100, 45);
-            this.btnNext.TabIndex = 138;
-            this.btnNext.Text = "Next";
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // dtpAssignDate
-            // 
-            this.dtpAssignDate.AutoRoundedCorners = true;
-            this.dtpAssignDate.BackColor = System.Drawing.Color.Transparent;
-            this.dtpAssignDate.Checked = true;
-            this.dtpAssignDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dtpAssignDate.Font = new System.Drawing.Font("Andalus", 10.2F);
-            this.dtpAssignDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpAssignDate.Location = new System.Drawing.Point(199, 57);
-            this.dtpAssignDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpAssignDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpAssignDate.Name = "dtpAssignDate";
-            this.dtpAssignDate.Size = new System.Drawing.Size(200, 36);
-            this.dtpAssignDate.TabIndex = 12;
-            this.dtpAssignDate.UseTransparentBackground = true;
-            this.dtpAssignDate.Value = new System.DateTime(2025, 6, 18, 17, 49, 23, 364);
             // 
             // frmAddUpdateMembersInstructors
             // 

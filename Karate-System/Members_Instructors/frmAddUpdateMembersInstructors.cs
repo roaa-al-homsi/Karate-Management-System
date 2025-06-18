@@ -33,7 +33,8 @@ namespace KarateSystem.Members_Instructors
             {
                 uc_MemberInfoWithFilter1.LoadMemberInfo(_memberInstructor.memberId);
                 uc_InstructorInfoWithFilter1.LoadInstructorData(_memberInstructor.instructorId);
-
+                txtMemberInstructorId.Text = _memberInstructor.id.ToString();
+                dtpAssignDate.Value = _memberInstructor.assignDate;
             }
         }
         private void _ResetDefaultValueToForm()
