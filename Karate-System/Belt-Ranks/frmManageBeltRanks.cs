@@ -19,11 +19,8 @@ namespace KarateSystem.Belt_Ranks
         {
             if (dgvAllBeltRanks.Rows.Count > 0)
             {
-                dgvAllBeltRanks.Columns[0].HeaderText = "Belt Id";
                 dgvAllBeltRanks.Columns[0].Width = 110;
-
                 dgvAllBeltRanks.Columns[1].Width = 170;
-
                 dgvAllBeltRanks.Columns[2].HeaderText = "Test Fees";
                 dgvAllBeltRanks.Columns[2].Width = 110;
             }
@@ -70,7 +67,7 @@ namespace KarateSystem.Belt_Ranks
                 return;
             }
 
-            if (cmbFilterBy.Text == "Belt Id")
+            if (cmbFilterBy.Text == "Id")
             {
                 _dtAllBeltRanks.DefaultView.RowFilter = string.Format("[{0}]={1}", cmbFilterBy.Text, txtFilterBy.Text.Trim());
             }

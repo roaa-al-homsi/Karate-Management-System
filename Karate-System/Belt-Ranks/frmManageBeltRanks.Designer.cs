@@ -52,12 +52,12 @@
             this.dgvAllBeltRanks.AllowUserToDeleteRows = false;
             this.dgvAllBeltRanks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAllBeltRanks.ContextMenuStrip = this.cmsManageBeltRanks;
-            this.dgvAllBeltRanks.Location = new System.Drawing.Point(325, 370);
+            this.dgvAllBeltRanks.Location = new System.Drawing.Point(527, 383);
             this.dgvAllBeltRanks.Name = "dgvAllBeltRanks";
             this.dgvAllBeltRanks.ReadOnly = true;
             this.dgvAllBeltRanks.RowHeadersWidth = 70;
             this.dgvAllBeltRanks.RowTemplate.Height = 24;
-            this.dgvAllBeltRanks.Size = new System.Drawing.Size(850, 304);
+            this.dgvAllBeltRanks.Size = new System.Drawing.Size(464, 304);
             this.dgvAllBeltRanks.TabIndex = 20;
             // 
             // cmsManageBeltRanks
@@ -76,13 +76,13 @@
             this.cmsManageBeltRanks.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageBeltRanks.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageBeltRanks.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageBeltRanks.Size = new System.Drawing.Size(215, 84);
+            this.cmsManageBeltRanks.Size = new System.Drawing.Size(132, 56);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.updateToolStripMenuItem.Text = "Update";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
@@ -90,7 +90,7 @@
             // 
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -98,7 +98,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(627, 76);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(631, 24);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -111,7 +111,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(324, 694);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(527, 712);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(114, 32);
             this.guna2HtmlLabel3.TabIndex = 27;
@@ -123,7 +123,7 @@
             this.labCountRecords.BackColor = System.Drawing.Color.Transparent;
             this.labCountRecords.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCountRecords.ForeColor = System.Drawing.Color.Black;
-            this.labCountRecords.Location = new System.Drawing.Point(427, 693);
+            this.labCountRecords.Location = new System.Drawing.Point(630, 711);
             this.labCountRecords.Name = "labCountRecords";
             this.labCountRecords.Size = new System.Drawing.Size(104, 33);
             this.labCountRecords.TabIndex = 26;
@@ -137,10 +137,10 @@
             this.btnAddPerson.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPerson.Image")));
             this.btnAddPerson.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnAddPerson.ImageRotate = 0F;
-            this.btnAddPerson.Location = new System.Drawing.Point(1081, 299);
+            this.btnAddPerson.Location = new System.Drawing.Point(921, 312);
             this.btnAddPerson.Name = "btnAddPerson";
             this.btnAddPerson.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddPerson.Size = new System.Drawing.Size(112, 65);
+            this.btnAddPerson.Size = new System.Drawing.Size(70, 65);
             this.btnAddPerson.TabIndex = 25;
             this.btnAddPerson.Click += new System.EventHandler(this.btnAddPerson_Click);
             // 
@@ -157,12 +157,12 @@
             this.txtFilterBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFilterBy.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFilterBy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFilterBy.Location = new System.Drawing.Point(614, 327);
+            this.txtFilterBy.Location = new System.Drawing.Point(751, 328);
             this.txtFilterBy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFilterBy.Name = "txtFilterBy";
             this.txtFilterBy.PlaceholderText = "";
             this.txtFilterBy.SelectedText = "";
-            this.txtFilterBy.Size = new System.Drawing.Size(175, 36);
+            this.txtFilterBy.Size = new System.Drawing.Size(139, 36);
             this.txtFilterBy.TabIndex = 24;
             this.txtFilterBy.TextChanged += new System.EventHandler(this.txtFilterBy_TextChanged);
             this.txtFilterBy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterBy_KeyPress);
@@ -181,9 +181,9 @@
             this.cmbFilterBy.ItemHeight = 30;
             this.cmbFilterBy.Items.AddRange(new object[] {
             "None"});
-            this.cmbFilterBy.Location = new System.Drawing.Point(405, 328);
+            this.cmbFilterBy.Location = new System.Drawing.Point(607, 328);
             this.cmbFilterBy.Name = "cmbFilterBy";
-            this.cmbFilterBy.Size = new System.Drawing.Size(186, 36);
+            this.cmbFilterBy.Size = new System.Drawing.Size(138, 36);
             this.cmbFilterBy.TabIndex = 23;
             this.cmbFilterBy.SelectedIndexChanged += new System.EventHandler(this.cmbFilterBy_SelectedIndexChanged);
             // 
@@ -191,7 +191,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(325, 331);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(527, 331);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(74, 33);
             this.guna2HtmlLabel2.TabIndex = 22;
@@ -202,7 +202,7 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sakkal Majalla", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(627, 269);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(631, 217);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(300, 75);
             this.guna2HtmlLabel1.TabIndex = 21;
