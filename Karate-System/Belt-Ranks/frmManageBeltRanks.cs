@@ -117,5 +117,19 @@ namespace KarateSystem.Belt_Ranks
                 }
             }
         }
+
+        private void btnAddPerson_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateBeltRank frmAddUpdateBeltRank = new frmAddUpdateBeltRank();
+            frmAddUpdateBeltRank.ShowDialog();
+            frmManageBeltRanks_Load(null, null);
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateBeltRank frmAddUpdateBeltRank = new frmAddUpdateBeltRank((int)dgvAllBeltRanks.CurrentRow.Cells[0].Value);
+            frmAddUpdateBeltRank.ShowDialog();
+            frmManageBeltRanks_Load(null, null);
+        }
     }
 }
