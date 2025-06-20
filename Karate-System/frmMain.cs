@@ -4,6 +4,7 @@ using KarateSystem.Instructors;
 using KarateSystem.Members;
 using KarateSystem.Members_Instructors;
 using KarateSystem.People;
+using KarateSystem.Subscription_Periods;
 using KarateSystem.Users;
 using System.Drawing;
 using System.Windows.Forms;
@@ -123,6 +124,12 @@ namespace KarateSystem
         {
             btnTitle.Image = btnBeltRanks.Image;
             OpenChildFormAsync(new frmManageBeltRanks(this), sender);
+        }
+
+        private void btnSubscriptionPeriods_Click(object sender, System.EventArgs e)
+        {
+            btnTitle.Image = btnSubscriptionPeriods.Image;
+            OpenChildFormAsync(new frmManageSubscriptionPeriods(this), sender);
         }
     }
 }

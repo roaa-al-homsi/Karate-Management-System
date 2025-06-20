@@ -182,6 +182,7 @@
             this.btnSubscriptionPeriods.TabIndex = 20;
             this.btnSubscriptionPeriods.Tag = "Subscription Periods";
             this.btnSubscriptionPeriods.Text = "Subscription Periods";
+            this.btnSubscriptionPeriods.Click += new System.EventHandler(this.btnSubscriptionPeriods_Click);
             // 
             // btnBeltRanks
             // 
