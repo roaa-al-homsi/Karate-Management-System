@@ -4,6 +4,7 @@ using KarateSystem.BeltTests;
 using KarateSystem.Instructors;
 using KarateSystem.Members;
 using KarateSystem.Members_Instructors;
+using KarateSystem.Payments;
 using KarateSystem.People;
 using KarateSystem.Subscription_Periods;
 using KarateSystem.Users;
@@ -137,6 +138,12 @@ namespace KarateSystem
         {
             btnTitle.Image = btnBeltTests.Image;
             OpenChildFormAsync(new frmManageBeltTests(this), sender);
+        }
+
+        private void btnPayments_Click(object sender, System.EventArgs e)
+        {
+            btnTitle.Image = btnPayments.Image;
+            OpenChildFormAsync(new frmManagePayments(this), sender);
         }
     }
 }

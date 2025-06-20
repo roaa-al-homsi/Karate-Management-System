@@ -101,7 +101,7 @@ namespace KarateDataAccess
 
         static public DataTable All()
         {
-            return GenericData.All("select * from Payments");
+            return GenericData.All("select * from view_Payments_Info");
         }
         static public bool Delete(int id)
         {

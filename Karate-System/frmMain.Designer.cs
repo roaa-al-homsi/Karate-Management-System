@@ -138,8 +138,9 @@
             this.btnPayments.Name = "btnPayments";
             this.btnPayments.Size = new System.Drawing.Size(291, 59);
             this.btnPayments.TabIndex = 22;
-            this.btnPayments.Tag = "Logins";
-            this.btnPayments.Text = "Logins";
+            this.btnPayments.Tag = "Payments";
+            this.btnPayments.Text = "Payments";
+            this.btnPayments.Click += new System.EventHandler(this.btnPayments_Click);
             // 
             // btnBeltTests
             // 
