@@ -203,6 +203,7 @@
             this.btnBeltRanks.TabIndex = 19;
             this.btnBeltRanks.Tag = "Belt Ranks";
             this.btnBeltRanks.Text = "Belt Ranks";
+            this.btnBeltRanks.Click += new System.EventHandler(this.btnBeltRanks_Click);
             // 
             // btnMembersInstructors
             // 
