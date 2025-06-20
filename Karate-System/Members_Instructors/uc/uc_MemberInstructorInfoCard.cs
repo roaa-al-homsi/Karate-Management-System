@@ -11,6 +11,19 @@ namespace KarateSystem.Members_Instructors.uc
             get { return _memberInstructorId; }
             set { _memberInstructorId = value; }
         }
+
+        private int _memberId = -1;
+        public int MemberId
+        {
+            get { return uc_MemberInfoCard1.MemberId; }
+        }
+
+        private int _instructorId = -1;
+        public int InstructorId
+        {
+            get { return uc_InstructorInfoCard1.InstructorId; }
+        }
+
         private MemberInstructor _memberInstructor;
         public MemberInstructor MemberInstructor
         {
@@ -26,6 +39,8 @@ namespace KarateSystem.Members_Instructors.uc
             uc_InstructorInfoCard1.LoadInstructorInfo(_memberInstructor.instructorId);
             txtMemberInstructorId.Text = _memberInstructor.id.ToString();
             dtpAssignDate.Value = _memberInstructor.assignDate;
+            _memberId = uc_MemberInfoCard1.MemberId;
+            _instructorId = uc_InstructorInfoCard1.InstructorId;
         }
         public void LoadMemberInstructorInfo(int memberInstructorId)
         {

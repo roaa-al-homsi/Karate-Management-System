@@ -30,6 +30,7 @@
         {
             this.labTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.uc_MemberInstructorInfoCard1 = new KarateSystem.Members_Instructors.uc.uc_MemberInstructorInfoCard();
+            this.linkLabShowTrainedMembers = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // labTitle
@@ -52,11 +53,26 @@
             this.uc_MemberInstructorInfoCard1.Size = new System.Drawing.Size(742, 779);
             this.uc_MemberInstructorInfoCard1.TabIndex = 3;
             // 
+            // linkLabShowTrainedMembers
+            // 
+            this.linkLabShowTrainedMembers.AutoSize = true;
+            this.linkLabShowTrainedMembers.BackColor = System.Drawing.Color.White;
+            this.linkLabShowTrainedMembers.DisabledLinkColor = System.Drawing.Color.Transparent;
+            this.linkLabShowTrainedMembers.Font = new System.Drawing.Font("Aldhabi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabShowTrainedMembers.Location = new System.Drawing.Point(497, 773);
+            this.linkLabShowTrainedMembers.Name = "linkLabShowTrainedMembers";
+            this.linkLabShowTrainedMembers.Size = new System.Drawing.Size(178, 35);
+            this.linkLabShowTrainedMembers.TabIndex = 40;
+            this.linkLabShowTrainedMembers.TabStop = true;
+            this.linkLabShowTrainedMembers.Text = "Show Trained Members";
+            this.linkLabShowTrainedMembers.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabShowTrainedMembers_LinkClicked);
+            // 
             // frmShowMemberInstructorDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 837);
+            this.ClientSize = new System.Drawing.Size(740, 845);
+            this.Controls.Add(this.linkLabShowTrainedMembers);
             this.Controls.Add(this.uc_MemberInstructorInfoCard1);
             this.Controls.Add(this.labTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -64,6 +80,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Member Instructor Details";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -71,5 +88,6 @@
 
         private Guna.UI2.WinForms.Guna2HtmlLabel labTitle;
         private uc.uc_MemberInstructorInfoCard uc_MemberInstructorInfoCard1;
+        private System.Windows.Forms.LinkLabel linkLabShowTrainedMembers;
     }
 }

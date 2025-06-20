@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using KarateSystem.Instructors;
+using System.Windows.Forms;
 
 namespace KarateSystem.Members_Instructors
 {
@@ -16,6 +17,13 @@ namespace KarateSystem.Members_Instructors
         {
             frmAddUpdateMembersInstructors frmAddUpdateMembersInstructors = new frmAddUpdateMembersInstructors(uc_MemberInstructorInfoCard1.MemberInstructorId);
             frmAddUpdateMembersInstructors.ShowDialog();
+        }
+
+        private void linkLabShowTrainedMembers_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmShowTrainedMembers frmTrainedMembers = new frmShowTrainedMembers(uc_MemberInstructorInfoCard1.InstructorId);
+            frmTrainedMembers.ShowDialog();
+
         }
     }
 }
