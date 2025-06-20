@@ -64,6 +64,12 @@
     <Compile Include="Belt-Ranks\frmManageBeltRanks.Designer.cs">
       <DependentUpon>frmManageBeltRanks.cs</DependentUpon>
     </Compile>
+    <Compile Include="BeltTests\frmManageBeltTests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeltTests\frmManageBeltTests.Designer.cs">
+      <DependentUpon>frmManageBeltTests.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Belt-Ranks\frmManageBeltRanks.resx">
       <DependentUpon>frmManageBeltRanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeltTests\frmManageBeltTests.resx">
+      <DependentUpon>frmManageBeltTests.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

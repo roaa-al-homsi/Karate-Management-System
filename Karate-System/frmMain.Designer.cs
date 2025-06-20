@@ -161,6 +161,7 @@
             this.btnBeltTests.TabIndex = 21;
             this.btnBeltTests.Tag = "Belt Tests";
             this.btnBeltTests.Text = "Belt Tests";
+            this.btnBeltTests.Click += new System.EventHandler(this.btnBeltTests_Click);
             // 
             // btnSubscriptionPeriods
             // 

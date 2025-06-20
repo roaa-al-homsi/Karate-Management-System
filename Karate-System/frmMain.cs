@@ -1,5 +1,6 @@
 ﻿using Guna.UI2.WinForms;
 using KarateSystem.Belt_Ranks;
+using KarateSystem.BeltTests;
 using KarateSystem.Instructors;
 using KarateSystem.Members;
 using KarateSystem.Members_Instructors;
@@ -130,6 +131,12 @@ namespace KarateSystem
         {
             btnTitle.Image = btnSubscriptionPeriods.Image;
             OpenChildFormAsync(new frmManageSubscriptionPeriods(this), sender);
+        }
+
+        private void btnBeltTests_Click(object sender, System.EventArgs e)
+        {
+            btnTitle.Image = btnBeltTests.Image;
+            OpenChildFormAsync(new frmManageBeltTests(this), sender);
         }
     }
 }

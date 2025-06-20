@@ -110,7 +110,7 @@ namespace KarateDataAccess
 
         static public DataTable All()
         {
-            return GenericData.All("select * from BeltTests");
+            return GenericData.All("select * from view_BeltTests_Info");
         }
         static public bool Delete(int id)
         {
