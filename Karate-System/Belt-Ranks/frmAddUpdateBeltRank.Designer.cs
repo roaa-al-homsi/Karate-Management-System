@@ -185,7 +185,7 @@
             this.labTitleForm.BackColor = System.Drawing.Color.Transparent;
             this.labTitleForm.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labTitleForm.ForeColor = System.Drawing.Color.Maroon;
-            this.labTitleForm.Location = new System.Drawing.Point(72, 12);
+            this.labTitleForm.Location = new System.Drawing.Point(110, 12);
             this.labTitleForm.Name = "labTitleForm";
             this.labTitleForm.Size = new System.Drawing.Size(277, 29);
             this.labTitleForm.TabIndex = 53;
@@ -204,7 +204,7 @@
             this.btnSave.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnSave.Location = new System.Drawing.Point(82, 255);
+            this.btnSave.Location = new System.Drawing.Point(110, 252);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 45);
             this.btnSave.TabIndex = 135;
@@ -224,7 +224,7 @@
             this.btnCancel.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnCancel.Location = new System.Drawing.Point(200, 255);
+            this.btnCancel.Location = new System.Drawing.Point(228, 252);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 45);
             this.btnCancel.TabIndex = 136;
@@ -238,7 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 322);
+            this.ClientSize = new System.Drawing.Size(452, 322);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.labTitleForm);
@@ -253,7 +253,7 @@
             this.Controls.Add(this.guna2HtmlLabel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAddUpdateBeltRank";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddUpdateBeltRank";
             this.Load += new System.EventHandler(this.frmAddUpdateBeltRank_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
