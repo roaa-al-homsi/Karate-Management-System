@@ -34,10 +34,10 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panelContainerMemberInfo = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.cmbBeltRanks = new Guna.UI2.WinForms.Guna2ComboBox();
             this.chkIsActive = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.txtContactInfo = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtLastBeltRankId = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.picMember = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.labMemberId = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -68,6 +68,7 @@
             this.labTitleForm.Size = new System.Drawing.Size(379, 44);
             this.labTitleForm.TabIndex = 17;
             this.labTitleForm.Text = "Add a Member";
+            
             // 
             // errorProvider1
             // 
@@ -88,11 +89,11 @@
             // panelContainerMemberInfo
             // 
             this.panelContainerMemberInfo.BorderColor = System.Drawing.Color.White;
+            this.panelContainerMemberInfo.Controls.Add(this.cmbBeltRanks);
             this.panelContainerMemberInfo.Controls.Add(this.guna2HtmlLabel4);
             this.panelContainerMemberInfo.Controls.Add(this.chkIsActive);
             this.panelContainerMemberInfo.Controls.Add(this.txtContactInfo);
             this.panelContainerMemberInfo.Controls.Add(this.guna2HtmlLabel1);
-            this.panelContainerMemberInfo.Controls.Add(this.txtLastBeltRankId);
             this.panelContainerMemberInfo.Controls.Add(this.guna2HtmlLabel2);
             this.panelContainerMemberInfo.Controls.Add(this.picMember);
             this.panelContainerMemberInfo.Controls.Add(this.labMemberId);
@@ -100,8 +101,25 @@
             this.panelContainerMemberInfo.FillColor = System.Drawing.Color.White;
             this.panelContainerMemberInfo.Location = new System.Drawing.Point(6, 6);
             this.panelContainerMemberInfo.Name = "panelContainerMemberInfo";
-            this.panelContainerMemberInfo.Size = new System.Drawing.Size(512, 588);
+            this.panelContainerMemberInfo.Size = new System.Drawing.Size(598, 588);
             this.panelContainerMemberInfo.TabIndex = 151;
+            // 
+            // cmbBeltRanks
+            // 
+            this.cmbBeltRanks.AutoRoundedCorners = true;
+            this.cmbBeltRanks.BackColor = System.Drawing.Color.Transparent;
+            this.cmbBeltRanks.BorderColor = System.Drawing.Color.Black;
+            this.cmbBeltRanks.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbBeltRanks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBeltRanks.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbBeltRanks.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbBeltRanks.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold);
+            this.cmbBeltRanks.ForeColor = System.Drawing.Color.Black;
+            this.cmbBeltRanks.ItemHeight = 30;
+            this.cmbBeltRanks.Location = new System.Drawing.Point(291, 318);
+            this.cmbBeltRanks.Name = "cmbBeltRanks";
+            this.cmbBeltRanks.Size = new System.Drawing.Size(231, 36);
+            this.cmbBeltRanks.TabIndex = 169;
             // 
             // chkIsActive
             // 
@@ -159,33 +177,6 @@
             this.guna2HtmlLabel1.TabIndex = 165;
             this.guna2HtmlLabel1.Text = "Emergency Contact:";
             // 
-            // txtLastBeltRankId
-            // 
-            this.txtLastBeltRankId.Animated = true;
-            this.txtLastBeltRankId.AutoRoundedCorners = true;
-            this.txtLastBeltRankId.BackColor = System.Drawing.Color.Transparent;
-            this.txtLastBeltRankId.BorderRadius = 17;
-            this.txtLastBeltRankId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLastBeltRankId.DefaultText = "";
-            this.txtLastBeltRankId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtLastBeltRankId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtLastBeltRankId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLastBeltRankId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLastBeltRankId.FillColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtLastBeltRankId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastBeltRankId.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtLastBeltRankId.ForeColor = System.Drawing.Color.Black;
-            this.txtLastBeltRankId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastBeltRankId.Location = new System.Drawing.Point(291, 322);
-            this.txtLastBeltRankId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtLastBeltRankId.Name = "txtLastBeltRankId";
-            this.txtLastBeltRankId.PlaceholderText = "";
-            this.txtLastBeltRankId.SelectedText = "";
-            this.txtLastBeltRankId.Size = new System.Drawing.Size(200, 36);
-            this.txtLastBeltRankId.TabIndex = 159;
-            this.txtLastBeltRankId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLastBeltRankId_KeyPress);
-            this.txtLastBeltRankId.Validating += new System.ComponentModel.CancelEventHandler(this._ValidateEmptyTextBox);
-            // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.AutoSize = false;
@@ -205,7 +196,7 @@
             this.picMember.FillColor = System.Drawing.Color.DimGray;
             this.picMember.Image = ((System.Drawing.Image)(resources.GetObject("picMember.Image")));
             this.picMember.ImageRotate = 0F;
-            this.picMember.Location = new System.Drawing.Point(130, 5);
+            this.picMember.Location = new System.Drawing.Point(172, 15);
             this.picMember.Name = "picMember";
             this.picMember.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.picMember.Size = new System.Drawing.Size(217, 200);
@@ -397,12 +388,12 @@
         private Guna.UI2.WinForms.Guna2CustomCheckBox chkIsActive;
         private Guna.UI2.WinForms.Guna2TextBox txtContactInfo;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox txtLastBeltRankId;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picMember;
         private Guna.UI2.WinForms.Guna2HtmlLabel labMemberId;
         private Guna.UI2.WinForms.Guna2HtmlLabel labMember;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private Guna.UI2.WinForms.Guna2Button btnSave;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbBeltRanks;
     }
 }

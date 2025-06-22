@@ -101,6 +101,11 @@ namespace KarateDataAccess
         {
             return GenericData.All("select * from BeltRanks");
         }
+
+        static public DataTable AllNames()
+        {
+            return GenericData.All("select Name from BeltRanks");
+        }
         static public bool Delete(int id)
         {
             return GenericData.Delete("delete BeltRanks where id = @id", "@id", id);
@@ -109,7 +114,15 @@ namespace KarateDataAccess
         {
             return GenericData.Exist("select Found=1 from BeltRanks where id= @id", "@id", id);
         }
+        static public string GetNameById(int beltId)
+        {
+            return GenericData.GetNameById("select Name from BeltRanks where Id=@beltId", "@beltId", beltId);
+        }
 
+        static public int GetIdByName(string nameBelt)
+        {
+            return GenericData.GetIdByName("select Id from BeltRanks where Name=@nameBelt", "@nameBelt", nameBelt);
+        }
 
     }
 

@@ -73,6 +73,10 @@ namespace KarateBusiness
         {
             return BeltRankData.All();
         }
+        public static DataTable AllNames()
+        {
+            return BeltRankData.AllNames();
+        }
         public static BeltRank Find(int id)
         {
             string name = string.Empty;
@@ -83,6 +87,16 @@ namespace KarateBusiness
                 return new BeltRank(id, name, testFees);
             }
             return null;
+        }
+
+        public static string GetNameById(int beltId)
+        {
+            return BeltRankData.GetNameById(beltId);
+        }
+        public static int GetIdByName(string nameBelt)
+        {
+            return BeltRankData.GetIdByName(nameBelt);
+
         }
     }
 

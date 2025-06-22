@@ -1,7 +1,7 @@
 ﻿using Guna.UI2.WinForms;
 using KarateBusiness;
-using System;
 using System.ComponentModel;
+using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -41,9 +41,10 @@ namespace KarateSystem.Members
             uc_PersonInfoWithFilter1.FilterEnable = false;
 
             txtContactInfo.Text = _member.emergencyContactInfo;
-            txtLastBeltRankId.Text = _member.lastBeltRankId.ToString();
             labMemberId.Text = _member.id.ToString();
             chkIsActive.Checked = _member.isActive;
+            cmbBeltRanks.SelectedIndex = cmbBeltRanks.FindString(BeltRank.GetNameById(_member.lastBeltRankId));
+            // txtLastBeltRankId.Text = _member.lastBeltRankId.ToString();
             if (string.IsNullOrWhiteSpace(_member.personInfo.imagePath))
             {
                 if (_member.personInfo.gender == 0)
@@ -68,6 +69,7 @@ namespace KarateSystem.Members
         }
         private void _ResetDefaultValuesToForm()
         {
+
             if (_mode == mode.Add)
             {
                 _member = new Member();
@@ -80,15 +82,26 @@ namespace KarateSystem.Members
             labTitleForm.Text = "Update a Member";
             _FillMemberDataToForm();
         }
-        private void _FillMemberData()
+        private void _FillMemberDataToSave()
         {
-            _member.lastBeltRankId = Convert.ToInt16(txtLastBeltRankId.Text);
+            _member.lastBeltRankId = BeltRank.GetIdByName(cmbBeltRanks.Text);
+            // _member.lastBeltRankId = Convert.ToInt16(txtLastBeltRankId.Text);
             _member.isActive = chkIsActive.Checked;
             _member.emergencyContactInfo = txtContactInfo.Text;
             _member.personId = uc_PersonInfoWithFilter1.PersonId;
         }
+        private void _FillCmbBeltRanks()
+        {
+            DataTable dtNamesBelts = BeltRank.AllNames();
+            foreach (DataRow row in dtNamesBelts.Rows)
+            {
+                cmbBeltRanks.Items.Add(row["Name"].ToString());
+            }
+        }
         private void frmAddUpdateMember_Load(object sender, System.EventArgs e)
         {
+            _FillCmbBeltRanks();
+            cmbBeltRanks.SelectedIndex = 0;
             _ResetDefaultValuesToForm();
         }
 
@@ -135,7 +148,7 @@ namespace KarateSystem.Members
                 MessageBox.Show("Some Field are not valid ,Put the mouse over the red icon!!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            _FillMemberData();
+            _FillMemberDataToSave();
             if (_member.Save())
             {
                 labMemberId.Text = _member.id.ToString();
