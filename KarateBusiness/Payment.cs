@@ -13,6 +13,7 @@ namespace KarateBusiness
         public DateTime date { get; set; }
         public int memberId { get; set; }
 
+        public Member memberInfo { get; private set; }
         public Payment()
         {
             this.id = 0;

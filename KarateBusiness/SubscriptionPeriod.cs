@@ -15,6 +15,8 @@ namespace KarateBusiness
         public int memberId { get; set; }
         public int paymentId { get; set; }
 
+        public Member memberInfo { get; set; }
+        public Payment paymentInfo { get; set; }
         public SubscriptionPeriod()
         {
             this.id = 0;
@@ -23,6 +25,8 @@ namespace KarateBusiness
             this.fees = 0;
             this.memberId = -1;
             this.paymentId = -1;
+            this.memberInfo = new Member();
+            this.paymentInfo = new Payment();
 
             _mode = Mode.Add;
         }
@@ -34,7 +38,8 @@ namespace KarateBusiness
             this.fees = fees;
             this.memberId = memberId;
             this.paymentId = paymentId;
-
+            this.memberInfo = Member.Find(memberId);
+            this.paymentInfo = Payment.Find(paymentId);
 
             _mode = Mode.Update;
         }
