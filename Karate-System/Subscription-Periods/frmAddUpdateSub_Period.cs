@@ -22,22 +22,6 @@ namespace KarateSystem.Subscription_Periods
             _subPeriodId = subPeriodId;
             _mode = mode.update;
         }
-        private void txtFees_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txtFees_Validating(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtFees.Text))
-            {
-                e.Cancel = true;
-                errorProvider1.SetError(txtFees, "This Field Is Required!!");
-            }
-        }
 
         private void _LoadPeriodDataToForm()
         {
@@ -76,6 +60,20 @@ namespace KarateSystem.Subscription_Periods
             labTitleForm.Text = "Update Subscription Period";
             _LoadPeriodDataToForm();
         }
+        private void _AddPaymentForSubscriptionPeriod()
+        {
+            _payment.amount = Convert.ToDecimal(txtFees.Text);
+            _payment.date = DateTime.Now;
+            _payment.memberId = uc_MemberInfoWithFilter1.MemberId;
+        }
+        private void _FillPeriodDataToSave()
+        {
+            _subscriptionPeriod.memberId = uc_MemberInfoWithFilter1.MemberId;
+            _subscriptionPeriod.startDate = dtpStartDate.Value;
+            _subscriptionPeriod.endDate = dtpEndDate.Value;
+            _subscriptionPeriod.fees = Convert.ToDecimal(txtFees.Text);
+            _subscriptionPeriod.paymentId = Convert.ToInt16(_payment.id);
+        }
         private void frmAddUpdateSub_Period_Load(object sender, System.EventArgs e)
         {
             _ResetDefaultValueToForm();
@@ -85,24 +83,7 @@ namespace KarateSystem.Subscription_Periods
         {
             dtpEndDate.MinDate = (dtpStartDate.Value).AddMonths(1);
         }
-        private void _AddPaymentForSubscriptionPeriod()
-        {
-            _payment.amount = _subscriptionPeriod.fees;
-            _payment.date = DateTime.Now;
-            _payment.memberId = _subscriptionPeriod.memberId;
 
-        }
-        private void _FillPeriodDataToSave()
-        {
-            _subscriptionPeriod.memberId = uc_MemberInfoWithFilter1.MemberId;
-            _subscriptionPeriod.startDate = dtpStartDate.Value;
-            _subscriptionPeriod.endDate = dtpEndDate.Value;
-            _subscriptionPeriod.fees = Convert.ToDecimal(txtFees.Text);
-            _subscriptionPeriod.paymentId = Convert.ToInt16(_payment.id);
-
-
-
-        }
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (!this.ValidateChildren())
@@ -117,15 +98,6 @@ namespace KarateSystem.Subscription_Periods
                 uc_MemberInfoWithFilter1.FilterFocus();
                 return;
             }
-            //if (_mode == mode.add)
-            //{
-            //    if (!_AddPaymentForSubscriptionPeriod())
-            //    {
-            //        MessageBox.Show("There is a problem in make a payment..", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        return;
-            //    }
-            //    labPaymentId.Text = _payment.id.ToString();
-            //}
             _AddPaymentForSubscriptionPeriod();
             if (_payment.Save())
             {
@@ -139,7 +111,6 @@ namespace KarateSystem.Subscription_Periods
                     labTitleForm.Text = "Update Subscription Period";
                     _mode = mode.update;
                     MessageBox.Show("Data Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 }
                 else
                 {
@@ -151,13 +122,27 @@ namespace KarateSystem.Subscription_Periods
                 MessageBox.Show("There is a problem in make a payment..", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-
         }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+
+        private void txtFees_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+        private void txtFees_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtFees.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(txtFees, "This Field Is Required!!");
+            }
         }
     }
 }
