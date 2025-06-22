@@ -25,7 +25,8 @@ namespace KarateSystem.Members.uc
         private void _LoadMemberDataToForm()
         {
             txtContactInfo.Text = _member.emergencyContactInfo;
-            txtLastBeltRank.Text = _member.lastBeltRank.ToString();
+            txtLastBeltRank.Text = _member.beltRankInfo.name;
+            //txtLastBeltRank.Text = _member.lastBeltRankId.ToString();
             txtMemberId.Text = _member.id.ToString();
             txtIsActive.Text = _member.isActive ? "Yes" : "No";
         }

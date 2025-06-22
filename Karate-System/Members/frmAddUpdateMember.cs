@@ -41,7 +41,7 @@ namespace KarateSystem.Members
             uc_PersonInfoWithFilter1.FilterEnable = false;
 
             txtContactInfo.Text = _member.emergencyContactInfo;
-            txtLastBeltRankId.Text = _member.lastBeltRank.ToString();
+            txtLastBeltRankId.Text = _member.lastBeltRankId.ToString();
             labMemberId.Text = _member.id.ToString();
             chkIsActive.Checked = _member.isActive;
             if (string.IsNullOrWhiteSpace(_member.personInfo.imagePath))
@@ -82,7 +82,7 @@ namespace KarateSystem.Members
         }
         private void _FillMemberData()
         {
-            _member.lastBeltRank = Convert.ToInt16(txtLastBeltRankId.Text);
+            _member.lastBeltRankId = Convert.ToInt16(txtLastBeltRankId.Text);
             _member.isActive = chkIsActive.Checked;
             _member.emergencyContactInfo = txtContactInfo.Text;
             _member.personId = uc_PersonInfoWithFilter1.PersonId;

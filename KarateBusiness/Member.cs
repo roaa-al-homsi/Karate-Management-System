@@ -10,40 +10,41 @@ namespace KarateBusiness
         public int id { get; set; }
         public int personId { get; set; }
         public string emergencyContactInfo { get; set; }
-        public int lastBeltRank { get; set; }
+        public int lastBeltRankId { get; set; }
         public bool isActive { get; set; }
         public Person personInfo { get; private set; }
+        public BeltRank beltRankInfo { get; private set; }
         public Member()
         {
             this.id = 0;
             this.personId = -1;
             this.emergencyContactInfo = string.Empty;
-            this.lastBeltRank = 0;
+            this.lastBeltRankId = 0;
             this.isActive = false;
             this.personInfo = new Person();
             _mode = Mode.Add;
         }
-        private Member(int id, int personId, string emergencyContactInfo, int lastBeltRank, bool isActive)
+        private Member(int id, int personId, string emergencyContactInfo, int lastBeltRankId, bool isActive)
         {
             this.id = id;
             this.personId = personId;
             this.emergencyContactInfo = emergencyContactInfo;
-            this.lastBeltRank = lastBeltRank;
+            this.lastBeltRankId = lastBeltRankId;
             this.isActive = isActive;
             this.personInfo = Person.Find(personId);
-
+            this.beltRankInfo = BeltRank.Find(this.lastBeltRankId);
             _mode = Mode.Update;
         }
         private bool _Add()
         {
-            this.id = MemberData.Add(this.personId, this.emergencyContactInfo, this.lastBeltRank, this.isActive);
+            this.id = MemberData.Add(this.personId, this.emergencyContactInfo, this.lastBeltRankId, this.isActive);
 
             return (this.id != -1);
         }
 
         private bool _Update()
         {
-            return MemberData.Update(this.id, this.personId, this.emergencyContactInfo, this.lastBeltRank, this.isActive);
+            return MemberData.Update(this.id, this.personId, this.emergencyContactInfo, this.lastBeltRankId, this.isActive);
         }
         public bool Save()
         {
