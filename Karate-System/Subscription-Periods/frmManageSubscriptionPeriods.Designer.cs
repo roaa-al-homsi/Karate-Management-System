@@ -37,7 +37,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnAddPerson = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnAddSubscriptionPeriod = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtFilterBy = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -78,27 +78,28 @@
             this.cmsManagePeriods.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePeriods.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePeriods.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePeriods.Size = new System.Drawing.Size(169, 82);
+            this.cmsManagePeriods.Size = new System.Drawing.Size(215, 110);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // showDetailsToolStripMenuItem
             // 
             this.showDetailsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showDetailsToolStripMenuItem.Image")));
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.showDetailsToolStripMenuItem.Text = "Show Details";
             // 
             // guna2PictureBox1
@@ -137,18 +138,19 @@
             this.labCountRecords.Text = "??";
             this.labCountRecords.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnAddPerson
+            // btnAddSubscriptionPeriod
             // 
-            this.btnAddPerson.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddPerson.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddPerson.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPerson.Image")));
-            this.btnAddPerson.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnAddPerson.ImageRotate = 0F;
-            this.btnAddPerson.Location = new System.Drawing.Point(1197, 302);
-            this.btnAddPerson.Name = "btnAddPerson";
-            this.btnAddPerson.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddPerson.Size = new System.Drawing.Size(72, 65);
-            this.btnAddPerson.TabIndex = 25;
+            this.btnAddSubscriptionPeriod.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddSubscriptionPeriod.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddSubscriptionPeriod.Image = ((System.Drawing.Image)(resources.GetObject("btnAddSubscriptionPeriod.Image")));
+            this.btnAddSubscriptionPeriod.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnAddSubscriptionPeriod.ImageRotate = 0F;
+            this.btnAddSubscriptionPeriod.Location = new System.Drawing.Point(1197, 302);
+            this.btnAddSubscriptionPeriod.Name = "btnAddSubscriptionPeriod";
+            this.btnAddSubscriptionPeriod.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddSubscriptionPeriod.Size = new System.Drawing.Size(72, 65);
+            this.btnAddSubscriptionPeriod.TabIndex = 25;
+            this.btnAddSubscriptionPeriod.Click += new System.EventHandler(this.btnAddSubscriptionPeriod_Click);
             // 
             // txtFilterBy
             // 
@@ -223,7 +225,7 @@
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.labCountRecords);
-            this.Controls.Add(this.btnAddPerson);
+            this.Controls.Add(this.btnAddSubscriptionPeriod);
             this.Controls.Add(this.txtFilterBy);
             this.Controls.Add(this.cmbFilterBy);
             this.Controls.Add(this.guna2HtmlLabel2);
@@ -250,7 +252,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel labCountRecords;
-        private Guna.UI2.WinForms.Guna2ImageButton btnAddPerson;
+        private Guna.UI2.WinForms.Guna2ImageButton btnAddSubscriptionPeriod;
         private Guna.UI2.WinForms.Guna2TextBox txtFilterBy;
         private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;

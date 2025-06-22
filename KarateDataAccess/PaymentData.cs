@@ -39,7 +39,7 @@ namespace KarateDataAccess
         public static bool Update(int id, decimal amount, DateTime date, int memberId)
         {
             int RowsAffected = 0;
-            string query = "update Payments set id = @id,amount = @amount,date = @date,memberId = @memberId  WHERE id=@id;";
+            string query = "update Payments set amount = @amount,date = @date,memberId = @memberId  WHERE id=@id;";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))

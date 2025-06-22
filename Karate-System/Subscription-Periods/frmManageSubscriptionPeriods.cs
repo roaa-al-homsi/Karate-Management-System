@@ -106,5 +106,19 @@ namespace KarateSystem.Subscription_Periods
                     break;
             }
         }
+
+        private void btnAddSubscriptionPeriod_Click(object sender, System.EventArgs e)
+        {
+            frmAddUpdateSub_Period frmAddUpdateSub_Period = new frmAddUpdateSub_Period();
+            frmAddUpdateSub_Period.ShowDialog();
+            frmManageSubscriptionPeriods_Load(null, null);
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmAddUpdateSub_Period frmAddUpdateSub_Period = new frmAddUpdateSub_Period((int)dgvAllPeriods.CurrentRow.Cells[0].Value);
+            frmAddUpdateSub_Period.ShowDialog();
+            frmManageSubscriptionPeriods_Load(null, null);
+        }
     }
 }
