@@ -120,5 +120,11 @@ namespace KarateSystem.Subscription_Periods
             frmAddUpdateSub_Period.ShowDialog();
             frmManageSubscriptionPeriods_Load(null, null);
         }
+
+        private void deleteToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmShowPeriodHistoryForSpecificMember frmShowPeriodHistoryForSpecificMember = new frmShowPeriodHistoryForSpecificMember((int)dgvAllPeriods.CurrentRow.Cells[2].Value);
+            frmShowPeriodHistoryForSpecificMember.ShowDialog();
+        }
     }
 }

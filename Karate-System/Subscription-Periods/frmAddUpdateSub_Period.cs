@@ -83,7 +83,10 @@ namespace KarateSystem.Subscription_Periods
         {
             dtpEndDate.MinDate = (dtpStartDate.Value).AddMonths(1);
         }
+        //private bool _IsExistActivePeriodForTheSameMemberAndBelt()
+        //{
 
+        //}
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (!this.ValidateChildren())
@@ -92,6 +95,13 @@ namespace KarateSystem.Subscription_Periods
 
                 return;
             }
+            //if (_IsExistActivePeriodForTheSameMemberAndBelt())
+            //{
+            //    MessageBox.Show("This member has an active period for the same belt rank, Please choose another member", "Stop", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            //    uc_MemberInfoWithFilter1.FilterFocus();
+            //    return;
+
+            //}
             if (uc_MemberInfoWithFilter1.MemberId == -1)
             {
                 MessageBox.Show("You can't add a subscription period without choose a member first!!.., Please choose a member.");

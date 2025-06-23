@@ -106,6 +106,10 @@ namespace KarateDataAccess
         {
             return GenericData.All("select * from view_Member_Info");
         }
+        static public DataTable GetAllPeriodsHistoryForSpecificMember(int memberId)
+        {
+            return GenericData.GetAllBySpecificField("select * from SubscriptionPeriods where MemberId=@memberId", "@memberId", memberId);
+        }
         static public bool Delete(int id)
         {
             return GenericData.Delete("delete Members where id = @id", "@id", id);
@@ -119,6 +123,10 @@ namespace KarateDataAccess
         {
             return GenericData.Exist("select Found=1 from Members where PersonId= @personId", "@personId", personId);
         }
+
+
+
+
 
     }
 

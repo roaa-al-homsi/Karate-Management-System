@@ -224,6 +224,12 @@
     <Compile Include="Subscription-Periods\frmManageSubscriptionPeriods.Designer.cs">
       <DependentUpon>frmManageSubscriptionPeriods.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subscription-Periods\frmShowPeriodHistroryForSpecificMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription-Periods\frmShowPeriodHistroryForSpecificMember.Designer.cs">
+      <DependentUpon>frmShowPeriodHistroryForSpecificMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\frmAddUpdateUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +262,7 @@
     </Compile>
     <EmbeddedResource Include="Belt-Ranks\frmAddUpdateBeltRank.resx">
       <DependentUpon>frmAddUpdateBeltRank.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Belt-Ranks\frmManageBeltRanks.resx">
       <DependentUpon>frmManageBeltRanks.cs</DependentUpon>
@@ -268,6 +275,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Instructors\frmAddUpdateInstructor.resx">
       <DependentUpon>frmAddUpdateInstructor.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Instructors\frmManageInstructors.resx">
       <DependentUpon>frmManageInstructors.cs</DependentUpon>
@@ -347,6 +355,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Subscription-Periods\frmManageSubscriptionPeriods.resx">
       <DependentUpon>frmManageSubscriptionPeriods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription-Periods\frmShowPeriodHistroryForSpecificMember.resx">
+      <DependentUpon>frmShowPeriodHistroryForSpecificMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\frmAddUpdateUser.resx">
       <DependentUpon>frmAddUpdateUser.cs</DependentUpon>

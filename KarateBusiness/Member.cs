@@ -98,6 +98,10 @@ namespace KarateBusiness
             return null;
         }
 
+        public DataTable GetAllPeriodsHistoryForSpecificMember()
+        {
+            return MemberData.GetAllPeriodsHistoryForSpecificMember(this.id);
+        }
     }
 
 
