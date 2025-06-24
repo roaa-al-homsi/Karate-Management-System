@@ -7,10 +7,10 @@ namespace KarateDataAccess
 {
     public static class SubscriptionPeriodData
     {
-        public static int Add(DateTime startDate, DateTime endDate, decimal fees, int memberId, int paymentId)
+        public static int Add(DateTime startDate, DateTime endDate, decimal fees, int memberId, int paymentId, byte issueReason)
         {
             int newId = 0;
-            string query = "insert into SubscriptionPeriods (startDate,endDate,fees,memberId,paymentId) values (@startDate,@endDate,@fees,@memberId,@paymentId) SELECT SCOPE_IDENTITY(); ";
+            string query = "insert into SubscriptionPeriods (startDate,endDate,fees,memberId,paymentId,issueReason) values (@startDate,@endDate,@fees,@memberId,@paymentId,@issueReason) SELECT SCOPE_IDENTITY(); ";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
@@ -21,7 +21,7 @@ namespace KarateDataAccess
                     command.Parameters.AddWithValue("@fees", fees);
                     command.Parameters.AddWithValue("@memberId", memberId);
                     command.Parameters.AddWithValue("@paymentId", paymentId);
-
+                    command.Parameters.AddWithValue("@issueReason", issueReason);
                     try
                     {
                         connection.Open();
@@ -38,10 +38,10 @@ namespace KarateDataAccess
 
             return newId;
         }
-        public static bool Update(int id, DateTime startDate, DateTime endDate, decimal fees, int memberId, int paymentId)
+        public static bool Update(int id, DateTime startDate, DateTime endDate, decimal fees, int memberId, int paymentId, byte issueReason)
         {
             int RowsAffected = 0;
-            string query = "update SubscriptionPeriods set startDate = @startDate,endDate = @endDate,fees = @fees,memberId = @memberId,paymentId = @paymentId  WHERE id=@id;";
+            string query = "update SubscriptionPeriods set startDate = @startDate,endDate = @endDate,fees = @fees,memberId = @memberId,paymentId = @paymentId ,issueReason=@issueReason WHERE id=@id;";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
@@ -52,7 +52,7 @@ namespace KarateDataAccess
                     command.Parameters.AddWithValue("@fees", fees);
                     command.Parameters.AddWithValue("@memberId", memberId);
                     command.Parameters.AddWithValue("@paymentId", paymentId);
-
+                    command.Parameters.AddWithValue("@issueReason", issueReason);
                     try
                     {
                         connection.Open();
@@ -64,7 +64,7 @@ namespace KarateDataAccess
 
             return RowsAffected > 0;
         }
-        public static bool Get(int id, ref DateTime startDate, ref DateTime endDate, ref decimal fees, ref int memberId, ref int paymentId)
+        public static bool Get(int id, ref DateTime startDate, ref DateTime endDate, ref decimal fees, ref int memberId, ref int paymentId, ref byte issueReason)
         {
             bool IsFound = false;
             string query = "select * from SubscriptionPeriods  WHERE id=@id;";
@@ -90,7 +90,7 @@ namespace KarateDataAccess
                                 fees = (decimal)reader["fees"];
                                 memberId = (int)reader["memberId"];
                                 paymentId = (int)reader["paymentId"];
-
+                                paymentId = (byte)reader["issueReason"];
 
                             }
                             else

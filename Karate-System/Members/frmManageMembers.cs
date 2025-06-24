@@ -1,4 +1,5 @@
 ﻿using KarateBusiness;
+using KarateSystem.Subscription_Periods;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -137,5 +138,10 @@ namespace KarateSystem.Members
             frmManageMembers_Load(null, null);
         }
 
+        private void showSubscriptionPeriodsHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowPeriodHistoryForSpecificMember frmShowPeriodHistoryForSpecificMember = new frmShowPeriodHistoryForSpecificMember((int)dgvAllMembers.CurrentRow.Cells[0].Value);
+            frmShowPeriodHistoryForSpecificMember.ShowDialog();
+        }
     }
 }

@@ -41,6 +41,7 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.showSubscriptionPeriodsHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllMembers)).BeginInit();
             this.cmsManagePeople.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -65,7 +66,8 @@
             this.cmsManagePeople.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsManagePeople.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateToolStripMenuItem,
-            this.showDetailsToolStripMenuItem});
+            this.showDetailsToolStripMenuItem,
+            this.showSubscriptionPeriodsHistoryToolStripMenuItem});
             this.cmsManagePeople.Name = "cmsManagePeople";
             this.cmsManagePeople.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.cmsManagePeople.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -76,13 +78,13 @@
             this.cmsManagePeople.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePeople.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePeople.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePeople.Size = new System.Drawing.Size(229, 56);
+            this.cmsManagePeople.Size = new System.Drawing.Size(312, 110);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
             this.updateToolStripMenuItem.Text = "Update Member";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
@@ -90,7 +92,7 @@
             // 
             this.showDetailsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showDetailsToolStripMenuItem.Image")));
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
             this.showDetailsToolStripMenuItem.Text = "Show Member Details";
             this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
             // 
@@ -208,6 +210,13 @@
             this.guna2HtmlLabel1.TabIndex = 21;
             this.guna2HtmlLabel1.Text = "Manage Members";
             // 
+            // showSubscriptionPeriodsHistoryToolStripMenuItem
+            // 
+            this.showSubscriptionPeriodsHistoryToolStripMenuItem.Name = "showSubscriptionPeriodsHistoryToolStripMenuItem";
+            this.showSubscriptionPeriodsHistoryToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
+            this.showSubscriptionPeriodsHistoryToolStripMenuItem.Text = "Show Subscription Periods History ";
+            this.showSubscriptionPeriodsHistoryToolStripMenuItem.Click += new System.EventHandler(this.showSubscriptionPeriodsHistoryToolStripMenuItem_Click);
+            // 
             // frmManageMembers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -248,5 +257,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private System.Windows.Forms.ToolStripMenuItem showSubscriptionPeriodsHistoryToolStripMenuItem;
     }
 }
