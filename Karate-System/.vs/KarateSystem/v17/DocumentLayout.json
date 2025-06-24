@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\subscription-periods\\frmshowsubscriptionperiodinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:subscription-periods\\frmshowsubscriptionperiodinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\subscription-periods\\uc\\uc_subscriptionperiodinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:subscription-periods\\uc\\uc_subscriptionperiodinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\subscription-periods\\uc\\uc_subscriptionperiodinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:subscription-periods\\uc\\uc_subscriptionperiodinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\subscription-periods\\frmshowsubscriptionperiodinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:subscription-periods\\frmshowsubscriptionperiodinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\subscription-periods\\frmshowsubscriptionperiodinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:subscription-periods\\frmshowsubscriptionperiodinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,25 +34,50 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "uc_SubscriptionPeriodInfoCard.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs",
+              "RelativeDocumentMoniker": "Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs",
+              "RelativeToolTip": "Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAE0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:45:48.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "uc_SubscriptionPeriodInfoCard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs",
+              "RelativeDocumentMoniker": "Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs [Design]",
+              "RelativeToolTip": "Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:42:56.927Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmShowSubscriptionPeriodInfo.cs",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs",
               "RelativeDocumentMoniker": "Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs \u2B24",
-              "RelativeToolTip": "Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs \u2B24",
-              "ViewState": "AgIAAAEAAAAAAAAAAIAwwA0AAAAHAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs",
+              "RelativeToolTip": "Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIAwwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T00:38:50.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmShowSubscriptionPeriodInfo.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs",
               "RelativeDocumentMoniker": "Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs [Design] \u2B24",
-              "RelativeToolTip": "Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs [Design] \u2B24",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs [Design]",
+              "RelativeToolTip": "Subscription-Periods\\frmShowSubscriptionPeriodInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T00:36:52.368Z",
               "EditorCaption": " [Design]"

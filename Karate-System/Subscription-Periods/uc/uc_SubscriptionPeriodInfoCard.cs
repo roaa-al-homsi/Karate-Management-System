@@ -1,4 +1,5 @@
 ﻿using KarateBusiness;
+using KarateSystem.Members;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -71,6 +72,10 @@ namespace KarateSystem.Subscription_Periods.uc
             _LoadPeriodDataToForm();
         }
 
-
+        private void linkLabMemberInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmShowMemberDetails frmShowMemberDetails = new frmShowMemberDetails(_subscriptionPeriod.memberId);
+            frmShowMemberDetails.ShowDialog();
+        }
     }
 }
