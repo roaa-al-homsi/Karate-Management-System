@@ -230,6 +230,12 @@
     <Compile Include="Subscription-Periods\frmShowPeriodHistroryForSpecificMember.Designer.cs">
       <DependentUpon>frmShowPeriodHistroryForSpecificMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subscription-Periods\uc\uc_SubscriptionPeriodInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription-Periods\uc\uc_SubscriptionPeriodInfoCard.Designer.cs">
+      <DependentUpon>uc_SubscriptionPeriodInfoCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\frmAddUpdateUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -358,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Subscription-Periods\frmShowPeriodHistroryForSpecificMember.resx">
       <DependentUpon>frmShowPeriodHistroryForSpecificMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription-Periods\uc\uc_SubscriptionPeriodInfoCard.resx">
+      <DependentUpon>uc_SubscriptionPeriodInfoCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\frmAddUpdateUser.resx">
       <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
