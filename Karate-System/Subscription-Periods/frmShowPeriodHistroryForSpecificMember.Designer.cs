@@ -36,8 +36,11 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgvPeriodsHistory = new System.Windows.Forms.DataGridView();
             this.uc_MemberInfoCard1 = new KarateSystem.Members.uc.uc_MemberInfoCard();
+            this.cmsdgvPeriodsHistory = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.showDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeriodsHistory)).BeginInit();
+            this.cmsdgvPeriodsHistory.SuspendLayout();
             this.SuspendLayout();
             // 
             // labTitleForm
@@ -106,6 +109,7 @@
             this.dgvPeriodsHistory.AllowUserToAddRows = false;
             this.dgvPeriodsHistory.AllowUserToDeleteRows = false;
             this.dgvPeriodsHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPeriodsHistory.ContextMenuStrip = this.cmsdgvPeriodsHistory;
             this.dgvPeriodsHistory.Location = new System.Drawing.Point(49, 744);
             this.dgvPeriodsHistory.Name = "dgvPeriodsHistory";
             this.dgvPeriodsHistory.ReadOnly = true;
@@ -121,6 +125,30 @@
             this.uc_MemberInfoCard1.Name = "uc_MemberInfoCard1";
             this.uc_MemberInfoCard1.Size = new System.Drawing.Size(727, 602);
             this.uc_MemberInfoCard1.TabIndex = 141;
+            // 
+            // cmsdgvPeriodsHistory
+            // 
+            this.cmsdgvPeriodsHistory.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmsdgvPeriodsHistory.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showDetailToolStripMenuItem});
+            this.cmsdgvPeriodsHistory.Name = "cmsdgvPeriodsHistory";
+            this.cmsdgvPeriodsHistory.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.cmsdgvPeriodsHistory.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.cmsdgvPeriodsHistory.RenderStyle.ColorTable = null;
+            this.cmsdgvPeriodsHistory.RenderStyle.RoundedEdges = true;
+            this.cmsdgvPeriodsHistory.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.cmsdgvPeriodsHistory.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmsdgvPeriodsHistory.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.cmsdgvPeriodsHistory.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.cmsdgvPeriodsHistory.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cmsdgvPeriodsHistory.Size = new System.Drawing.Size(211, 56);
+            // 
+            // showDetailToolStripMenuItem
+            // 
+            this.showDetailToolStripMenuItem.Name = "showDetailToolStripMenuItem";
+            this.showDetailToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.showDetailToolStripMenuItem.Text = "Show Period Details";
+            this.showDetailToolStripMenuItem.Click += new System.EventHandler(this.showDetailToolStripMenuItem_Click);
             // 
             // frmShowPeriodHistoryForSpecificMember
             // 
@@ -141,6 +169,7 @@
             this.Load += new System.EventHandler(this.frmShowPeriodHistoryForSpecificMember_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeriodsHistory)).EndInit();
+            this.cmsdgvPeriodsHistory.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -154,5 +183,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.DataGridView dgvPeriodsHistory;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip cmsdgvPeriodsHistory;
+        private System.Windows.Forms.ToolStripMenuItem showDetailToolStripMenuItem;
     }
 }

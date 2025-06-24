@@ -31,12 +31,24 @@ namespace KarateSystem.Subscription_Periods
         {
             _dtPeriodsHistory = uc_MemberInfoCard1.SelectedMember.GetAllPeriodsHistoryForSpecificMember();
             dgvPeriodsHistory.DataSource = _dtPeriodsHistory;
+            labCountRecords.Text = dgvPeriodsHistory.RowCount.ToString();
             _ChangeHeaderDgvPeriodsHistory();
         }
         private void frmShowPeriodHistoryForSpecificMember_Load(object sender, EventArgs e)
         {
             uc_MemberInfoCard1.LoadMemberInfo(_memberId);
             _LoadPeriodsHistoryForMemberToForm();
+        }
+
+        private void sToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void showDetailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowSubscriptionPeriodInfo frmShowSubscriptionPeriodInfo = new frmShowSubscriptionPeriodInfo((int)dgvPeriodsHistory.CurrentRow.Cells[0].Value);
+            frmShowSubscriptionPeriodInfo.ShowDialog();
         }
     }
 }

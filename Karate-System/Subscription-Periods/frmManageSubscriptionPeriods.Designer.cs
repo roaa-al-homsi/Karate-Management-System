@@ -42,6 +42,7 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.renewSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllPeriods)).BeginInit();
             this.cmsManagePeriods.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -67,7 +68,8 @@
             this.cmsManagePeriods.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateToolStripMenuItem,
             this.deleteToolStripMenuItem,
-            this.showDetailsToolStripMenuItem});
+            this.showDetailsToolStripMenuItem,
+            this.renewSubscriptionToolStripMenuItem});
             this.cmsManagePeriods.Name = "cmsManagePeople";
             this.cmsManagePeriods.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.cmsManagePeriods.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -78,7 +80,7 @@
             this.cmsManagePeriods.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePeriods.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePeriods.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePeriods.Size = new System.Drawing.Size(312, 110);
+            this.cmsManagePeriods.Size = new System.Drawing.Size(312, 136);
             // 
             // updateToolStripMenuItem
             // 
@@ -218,6 +220,12 @@
             this.guna2HtmlLabel1.TabIndex = 21;
             this.guna2HtmlLabel1.Text = "Manage Subscription Periods";
             // 
+            // renewSubscriptionToolStripMenuItem
+            // 
+            this.renewSubscriptionToolStripMenuItem.Name = "renewSubscriptionToolStripMenuItem";
+            this.renewSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
+            this.renewSubscriptionToolStripMenuItem.Text = "Renew Subscription";
+            // 
             // frmManageSubscriptionPeriods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -259,5 +267,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private System.Windows.Forms.ToolStripMenuItem renewSubscriptionToolStripMenuItem;
     }
 }
