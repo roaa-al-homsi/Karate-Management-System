@@ -16,7 +16,6 @@ namespace KarateBusiness
         public int memberId { get; set; }
         public int paymentId { get; set; }
         public IssueReason issueReason { get; set; }
-
         public string textIssueReason
         {
             get
@@ -33,6 +32,8 @@ namespace KarateBusiness
         }
         public Member memberInfo { get; set; }
         public Payment paymentInfo { get; set; }
+
+        public bool isActivePeriod { get; private set; }
         public SubscriptionPeriod()
         {
             this.id = 0;
@@ -44,10 +45,10 @@ namespace KarateBusiness
             this.issueReason = IssueReason.FirstTime;
             this.memberInfo = new Member();
             this.paymentInfo = new Payment();
-
+            this.isActivePeriod = true;
             _mode = Mode.Add;
         }
-        private SubscriptionPeriod(int id, DateTime startDate, DateTime endDate, decimal fees, int memberId, int paymentId, IssueReason issueReason)
+        private SubscriptionPeriod(int id, DateTime startDate, DateTime endDate, decimal fees, int memberId, int paymentId, IssueReason issueReason, bool isActive)
         {
             this.id = id;
             this.startDate = startDate;
@@ -56,6 +57,7 @@ namespace KarateBusiness
             this.memberId = memberId;
             this.paymentId = paymentId;
             this.issueReason = issueReason;
+            this.isActivePeriod = isActive;
             this.memberInfo = Member.Find(memberId);
             this.paymentInfo = Payment.Find(paymentId);
 
@@ -113,10 +115,10 @@ namespace KarateBusiness
             int memberId = -1;
             int paymentId = -1;
             byte issueReason = 1;
-
-            if (SubscriptionPeriodData.Get(id, ref startDate, ref endDate, ref fees, ref memberId, ref paymentId, ref issueReason))
+            bool isActive = false;
+            if (SubscriptionPeriodData.Get(id, ref startDate, ref endDate, ref fees, ref memberId, ref paymentId, ref issueReason, ref isActive))
             {
-                return new SubscriptionPeriod(id, startDate, endDate, fees, memberId, paymentId, (IssueReason)issueReason);
+                return new SubscriptionPeriod(id, startDate, endDate, fees, memberId, paymentId, (IssueReason)issueReason, isActive);
             }
             return null;
         }

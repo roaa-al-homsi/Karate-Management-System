@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_SubscriptionPeriodInfoCard));
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.labIsActive = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.linkLabMemberInfo = new System.Windows.Forms.LinkLabel();
             this.picMember = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.labGender = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -59,8 +63,8 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.linkLabMemberInfo = new System.Windows.Forms.LinkLabel();
             this.guna2GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
@@ -77,6 +81,9 @@
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GroupBox1.Controls.Add(this.labIsActive);
+            this.guna2GroupBox1.Controls.Add(this.guna2PictureBox7);
+            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel8);
             this.guna2GroupBox1.Controls.Add(this.linkLabMemberInfo);
             this.guna2GroupBox1.Controls.Add(this.picMember);
             this.guna2GroupBox1.Controls.Add(this.guna2PictureBox3);
@@ -115,6 +122,57 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(982, 301);
             this.guna2GroupBox1.TabIndex = 2;
             this.guna2GroupBox1.Text = "Subscription Period Info";
+            // 
+            // labIsActive
+            // 
+            this.labIsActive.AutoSize = false;
+            this.labIsActive.BackColor = System.Drawing.Color.Transparent;
+            this.labIsActive.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labIsActive.ForeColor = System.Drawing.Color.Maroon;
+            this.labIsActive.Location = new System.Drawing.Point(560, 245);
+            this.labIsActive.Name = "labIsActive";
+            this.labIsActive.Size = new System.Drawing.Size(128, 29);
+            this.labIsActive.TabIndex = 74;
+            this.labIsActive.Text = "[??]";
+            this.labIsActive.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2PictureBox7
+            // 
+            this.guna2PictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
+            this.guna2PictureBox7.ImageRotate = 0F;
+            this.guna2PictureBox7.Location = new System.Drawing.Point(380, 248);
+            this.guna2PictureBox7.Name = "guna2PictureBox7";
+            this.guna2PictureBox7.Size = new System.Drawing.Size(32, 30);
+            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox7.TabIndex = 73;
+            this.guna2PictureBox7.TabStop = false;
+            this.guna2PictureBox7.UseTransparentBackground = true;
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.AutoSize = false;
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(418, 248);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(79, 30);
+            this.guna2HtmlLabel8.TabIndex = 72;
+            this.guna2HtmlLabel8.Text = "Is Active:";
+            // 
+            // linkLabMemberInfo
+            // 
+            this.linkLabMemberInfo.AutoSize = true;
+            this.linkLabMemberInfo.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabMemberInfo.DisabledLinkColor = System.Drawing.Color.Transparent;
+            this.linkLabMemberInfo.Font = new System.Drawing.Font("Aldhabi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabMemberInfo.Location = new System.Drawing.Point(14, 258);
+            this.linkLabMemberInfo.Name = "linkLabMemberInfo";
+            this.linkLabMemberInfo.Size = new System.Drawing.Size(104, 35);
+            this.linkLabMemberInfo.TabIndex = 71;
+            this.linkLabMemberInfo.TabStop = true;
+            this.linkLabMemberInfo.Text = "Member Info";
+            this.linkLabMemberInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabMemberInfo_LinkClicked);
             // 
             // picMember
             // 
@@ -487,20 +545,6 @@
             this.guna2HtmlLabel1.TabIndex = 29;
             this.guna2HtmlLabel1.Text = "Period Id:";
             // 
-            // linkLabMemberInfo
-            // 
-            this.linkLabMemberInfo.AutoSize = true;
-            this.linkLabMemberInfo.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabMemberInfo.DisabledLinkColor = System.Drawing.Color.Transparent;
-            this.linkLabMemberInfo.Font = new System.Drawing.Font("Aldhabi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabMemberInfo.Location = new System.Drawing.Point(14, 258);
-            this.linkLabMemberInfo.Name = "linkLabMemberInfo";
-            this.linkLabMemberInfo.Size = new System.Drawing.Size(104, 35);
-            this.linkLabMemberInfo.TabIndex = 71;
-            this.linkLabMemberInfo.TabStop = true;
-            this.linkLabMemberInfo.Text = "Member Info";
-            this.linkLabMemberInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabMemberInfo_LinkClicked);
-            // 
             // uc_SubscriptionPeriodInfoCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -510,6 +554,7 @@
             this.Size = new System.Drawing.Size(988, 309);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMember)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
@@ -557,5 +602,8 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox11;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private System.Windows.Forms.LinkLabel linkLabMemberInfo;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labIsActive;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
     }
 }

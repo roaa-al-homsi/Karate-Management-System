@@ -35,9 +35,10 @@ namespace KarateSystem.Subscription_Periods.uc
             labGender.Text = _subscriptionPeriod.memberInfo.personInfo.GenderText;
             labIssueReason.Text = _subscriptionPeriod.textIssueReason;
             labFees.Text = _subscriptionPeriod.fees.ToString();
+            labIsActive.Text = _subscriptionPeriod.isActivePeriod ? "Yes" : "No";
             dtpStartDate.Value = _subscriptionPeriod.startDate;
             dtpEndDate.Value = _subscriptionPeriod.endDate;
-            //active
+
             if (string.IsNullOrWhiteSpace(_subscriptionPeriod.memberInfo.personInfo.imagePath))
             {
                 if (_subscriptionPeriod.memberInfo.personInfo.gender == 0)

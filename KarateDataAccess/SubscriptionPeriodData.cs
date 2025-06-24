@@ -64,7 +64,7 @@ namespace KarateDataAccess
 
             return RowsAffected > 0;
         }
-        public static bool Get(int id, ref DateTime startDate, ref DateTime endDate, ref decimal fees, ref int memberId, ref int paymentId, ref byte issueReason)
+        public static bool Get(int id, ref DateTime startDate, ref DateTime endDate, ref decimal fees, ref int memberId, ref int paymentId, ref byte issueReason, ref bool isActive)
         {
             bool IsFound = false;
             string query = "select * from SubscriptionPeriods  WHERE id=@id;";
@@ -90,8 +90,8 @@ namespace KarateDataAccess
                                 fees = (decimal)reader["fees"];
                                 memberId = (int)reader["memberId"];
                                 paymentId = (int)reader["paymentId"];
-                                paymentId = (byte)reader["issueReason"];
-
+                                issueReason = (byte)reader["issueReason"];
+                                isActive = (bool)reader["IsActive"];
                             }
                             else
                             {

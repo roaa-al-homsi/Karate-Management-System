@@ -132,5 +132,12 @@ namespace KarateSystem.Subscription_Periods
             frmShowSubscriptionPeriodInfo frmShowSubscriptionPeriodInfo = new frmShowSubscriptionPeriodInfo((int)dgvAllPeriods.CurrentRow.Cells[0].Value);
             frmShowSubscriptionPeriodInfo.ShowDialog();
         }
+
+        private void addNewPeriodToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmAddUpdateSub_Period frmAddUpdateSub_Period = new frmAddUpdateSub_Period();
+            frmAddUpdateSub_Period.ShowDialog();
+            frmManageSubscriptionPeriods_Load(null, null);
+        }
     }
 }
