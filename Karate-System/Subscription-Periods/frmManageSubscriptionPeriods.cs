@@ -126,5 +126,11 @@ namespace KarateSystem.Subscription_Periods
             frmShowPeriodHistoryForSpecificMember frmShowPeriodHistoryForSpecificMember = new frmShowPeriodHistoryForSpecificMember((int)dgvAllPeriods.CurrentRow.Cells[2].Value);
             frmShowPeriodHistoryForSpecificMember.ShowDialog();
         }
+
+        private void showDetailsToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmShowSubscriptionPeriodInfo frmShowSubscriptionPeriodInfo = new frmShowSubscriptionPeriodInfo((int)dgvAllPeriods.CurrentRow.Cells[0].Value);
+            frmShowSubscriptionPeriodInfo.ShowDialog();
+        }
     }
 }

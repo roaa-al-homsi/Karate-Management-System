@@ -230,6 +230,12 @@
     <Compile Include="Subscription-Periods\frmShowPeriodHistroryForSpecificMember.Designer.cs">
       <DependentUpon>frmShowPeriodHistroryForSpecificMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subscription-Periods\frmShowSubscriptionPeriodInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription-Periods\frmShowSubscriptionPeriodInfo.Designer.cs">
+      <DependentUpon>frmShowSubscriptionPeriodInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Subscription-Periods\uc\uc_SubscriptionPeriodInfoCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -364,6 +370,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Subscription-Periods\frmShowPeriodHistroryForSpecificMember.resx">
       <DependentUpon>frmShowPeriodHistroryForSpecificMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription-Periods\frmShowSubscriptionPeriodInfo.resx">
+      <DependentUpon>frmShowSubscriptionPeriodInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Subscription-Periods\uc\uc_SubscriptionPeriodInfoCard.resx">
       <DependentUpon>uc_SubscriptionPeriodInfoCard.cs</DependentUpon>
