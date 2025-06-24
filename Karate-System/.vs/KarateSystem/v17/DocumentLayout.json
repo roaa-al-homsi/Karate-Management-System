@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\subscription-periods\\uc\\uc_subscriptionperiodinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:subscription-periods\\uc\\uc_subscriptionperiodinfocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\subscription-periods\\frmmanagesubscriptionperiods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:subscription-periods\\frmmanagesubscriptionperiods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\subscription-periods\\frmmanagesubscriptionperiods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:subscription-periods\\frmmanagesubscriptionperiods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,14 +26,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "uc_SubscriptionPeriodInfoCard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs",
-              "RelativeDocumentMoniker": "Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs [Design]",
-              "RelativeToolTip": "Subscription-Periods\\uc\\uc_SubscriptionPeriodInfoCard.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "frmManageSubscriptionPeriods.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\frmManageSubscriptionPeriods.cs",
+              "RelativeDocumentMoniker": "Subscription-Periods\\frmManageSubscriptionPeriods.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\frmManageSubscriptionPeriods.cs",
+              "RelativeToolTip": "Subscription-Periods\\frmManageSubscriptionPeriods.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAJAAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T03:05:49.341Z",
+              "WhenOpened": "2025-06-24T03:09:28.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmManageSubscriptionPeriods.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\frmManageSubscriptionPeriods.cs",
+              "RelativeDocumentMoniker": "Subscription-Periods\\frmManageSubscriptionPeriods.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Subscription-Periods\\frmManageSubscriptionPeriods.cs [Design]",
+              "RelativeToolTip": "Subscription-Periods\\frmManageSubscriptionPeriods.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:08:50.858Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -139,5 +139,10 @@ namespace KarateSystem.Subscription_Periods
             frmAddUpdateSub_Period.ShowDialog();
             frmManageSubscriptionPeriods_Load(null, null);
         }
+
+        private void cmsManagePeriods_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            renewSubscriptionToolStripMenuItem.Enabled = !(bool)dgvAllPeriods.CurrentRow.Cells[7].Value;
+        }
     }
 }
