@@ -224,6 +224,12 @@
     <Compile Include="Subscription-Periods\frmManageSubscriptionPeriods.Designer.cs">
       <DependentUpon>frmManageSubscriptionPeriods.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subscription-Periods\frmRenewSubscriptionPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription-Periods\frmRenewSubscriptionPeriod.Designer.cs">
+      <DependentUpon>frmRenewSubscriptionPeriod.cs</DependentUpon>
+    </Compile>
     <Compile Include="Subscription-Periods\frmShowPeriodHistroryForSpecificMember.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,12 @@
     </Compile>
     <Compile Include="Subscription-Periods\uc\uc_SubscriptionPeriodInfoCard.Designer.cs">
       <DependentUpon>uc_SubscriptionPeriodInfoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription-Periods\uc\uc_SubscriptionPeriodWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription-Periods\uc\uc_SubscriptionPeriodWithFilter.Designer.cs">
+      <DependentUpon>uc_SubscriptionPeriodWithFilter.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\frmAddUpdateUser.cs">
       <SubType>Form</SubType>
@@ -368,6 +380,9 @@
     <EmbeddedResource Include="Subscription-Periods\frmManageSubscriptionPeriods.resx">
       <DependentUpon>frmManageSubscriptionPeriods.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Subscription-Periods\frmRenewSubscriptionPeriod.resx">
+      <DependentUpon>frmRenewSubscriptionPeriod.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Subscription-Periods\frmShowPeriodHistroryForSpecificMember.resx">
       <DependentUpon>frmShowPeriodHistroryForSpecificMember.cs</DependentUpon>
     </EmbeddedResource>
@@ -376,6 +391,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Subscription-Periods\uc\uc_SubscriptionPeriodInfoCard.resx">
       <DependentUpon>uc_SubscriptionPeriodInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription-Periods\uc\uc_SubscriptionPeriodWithFilter.resx">
+      <DependentUpon>uc_SubscriptionPeriodWithFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\frmAddUpdateUser.resx">
       <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
