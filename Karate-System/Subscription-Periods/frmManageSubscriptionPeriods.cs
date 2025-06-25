@@ -150,5 +150,11 @@ namespace KarateSystem.Subscription_Periods
             frmFindSubscriptionPeriodWithFilter frmFindSubscriptionPeriodWithFilter = new frmFindSubscriptionPeriodWithFilter();
             frmFindSubscriptionPeriodWithFilter.ShowDialog();
         }
+
+        private void btnRenewPeriod_Click(object sender, System.EventArgs e)
+        {
+            frmRenewSubscriptionPeriod frmRenewSubscriptionPeriod = new frmRenewSubscriptionPeriod();
+            frmRenewSubscriptionPeriod.ShowDialog();
+        }
     }
 }

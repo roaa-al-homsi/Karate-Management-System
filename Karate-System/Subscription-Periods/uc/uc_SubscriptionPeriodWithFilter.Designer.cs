@@ -118,7 +118,7 @@
             this.Controls.Add(this.uc_SubscriptionPeriodInfoCard1);
             this.Name = "uc_SubscriptionPeriodWithFilter";
             this.Size = new System.Drawing.Size(990, 447);
-            this.Load += new System.EventHandler(this.uc_SubscriptionPeriodWithFilter_Load);
+         
             this.gbFilter.ResumeLayout(false);
             this.gbFilter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFind)).EndInit();

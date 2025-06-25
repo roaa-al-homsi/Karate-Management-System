@@ -45,6 +45,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnFind = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnRenewPeriod = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllPeriods)).BeginInit();
             this.cmsManagePeriods.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -251,11 +252,29 @@
             this.btnFind.TabIndex = 29;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
+            // btnRenewPeriod
+            // 
+            this.btnRenewPeriod.AutoRoundedCorners = true;
+            this.btnRenewPeriod.BackColor = System.Drawing.Color.Transparent;
+            this.btnRenewPeriod.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRenewPeriod.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRenewPeriod.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRenewPeriod.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRenewPeriod.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRenewPeriod.ForeColor = System.Drawing.Color.White;
+            this.btnRenewPeriod.Location = new System.Drawing.Point(1119, 48);
+            this.btnRenewPeriod.Name = "btnRenewPeriod";
+            this.btnRenewPeriod.Size = new System.Drawing.Size(180, 45);
+            this.btnRenewPeriod.TabIndex = 30;
+            this.btnRenewPeriod.Text = "guna2Button1";
+            this.btnRenewPeriod.Click += new System.EventHandler(this.btnRenewPeriod_Click);
+            // 
             // frmManageSubscriptionPeriods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1509, 833);
+            this.Controls.Add(this.btnRenewPeriod);
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.dgvAllPeriods);
             this.Controls.Add(this.guna2PictureBox1);
@@ -296,5 +315,6 @@
         private System.Windows.Forms.ToolStripMenuItem renewSubscriptionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewPeriodToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2ImageButton btnFind;
+        private Guna.UI2.WinForms.Guna2Button btnRenewPeriod;
     }
 }

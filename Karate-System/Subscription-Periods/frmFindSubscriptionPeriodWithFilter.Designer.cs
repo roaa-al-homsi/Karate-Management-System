@@ -49,7 +49,7 @@
             this.uc_SubscriptionPeriodWithFilter1.FilterEnabled = false;
             this.uc_SubscriptionPeriodWithFilter1.Location = new System.Drawing.Point(12, 79);
             this.uc_SubscriptionPeriodWithFilter1.Name = "uc_SubscriptionPeriodWithFilter1";
-            this.uc_SubscriptionPeriodWithFilter1.PeriodId = -1;
+          
             this.uc_SubscriptionPeriodWithFilter1.Size = new System.Drawing.Size(990, 447);
             this.uc_SubscriptionPeriodWithFilter1.TabIndex = 0;
             // 

@@ -6,6 +6,12 @@ namespace KarateSystem.Subscription_Periods.uc
 {
     public partial class uc_SubscriptionPeriodWithFilter : UserControl
     {
+        public event Action<int> OnePeriodSelected;
+        protected virtual void PeriodSelected(int periodId)
+        {
+            OnePeriodSelected?.Invoke(periodId);
+        }
+
         private int _periodId = -1;
         public int PeriodId
         {
@@ -13,29 +19,26 @@ namespace KarateSystem.Subscription_Periods.uc
             set { _periodId = value; }
         }
 
-        private bool _filterEnabled = false;
-
-        private SubscriptionPeriod _subscriptionPeriod;
-        public SubscriptionPeriod SubscriptionPeriod
-        {
-            get { return uc_SubscriptionPeriodInfoCard1.SubscriptionPeriod; }
-        }
+        private bool _filterEnabled;
         public bool FilterEnabled
         {
             get { return _filterEnabled; }
             set { gbFilter.Enabled = value; }
         }
+        private SubscriptionPeriod _subscriptionPeriod;
+        public SubscriptionPeriod SubscriptionPeriod
+        {
+            get { return uc_SubscriptionPeriodInfoCard1.SubscriptionPeriod; }
+        }
+
         public uc_SubscriptionPeriodWithFilter()
         {
             InitializeComponent();
         }
 
-        private void uc_SubscriptionPeriodWithFilter_Load(object sender, EventArgs e)
-        {
 
-        }
 
-        private void FilterFocus()
+        public void FilterFocus()
         {
             txtFilterValue.Focus();
         }
@@ -45,12 +48,6 @@ namespace KarateSystem.Subscription_Periods.uc
             {
                 e.Handled = true;
             }
-        }
-
-        private void _ShowDataPeriodToForm()
-        {
-            _periodId = Convert.ToInt32(txtFilterValue.Text);
-            uc_SubscriptionPeriodInfoCard1.LoadPeriodInfo(_periodId);
         }
         private void btnFind_Click(object sender, EventArgs e)
         {
@@ -62,14 +59,21 @@ namespace KarateSystem.Subscription_Periods.uc
                 FilterFocus();
                 return;
             }
+            _periodId = Convert.ToInt32(txtFilterValue.Text);
+            LoadPeriodData(_periodId);
 
-            _ShowDataPeriodToForm();
         }
         public void LoadPeriodData(int periodId)
         {
             txtFilterValue.Text = periodId.ToString();
-            _ShowDataPeriodToForm();
-            FilterEnabled = false;
+
+            uc_SubscriptionPeriodInfoCard1.LoadPeriodInfo(_periodId);
+            _periodId = uc_SubscriptionPeriodInfoCard1.SubscriptionPeriod.id;
+            if (OnePeriodSelected != null && FilterEnabled)
+            {
+                OnePeriodSelected(_periodId);
+
+            }
 
         }
     }
