@@ -44,6 +44,7 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnFind = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllPeriods)).BeginInit();
             this.cmsManagePeriods.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -82,7 +83,7 @@
             this.cmsManagePeriods.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePeriods.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePeriods.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePeriods.Size = new System.Drawing.Size(312, 162);
+            this.cmsManagePeriods.Size = new System.Drawing.Size(312, 134);
             this.cmsManagePeriods.Opening += new System.ComponentModel.CancelEventHandler(this.cmsManagePeriods_Opening);
             // 
             // updateToolStripMenuItem
@@ -236,11 +237,26 @@
             this.guna2HtmlLabel1.TabIndex = 21;
             this.guna2HtmlLabel1.Text = "Manage Subscription Periods";
             // 
+            // btnFind
+            // 
+            this.btnFind.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnFind.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnFind.Image = ((System.Drawing.Image)(resources.GetObject("btnFind.Image")));
+            this.btnFind.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnFind.ImageRotate = 0F;
+            this.btnFind.Location = new System.Drawing.Point(1119, 300);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnFind.Size = new System.Drawing.Size(72, 65);
+            this.btnFind.TabIndex = 29;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
             // frmManageSubscriptionPeriods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1509, 833);
+            this.Controls.Add(this.btnFind);
             this.Controls.Add(this.dgvAllPeriods);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -279,5 +295,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.ToolStripMenuItem renewSubscriptionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewPeriodToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2ImageButton btnFind;
     }
 }

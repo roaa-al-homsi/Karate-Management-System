@@ -218,6 +218,12 @@
     <Compile Include="Subscription-Periods\frmAddUpdateSub_Period.Designer.cs">
       <DependentUpon>frmAddUpdateSub_Period.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subscription-Periods\frmFindSubscriptionPeriodWithFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription-Periods\frmFindSubscriptionPeriodWithFilter.Designer.cs">
+      <DependentUpon>frmFindSubscriptionPeriodWithFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Subscription-Periods\frmManageSubscriptionPeriods.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -376,6 +382,9 @@
     </Compile>
     <EmbeddedResource Include="Subscription-Periods\frmAddUpdateSub_Period.resx">
       <DependentUpon>frmAddUpdateSub_Period.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription-Periods\frmFindSubscriptionPeriodWithFilter.resx">
+      <DependentUpon>frmFindSubscriptionPeriodWithFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Subscription-Periods\frmManageSubscriptionPeriods.resx">
       <DependentUpon>frmManageSubscriptionPeriods.cs</DependentUpon>

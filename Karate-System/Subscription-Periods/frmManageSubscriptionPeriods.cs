@@ -144,5 +144,11 @@ namespace KarateSystem.Subscription_Periods
         {
             renewSubscriptionToolStripMenuItem.Enabled = !(bool)dgvAllPeriods.CurrentRow.Cells[7].Value;
         }
+
+        private void btnFind_Click(object sender, System.EventArgs e)
+        {
+            frmFindSubscriptionPeriodWithFilter frmFindSubscriptionPeriodWithFilter = new frmFindSubscriptionPeriodWithFilter();
+            frmFindSubscriptionPeriodWithFilter.ShowDialog();
+        }
     }
 }
