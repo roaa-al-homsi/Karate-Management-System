@@ -40,6 +40,7 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnAddTest = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllBeltTests)).BeginInit();
             this.cmsManageBeltTests.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -83,12 +84,13 @@
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // guna2PictureBox1
@@ -191,11 +193,28 @@
             this.guna2HtmlLabel1.TabIndex = 30;
             this.guna2HtmlLabel1.Text = "Manage Belt Tests";
             // 
+            // btnAddTest
+            // 
+            this.btnAddTest.AutoRoundedCorners = true;
+            this.btnAddTest.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddTest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddTest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddTest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddTest.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddTest.ForeColor = System.Drawing.Color.White;
+            this.btnAddTest.Location = new System.Drawing.Point(1264, 360);
+            this.btnAddTest.Name = "btnAddTest";
+            this.btnAddTest.Size = new System.Drawing.Size(96, 45);
+            this.btnAddTest.TabIndex = 38;
+            this.btnAddTest.Text = "ADD";
+            this.btnAddTest.Click += new System.EventHandler(this.btnAddTest_Click);
+            // 
             // frmManageBeltTests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1509, 833);
+            this.Controls.Add(this.btnAddTest);
             this.Controls.Add(this.dgvAllBeltTests);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -229,5 +248,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2Button btnAddTest;
     }
 }

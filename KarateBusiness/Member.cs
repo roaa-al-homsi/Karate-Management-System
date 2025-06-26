@@ -19,7 +19,7 @@ namespace KarateBusiness
             this.id = 0;
             this.personId = -1;
             this.emergencyContactInfo = string.Empty;
-            this.lastBeltRankId = 0;
+            this.lastBeltRankId = 1;
             this.isActive = false;
             this.personInfo = new Person();
             _mode = Mode.Add;

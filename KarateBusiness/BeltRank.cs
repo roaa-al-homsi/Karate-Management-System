@@ -5,6 +5,27 @@ namespace KarateBusiness
 {
     public class BeltRank
     {
+        public enum TypeBeltRank
+        {
+            WhiteBelt = 1
+          , YellowBelt = 2
+          , OrangeBelt = 3
+          , GreenBelt = 4
+          , BlueBelt = 5
+          , PurpleBelt = 6
+          , BrownBelt = 7
+          , BlackBelt1stDan = 8
+          , BlackBelt2ndDan = 9
+          , BlackBelt3rdDan = 10
+          , BlackBelt4thDan = 11
+          , BlackBelt5thDan = 12
+          , BlackBelt6thDan = 13
+          , BlackBelt7thDan = 14
+          , BlackBelt8thDan = 15
+          , BlackBelt9thDan = 16
+          , BlackBelt10thDan = 17
+
+        }
         private enum Mode { Add, Update }
         private Mode _mode;
         public int id { get; set; }

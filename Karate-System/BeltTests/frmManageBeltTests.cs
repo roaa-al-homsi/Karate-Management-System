@@ -110,5 +110,19 @@ namespace KarateSystem.BeltTests
                     break;
             }
         }
+
+        private void btnAddTest_Click(object sender, System.EventArgs e)
+        {
+            frmAddUpdateBeltTest frmAddUpdateBeltTest = new frmAddUpdateBeltTest();
+            frmAddUpdateBeltTest.ShowDialog();
+            frmManageBeltTests_Load(null, null);
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmAddUpdateBeltTest frmAddUpdateBeltTest = new frmAddUpdateBeltTest((int)dgvAllBeltTests.CurrentRow.Cells[0].Value);
+            frmAddUpdateBeltTest.ShowDialog();
+            frmManageBeltTests_Load(null, null);
+        }
     }
 }

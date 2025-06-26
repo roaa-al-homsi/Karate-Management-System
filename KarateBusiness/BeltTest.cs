@@ -5,6 +5,7 @@ namespace KarateBusiness
 {
     public class BeltTest
     {
+
         private enum Mode { Add, Update }
         private Mode _mode;
         public int id { get; set; }
@@ -15,6 +16,11 @@ namespace KarateBusiness
         public int testedByInstructorID { get; set; }
         public int paymentId { get; set; }
 
+        public BeltRank beltRankInfo { get; private set; }
+        public Member memberInfo { get; private set; }
+        public Instructor instructorInfo { get; private set; }
+        public Payment paymentInfo { get; private set; }
+
         public BeltTest()
         {
             this.id = 0;
@@ -24,6 +30,12 @@ namespace KarateBusiness
             this.date = DateTime.MinValue;
             this.testedByInstructorID = 0;
             this.paymentId = -1;
+
+            this.beltRankInfo = new BeltRank();//
+            this.memberInfo = new Member();
+            this.instructorInfo = new Instructor();
+            this.paymentInfo = new Payment();
+
 
             _mode = Mode.Add;
         }
@@ -36,6 +48,11 @@ namespace KarateBusiness
             this.date = date;
             this.testedByInstructorID = testedByInstructorID;
             this.paymentId = paymentId;
+
+            this.beltRankInfo = BeltRank.Find(rankId);
+            this.memberInfo = Member.Find(memberId);
+            this.instructorInfo = Instructor.Find(testedByInstructorID);
+            this.paymentInfo = Payment.Find(paymentId);
 
 
             _mode = Mode.Update;
@@ -102,5 +119,8 @@ namespace KarateBusiness
         }
     }
 
-
 }
+
+
+
+
