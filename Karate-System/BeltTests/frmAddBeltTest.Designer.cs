@@ -32,7 +32,9 @@
             this.tcMemberInstructor = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpMember = new System.Windows.Forms.TabPage();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
+            this.uc_MemberInfoWithFilter1 = new KarateSystem.Members.uc.uc_MemberInfoWithFilter();
             this.tpInstructor = new System.Windows.Forms.TabPage();
+            this.uc_InstructorInfoWithFilter1 = new KarateSystem.Instructors.uc.uc_InstructorInfoWithFilter();
             this.labTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -57,8 +59,6 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.uc_MemberInfoWithFilter1 = new KarateSystem.Members.uc.uc_MemberInfoWithFilter();
-            this.uc_InstructorInfoWithFilter1 = new KarateSystem.Instructors.uc.uc_InstructorInfoWithFilter();
             this.tcMemberInstructor.SuspendLayout();
             this.tpMember.SuspendLayout();
             this.tpInstructor.SuspendLayout();
@@ -76,7 +76,7 @@
             this.tcMemberInstructor.Controls.Add(this.tpMember);
             this.tcMemberInstructor.Controls.Add(this.tpInstructor);
             this.tcMemberInstructor.ItemSize = new System.Drawing.Size(180, 40);
-            this.tcMemberInstructor.Location = new System.Drawing.Point(12, 54);
+            this.tcMemberInstructor.Location = new System.Drawing.Point(5, 54);
             this.tcMemberInstructor.Name = "tcMemberInstructor";
             this.tcMemberInstructor.SelectedIndex = 0;
             this.tcMemberInstructor.Size = new System.Drawing.Size(745, 788);
@@ -132,6 +132,16 @@
             this.btnNext.Text = "Next";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
+            // uc_MemberInfoWithFilter1
+            // 
+            this.uc_MemberInfoWithFilter1.FilterEnabled = false;
+            this.uc_MemberInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
+            this.uc_MemberInfoWithFilter1.Name = "uc_MemberInfoWithFilter1";
+            this.uc_MemberInfoWithFilter1.ShowAddPerson = true;
+            this.uc_MemberInfoWithFilter1.Size = new System.Drawing.Size(729, 734);
+            this.uc_MemberInfoWithFilter1.TabIndex = 0;
+            this.uc_MemberInfoWithFilter1.OneMemberSelected += new System.Action<int>(this.uc_MemberInfoWithFilter1_OneMemberSelected);
+            // 
             // tpInstructor
             // 
             this.tpInstructor.Controls.Add(this.uc_InstructorInfoWithFilter1);
@@ -143,17 +153,26 @@
             this.tpInstructor.Text = "Instructor";
             this.tpInstructor.UseVisualStyleBackColor = true;
             // 
+            // uc_InstructorInfoWithFilter1
+            // 
+            this.uc_InstructorInfoWithFilter1.FilterEnabled = false;
+            this.uc_InstructorInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
+            this.uc_InstructorInfoWithFilter1.Name = "uc_InstructorInfoWithFilter1";
+            this.uc_InstructorInfoWithFilter1.ShowAddInstructor = false;
+            this.uc_InstructorInfoWithFilter1.Size = new System.Drawing.Size(726, 645);
+            this.uc_InstructorInfoWithFilter1.TabIndex = 0;
+            // 
             // labTitle
             // 
             this.labTitle.AutoSize = false;
             this.labTitle.BackColor = System.Drawing.Color.Transparent;
             this.labTitle.Font = new System.Drawing.Font("Andalus", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labTitle.Location = new System.Drawing.Point(113, 12);
+            this.labTitle.Location = new System.Drawing.Point(262, 12);
             this.labTitle.Name = "labTitle";
-            this.labTitle.Size = new System.Drawing.Size(483, 36);
+            this.labTitle.Size = new System.Drawing.Size(206, 36);
             this.labTitle.TabIndex = 2;
-            this.labTitle.Text = "Add New Instructors-Members";
+            this.labTitle.Text = "Take A  Belt Test ";
             // 
             // btnSave
             // 
@@ -485,35 +504,17 @@
             this.guna2HtmlLabel1.TabIndex = 29;
             this.guna2HtmlLabel1.Text = "Test Id:";
             // 
-            // uc_MemberInfoWithFilter1
-            // 
-            this.uc_MemberInfoWithFilter1.FilterEnabled = false;
-            this.uc_MemberInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
-            this.uc_MemberInfoWithFilter1.Name = "uc_MemberInfoWithFilter1";
-            this.uc_MemberInfoWithFilter1.ShowAddPerson = true;
-            this.uc_MemberInfoWithFilter1.Size = new System.Drawing.Size(729, 734);
-            this.uc_MemberInfoWithFilter1.TabIndex = 0;
-            this.uc_MemberInfoWithFilter1.OneMemberSelected += new System.Action<int>(this.uc_MemberInfoWithFilter1_OneMemberSelected);
-            // 
-            // uc_InstructorInfoWithFilter1
-            // 
-            this.uc_InstructorInfoWithFilter1.FilterEnabled = false;
-            this.uc_InstructorInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
-            this.uc_InstructorInfoWithFilter1.Name = "uc_InstructorInfoWithFilter1";
-            this.uc_InstructorInfoWithFilter1.ShowAddInstructor = false;
-            this.uc_InstructorInfoWithFilter1.Size = new System.Drawing.Size(726, 645);
-            this.uc_InstructorInfoWithFilter1.TabIndex = 0;
-            // 
-            // frmAddUpdateBeltTest
+            // frmAddBeltTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 1040);
+            this.ClientSize = new System.Drawing.Size(762, 1040);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.labTitle);
             this.Controls.Add(this.tcMemberInstructor);
-            this.Name = "frmAddUpdateBeltTest";
-            this.Text = "frmAddUpdateBeltTest";
+            this.Name = "frmAddBeltTest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Add Belt Test";
             this.Load += new System.EventHandler(this.frmAddUpdateBeltTest_Load);
             this.tcMemberInstructor.ResumeLayout(false);
             this.tpMember.ResumeLayout(false);
