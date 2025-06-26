@@ -6,6 +6,9 @@ namespace KarateSystem.Members.uc
 {
     public partial class uc_MemberInfoWithFilter : UserControl
     {
+        public event Action<int> OneMemberSelected;
+
+
         private int _memberId = -1;
         public int MemberId
         {
@@ -48,6 +51,10 @@ namespace KarateSystem.Members.uc
             txtFilterValue.Text = memberId.ToString();
             uc_MemberInfoCard1.LoadMemberInfo(memberId);
             FilterEnabled = false;
+            if (OneMemberSelected != null)
+            {
+                OneMemberSelected(uc_MemberInfoCard1.MemberId);
+            }
 
         }
 
@@ -69,6 +76,10 @@ namespace KarateSystem.Members.uc
 
             uc_MemberInfoCard1.LoadMemberInfo(Convert.ToInt32(txtFilterValue.Text));
             _memberId = uc_MemberInfoCard1.MemberId;
+            if (OneMemberSelected != null)
+            {
+                OneMemberSelected.Invoke(_memberId);
+            }
         }
 
         private void uc_MemberInfoWithFilter_Load(object sender, EventArgs e)

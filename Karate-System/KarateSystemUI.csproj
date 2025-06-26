@@ -64,11 +64,11 @@
     <Compile Include="Belt-Ranks\frmManageBeltRanks.Designer.cs">
       <DependentUpon>frmManageBeltRanks.cs</DependentUpon>
     </Compile>
-    <Compile Include="BeltTests\frmAddUpdateBeltTest.cs">
+    <Compile Include="BeltTests\frmAddBeltTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BeltTests\frmAddUpdateBeltTest.Designer.cs">
-      <DependentUpon>frmAddUpdateBeltTest.cs</DependentUpon>
+    <Compile Include="BeltTests\frmAddBeltTest.Designer.cs">
+      <DependentUpon>frmAddBeltTest.cs</DependentUpon>
     </Compile>
     <Compile Include="BeltTests\frmManageBeltTests.cs">
       <SubType>Form</SubType>
@@ -303,8 +303,8 @@
     <EmbeddedResource Include="Belt-Ranks\frmManageBeltRanks.resx">
       <DependentUpon>frmManageBeltRanks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BeltTests\frmAddUpdateBeltTest.resx">
-      <DependentUpon>frmAddUpdateBeltTest.cs</DependentUpon>
+    <EmbeddedResource Include="BeltTests\frmAddBeltTest.resx">
+      <DependentUpon>frmAddBeltTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BeltTests\frmManageBeltTests.resx">
       <DependentUpon>frmManageBeltTests.cs</DependentUpon>

@@ -119,6 +119,12 @@ namespace KarateBusiness
             return BeltRankData.GetIdByName(nameBelt);
 
         }
+        public static decimal GetFeesById(int beltId)
+        {
+            return BeltRankData.GetTestFeesById(beltId);
+
+        }
+
     }
 
 

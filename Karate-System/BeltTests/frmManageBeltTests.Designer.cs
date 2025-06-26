@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManageBeltTests));
             this.dgvAllBeltTests = new System.Windows.Forms.DataGridView();
             this.cmsManageBeltTests = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -42,7 +40,6 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnAddTest = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllBeltTests)).BeginInit();
-            this.cmsManageBeltTests.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,9 +60,6 @@
             // cmsManageBeltTests
             // 
             this.cmsManageBeltTests.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.cmsManageBeltTests.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.updateToolStripMenuItem,
-            this.deleteToolStripMenuItem});
             this.cmsManageBeltTests.Name = "cmsManagePeople";
             this.cmsManageBeltTests.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.cmsManageBeltTests.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -76,22 +70,7 @@
             this.cmsManageBeltTests.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageBeltTests.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageBeltTests.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageBeltTests.Size = new System.Drawing.Size(132, 56);
-            // 
-            // updateToolStripMenuItem
-            // 
-            this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
-            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
-            this.updateToolStripMenuItem.Text = "Update";
-            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
-            this.deleteToolStripMenuItem.Text = "Delete";
+            this.cmsManageBeltTests.Size = new System.Drawing.Size(211, 32);
             // 
             // guna2PictureBox1
             // 
@@ -228,7 +207,6 @@
             this.Text = "frmManageBeltTests";
             this.Load += new System.EventHandler(this.frmManageBeltTests_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllBeltTests)).EndInit();
-            this.cmsManageBeltTests.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -239,8 +217,6 @@
 
         private System.Windows.Forms.DataGridView dgvAllBeltTests;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip cmsManageBeltTests;
-        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel labCountRecords;

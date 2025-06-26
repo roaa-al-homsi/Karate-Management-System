@@ -124,6 +124,29 @@ namespace KarateDataAccess
             return GenericData.GetIdByName("select Id from BeltRanks where Name=@nameBelt", "@nameBelt", nameBelt);
         }
 
+        static public decimal GetTestFeesById(int beltId)
+        {
+            decimal fees = -1;
+            string query = "select testFees from BeltRanks where Id=@beltId";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@beltId", beltId);
+                    try
+                    {
+                        connection.Open();
+                        object result = command.ExecuteScalar();
+                        if (result != null && decimal.TryParse(result.ToString(), out decimal testFees))
+                        {
+                            fees = testFees;
+                        }
+                    }
+                    catch (Exception ex) { }
+                }
+            }
+            return fees;
+        }
     }
 
 

@@ -1,6 +1,6 @@
 ﻿namespace KarateSystem.BeltTests
 {
-    partial class frmAddUpdateBeltTest
+    partial class frmAddBeltTest
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddUpdateBeltTest));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddBeltTest));
             this.tcMemberInstructor = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpMember = new System.Windows.Forms.TabPage();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
-            this.uc_MemberInfoWithFilter1 = new KarateSystem.Members.uc.uc_MemberInfoWithFilter();
             this.tpInstructor = new System.Windows.Forms.TabPage();
-            this.uc_InstructorInfoWithFilter1 = new KarateSystem.Instructors.uc.uc_InstructorInfoWithFilter();
             this.labTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.rdFail = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdPass = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labFeesTest = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labBeltRankId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labBeltRankName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPaymentId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LabTestId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dtpAssignDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -50,24 +55,19 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labBeltRankId = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labFeesTest = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rdPass = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rdFail = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.uc_MemberInfoWithFilter1 = new KarateSystem.Members.uc.uc_MemberInfoWithFilter();
+            this.uc_InstructorInfoWithFilter1 = new KarateSystem.Instructors.uc.uc_InstructorInfoWithFilter();
             this.tcMemberInstructor.SuspendLayout();
             this.tpMember.SuspendLayout();
             this.tpInstructor.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,15 +130,7 @@
             this.btnNext.Size = new System.Drawing.Size(100, 45);
             this.btnNext.TabIndex = 138;
             this.btnNext.Text = "Next";
-            // 
-            // uc_MemberInfoWithFilter1
-            // 
-            this.uc_MemberInfoWithFilter1.FilterEnabled = false;
-            this.uc_MemberInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
-            this.uc_MemberInfoWithFilter1.Name = "uc_MemberInfoWithFilter1";
-            this.uc_MemberInfoWithFilter1.ShowAddPerson = true;
-            this.uc_MemberInfoWithFilter1.Size = new System.Drawing.Size(729, 734);
-            this.uc_MemberInfoWithFilter1.TabIndex = 0;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // tpInstructor
             // 
@@ -150,15 +142,6 @@
             this.tpInstructor.TabIndex = 1;
             this.tpInstructor.Text = "Instructor";
             this.tpInstructor.UseVisualStyleBackColor = true;
-            // 
-            // uc_InstructorInfoWithFilter1
-            // 
-            this.uc_InstructorInfoWithFilter1.FilterEnabled = false;
-            this.uc_InstructorInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
-            this.uc_InstructorInfoWithFilter1.Name = "uc_InstructorInfoWithFilter1";
-            this.uc_InstructorInfoWithFilter1.ShowAddInstructor = false;
-            this.uc_InstructorInfoWithFilter1.Size = new System.Drawing.Size(726, 645);
-            this.uc_InstructorInfoWithFilter1.TabIndex = 0;
             // 
             // labTitle
             // 
@@ -185,11 +168,12 @@
             this.btnSave.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnSave.Location = new System.Drawing.Point(637, 157);
+            this.btnSave.Location = new System.Drawing.Point(637, 135);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 45);
             this.btnSave.TabIndex = 139;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // guna2GroupBox1
             // 
@@ -220,11 +204,88 @@
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(16, 848);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(16, 838);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(746, 205);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(746, 193);
             this.guna2GroupBox1.TabIndex = 141;
             this.guna2GroupBox1.Text = "Belt Test Info";
+            // 
+            // rdFail
+            // 
+            this.rdFail.AutoSize = true;
+            this.rdFail.BackColor = System.Drawing.Color.Transparent;
+            this.rdFail.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdFail.CheckedState.BorderThickness = 0;
+            this.rdFail.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdFail.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdFail.CheckedState.InnerOffset = -4;
+            this.rdFail.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold);
+            this.rdFail.Location = new System.Drawing.Point(149, 165);
+            this.rdFail.Name = "rdFail";
+            this.rdFail.Size = new System.Drawing.Size(64, 33);
+            this.rdFail.TabIndex = 57;
+            this.rdFail.Text = "Fail";
+            this.rdFail.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.rdFail.UncheckedState.BorderThickness = 2;
+            this.rdFail.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.rdFail.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdFail.UseVisualStyleBackColor = false;
+            // 
+            // rdPass
+            // 
+            this.rdPass.AutoSize = true;
+            this.rdPass.BackColor = System.Drawing.Color.Transparent;
+            this.rdPass.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdPass.CheckedState.BorderThickness = 0;
+            this.rdPass.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdPass.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdPass.CheckedState.InnerOffset = -4;
+            this.rdPass.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold);
+            this.rdPass.Location = new System.Drawing.Point(74, 165);
+            this.rdPass.Name = "rdPass";
+            this.rdPass.Size = new System.Drawing.Size(69, 33);
+            this.rdPass.TabIndex = 56;
+            this.rdPass.Text = "Pass";
+            this.rdPass.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.rdPass.UncheckedState.BorderThickness = 2;
+            this.rdPass.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.rdPass.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdPass.UseVisualStyleBackColor = false;
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.AutoSize = false;
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(12, 165);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(56, 30);
+            this.guna2HtmlLabel7.TabIndex = 55;
+            this.guna2HtmlLabel7.Text = "Result:";
+            // 
+            // labFeesTest
+            // 
+            this.labFeesTest.AutoSize = false;
+            this.labFeesTest.BackColor = System.Drawing.Color.Transparent;
+            this.labFeesTest.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labFeesTest.ForeColor = System.Drawing.Color.Maroon;
+            this.labFeesTest.Location = new System.Drawing.Point(571, 148);
+            this.labFeesTest.Name = "labFeesTest";
+            this.labFeesTest.Size = new System.Drawing.Size(97, 29);
+            this.labFeesTest.TabIndex = 54;
+            this.labFeesTest.Text = "[??]";
+            // 
+            // labBeltRankId
+            // 
+            this.labBeltRankId.AutoSize = false;
+            this.labBeltRankId.BackColor = System.Drawing.Color.Transparent;
+            this.labBeltRankId.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labBeltRankId.ForeColor = System.Drawing.Color.Maroon;
+            this.labBeltRankId.Location = new System.Drawing.Point(172, 89);
+            this.labBeltRankId.Name = "labBeltRankId";
+            this.labBeltRankId.Size = new System.Drawing.Size(97, 29);
+            this.labBeltRankId.TabIndex = 53;
+            this.labBeltRankId.Text = "A/N";
             // 
             // labBeltRankName
             // 
@@ -274,6 +335,30 @@
             this.guna2PictureBox6.TabIndex = 44;
             this.guna2PictureBox6.TabStop = false;
             this.guna2PictureBox6.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(322, 99);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(35, 36);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox5.TabIndex = 33;
+            this.guna2PictureBox5.TabStop = false;
+            this.guna2PictureBox5.UseTransparentBackground = true;
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.AutoSize = false;
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(363, 105);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(146, 30);
+            this.guna2HtmlLabel5.TabIndex = 32;
+            this.guna2HtmlLabel5.Text = "Belt Rank Name:";
             // 
             // guna2HtmlLabel6
             // 
@@ -376,30 +461,6 @@
             this.guna2HtmlLabel4.TabIndex = 34;
             this.guna2HtmlLabel4.Text = "Payment Id:";
             // 
-            // guna2PictureBox5
-            // 
-            this.guna2PictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(322, 99);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(35, 36);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox5.TabIndex = 33;
-            this.guna2PictureBox5.TabStop = false;
-            this.guna2PictureBox5.UseTransparentBackground = true;
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.AutoSize = false;
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(363, 105);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(146, 30);
-            this.guna2HtmlLabel5.TabIndex = 32;
-            this.guna2HtmlLabel5.Text = "Belt Rank Name:";
-            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -424,88 +485,30 @@
             this.guna2HtmlLabel1.TabIndex = 29;
             this.guna2HtmlLabel1.Text = "Test Id:";
             // 
-            // labBeltRankId
+            // uc_MemberInfoWithFilter1
             // 
-            this.labBeltRankId.AutoSize = false;
-            this.labBeltRankId.BackColor = System.Drawing.Color.Transparent;
-            this.labBeltRankId.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labBeltRankId.ForeColor = System.Drawing.Color.Maroon;
-            this.labBeltRankId.Location = new System.Drawing.Point(172, 89);
-            this.labBeltRankId.Name = "labBeltRankId";
-            this.labBeltRankId.Size = new System.Drawing.Size(97, 29);
-            this.labBeltRankId.TabIndex = 53;
-            this.labBeltRankId.Text = "A/N";
+            this.uc_MemberInfoWithFilter1.FilterEnabled = false;
+            this.uc_MemberInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
+            this.uc_MemberInfoWithFilter1.Name = "uc_MemberInfoWithFilter1";
+            this.uc_MemberInfoWithFilter1.ShowAddPerson = true;
+            this.uc_MemberInfoWithFilter1.Size = new System.Drawing.Size(729, 734);
+            this.uc_MemberInfoWithFilter1.TabIndex = 0;
+            this.uc_MemberInfoWithFilter1.OneMemberSelected += new System.Action<int>(this.uc_MemberInfoWithFilter1_OneMemberSelected);
             // 
-            // labFeesTest
+            // uc_InstructorInfoWithFilter1
             // 
-            this.labFeesTest.AutoSize = false;
-            this.labFeesTest.BackColor = System.Drawing.Color.Transparent;
-            this.labFeesTest.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labFeesTest.ForeColor = System.Drawing.Color.Maroon;
-            this.labFeesTest.Location = new System.Drawing.Point(571, 148);
-            this.labFeesTest.Name = "labFeesTest";
-            this.labFeesTest.Size = new System.Drawing.Size(97, 29);
-            this.labFeesTest.TabIndex = 54;
-            this.labFeesTest.Text = "[??]";
-            // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.AutoSize = false;
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(12, 165);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(56, 30);
-            this.guna2HtmlLabel7.TabIndex = 55;
-            this.guna2HtmlLabel7.Text = "Result:";
-            // 
-            // rdPass
-            // 
-            this.rdPass.AutoSize = true;
-            this.rdPass.BackColor = System.Drawing.Color.Transparent;
-            this.rdPass.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdPass.CheckedState.BorderThickness = 0;
-            this.rdPass.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdPass.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdPass.CheckedState.InnerOffset = -4;
-            this.rdPass.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold);
-            this.rdPass.Location = new System.Drawing.Point(74, 165);
-            this.rdPass.Name = "rdPass";
-            this.rdPass.Size = new System.Drawing.Size(69, 33);
-            this.rdPass.TabIndex = 56;
-            this.rdPass.Text = "Pass";
-            this.rdPass.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.rdPass.UncheckedState.BorderThickness = 2;
-            this.rdPass.UncheckedState.FillColor = System.Drawing.Color.White;
-            this.rdPass.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdPass.UseVisualStyleBackColor = false;
-            // 
-            // rdFail
-            // 
-            this.rdFail.AutoSize = true;
-            this.rdFail.BackColor = System.Drawing.Color.Transparent;
-            this.rdFail.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdFail.CheckedState.BorderThickness = 0;
-            this.rdFail.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdFail.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdFail.CheckedState.InnerOffset = -4;
-            this.rdFail.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold);
-            this.rdFail.Location = new System.Drawing.Point(149, 165);
-            this.rdFail.Name = "rdFail";
-            this.rdFail.Size = new System.Drawing.Size(64, 33);
-            this.rdFail.TabIndex = 57;
-            this.rdFail.Text = "Fail";
-            this.rdFail.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.rdFail.UncheckedState.BorderThickness = 2;
-            this.rdFail.UncheckedState.FillColor = System.Drawing.Color.White;
-            this.rdFail.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdFail.UseVisualStyleBackColor = false;
+            this.uc_InstructorInfoWithFilter1.FilterEnabled = false;
+            this.uc_InstructorInfoWithFilter1.Location = new System.Drawing.Point(0, 0);
+            this.uc_InstructorInfoWithFilter1.Name = "uc_InstructorInfoWithFilter1";
+            this.uc_InstructorInfoWithFilter1.ShowAddInstructor = false;
+            this.uc_InstructorInfoWithFilter1.Size = new System.Drawing.Size(726, 645);
+            this.uc_InstructorInfoWithFilter1.TabIndex = 0;
             // 
             // frmAddUpdateBeltTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 1055);
+            this.ClientSize = new System.Drawing.Size(818, 1040);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.labTitle);
             this.Controls.Add(this.tcMemberInstructor);
@@ -518,10 +521,10 @@
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 

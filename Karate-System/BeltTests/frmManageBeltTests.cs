@@ -113,14 +113,14 @@ namespace KarateSystem.BeltTests
 
         private void btnAddTest_Click(object sender, System.EventArgs e)
         {
-            frmAddUpdateBeltTest frmAddUpdateBeltTest = new frmAddUpdateBeltTest();
+            frmAddBeltTest frmAddUpdateBeltTest = new frmAddBeltTest();
             frmAddUpdateBeltTest.ShowDialog();
             frmManageBeltTests_Load(null, null);
         }
 
         private void updateToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            frmAddUpdateBeltTest frmAddUpdateBeltTest = new frmAddUpdateBeltTest((int)dgvAllBeltTests.CurrentRow.Cells[0].Value);
+            frmAddBeltTest frmAddUpdateBeltTest = new frmAddBeltTest();
             frmAddUpdateBeltTest.ShowDialog();
             frmManageBeltTests_Load(null, null);
         }

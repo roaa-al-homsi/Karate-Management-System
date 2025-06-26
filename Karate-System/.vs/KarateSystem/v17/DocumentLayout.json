@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\belttests\\frmaddupdatebelttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:belttests\\frmaddupdatebelttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\belttests\\frmmanagebelttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:belttests\\frmmanagebelttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\belttests\\frmmanagebelttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:belttests\\frmmanagebelttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\belttests\\frmmanagebelttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:belttests\\frmmanagebelttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\belttests\\frmaddbelttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:belttests\\frmaddbelttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\belttests\\frmaddupdatebelttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:belttests\\frmaddupdatebelttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\belttests\\frmaddbelttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:belttests\\frmaddbelttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmManageBeltTests.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmManageBeltTests.cs",
-              "RelativeDocumentMoniker": "BeltTests\\frmManageBeltTests.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmManageBeltTests.cs",
-              "RelativeToolTip": "BeltTests\\frmManageBeltTests.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAUwHoAAACBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T01:14:45.27Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -54,18 +41,31 @@
               "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmManageBeltTests.cs [Design]",
               "RelativeToolTip": "BeltTests\\frmManageBeltTests.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T01:14:43.976Z",
+              "WhenOpened": "2025-06-26T23:40:17.461Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmAddUpdateBeltTest.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmAddUpdateBeltTest.cs",
-              "RelativeDocumentMoniker": "BeltTests\\frmAddUpdateBeltTest.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmAddUpdateBeltTest.cs",
-              "RelativeToolTip": "BeltTests\\frmAddUpdateBeltTest.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAAC0AAAANAAAAAAAAAA==",
+              "Title": "frmManageBeltTests.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmManageBeltTests.cs",
+              "RelativeDocumentMoniker": "BeltTests\\frmManageBeltTests.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmManageBeltTests.cs",
+              "RelativeToolTip": "BeltTests\\frmManageBeltTests.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAEwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T23:37:49.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmAddBeltTest.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmAddBeltTest.cs",
+              "RelativeDocumentMoniker": "BeltTests\\frmAddBeltTest.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmAddBeltTest.cs",
+              "RelativeToolTip": "BeltTests\\frmAddBeltTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T23:44:44.299Z",
               "EditorCaption": ""
@@ -73,11 +73,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "frmAddUpdateBeltTest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmAddUpdateBeltTest.cs",
-              "RelativeDocumentMoniker": "BeltTests\\frmAddUpdateBeltTest.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmAddUpdateBeltTest.cs [Design]",
-              "RelativeToolTip": "BeltTests\\frmAddUpdateBeltTest.cs [Design]",
+              "Title": "frmAddBeltTest.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmAddBeltTest.cs",
+              "RelativeDocumentMoniker": "BeltTests\\frmAddBeltTest.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\BeltTests\\frmAddBeltTest.cs [Design]",
+              "RelativeToolTip": "BeltTests\\frmAddBeltTest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T23:22:59.622Z",
               "EditorCaption": " [Design]"
