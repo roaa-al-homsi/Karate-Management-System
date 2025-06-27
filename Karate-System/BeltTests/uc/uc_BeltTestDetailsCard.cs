@@ -1,4 +1,6 @@
 ﻿using KarateBusiness;
+using KarateSystem.Instructors;
+using KarateSystem.Members;
 using System.Windows.Forms;
 
 namespace KarateSystem.BeltTests.uc
@@ -44,6 +46,18 @@ namespace KarateSystem.BeltTests.uc
             }
             _beltTestId = beltTestId;
             _LoadDataBeltTestToForm();
+        }
+
+        private void linkLabInstructorInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmShowInstructorDetails frmShowInstructorDetails = new frmShowInstructorDetails(_beltTest.testedByInstructorID);
+            frmShowInstructorDetails.ShowDialog();
+        }
+
+        private void linkLabMemberInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmShowMemberDetails frmShowMemberDetails = new frmShowMemberDetails(_beltTest.memberId);
+            frmShowMemberDetails.ShowDialog();
         }
     }
 }
