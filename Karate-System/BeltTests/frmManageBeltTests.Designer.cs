@@ -41,6 +41,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnAddTest = new Guna.UI2.WinForms.Guna2Button();
+            this.showTestDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllBeltTests)).BeginInit();
             this.cmsManageBeltTests.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -65,7 +66,8 @@
             this.cmsManageBeltTests.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsManageBeltTests.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.takeNextTestToolStripMenuItem,
-            this.retakeTestToolStripMenuItem});
+            this.retakeTestToolStripMenuItem,
+            this.showTestDetailsToolStripMenuItem});
             this.cmsManageBeltTests.Name = "cmsManagePeople";
             this.cmsManageBeltTests.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.cmsManageBeltTests.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -76,7 +78,7 @@
             this.cmsManageBeltTests.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageBeltTests.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageBeltTests.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageBeltTests.Size = new System.Drawing.Size(211, 80);
+            this.cmsManageBeltTests.Size = new System.Drawing.Size(211, 104);
             this.cmsManageBeltTests.Opening += new System.ComponentModel.CancelEventHandler(this.cmsManageBeltTests_Opening);
             // 
             // takeNextTestToolStripMenuItem
@@ -209,6 +211,13 @@
             this.btnAddTest.Text = "ADD";
             this.btnAddTest.Click += new System.EventHandler(this.btnAddTest_Click);
             // 
+            // showTestDetailsToolStripMenuItem
+            // 
+            this.showTestDetailsToolStripMenuItem.Name = "showTestDetailsToolStripMenuItem";
+            this.showTestDetailsToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.showTestDetailsToolStripMenuItem.Text = "Show Test Details";
+            this.showTestDetailsToolStripMenuItem.Click += new System.EventHandler(this.showTestDetailsToolStripMenuItem_Click);
+            // 
             // frmManageBeltTests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -249,5 +258,6 @@
         private Guna.UI2.WinForms.Guna2Button btnAddTest;
         private System.Windows.Forms.ToolStripMenuItem takeNextTestToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem retakeTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showTestDetailsToolStripMenuItem;
     }
 }

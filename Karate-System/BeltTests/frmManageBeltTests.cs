@@ -144,5 +144,11 @@ namespace KarateSystem.BeltTests
             frmAddBeltTest.ShowDialog();
             frmManageBeltTests_Load(null, null);
         }
+
+        private void showTestDetailsToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmShowTestDetails frmShowTestDetails = new frmShowTestDetails((int)dgvAllBeltTests.CurrentRow.Cells[0].Value);
+            frmShowTestDetails.ShowDialog();
+        }
     }
 }

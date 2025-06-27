@@ -38,7 +38,7 @@ namespace KarateSystem.BeltTests.uc
         }
         public void LoadBeltTestData(int beltTestId)
         {
-            _beltTest = BeltTest.Find(BeltTestId);
+            _beltTest = BeltTest.Find(beltTestId);
             if (_beltTest == null)
             {
                 MessageBox.Show($"There is not belt test with this Id:{beltTestId}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
