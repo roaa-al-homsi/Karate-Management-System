@@ -1,7 +1,22 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members\\frmmembertestshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members\\frmmembertestshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karate-system\\members\\frmmembertestshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9870F381-A117-42B9-95B8-13C0B4FC382C}|KarateSystemUI.csproj|solutionrelative:members\\frmmembertestshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{147EF04C-73B8-40EE-8521-B6782C22469C}|..\\KarateDataAccess\\KarateDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karatedataaccess\\memberdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F2885B0-23D3-4B87-B6F7-5038ABA25760}|..\\KarateBusiness\\KarateBusiness.csproj|c:\\users\\ruaa\\source\\repos\\karate-management-system\\karatebusiness\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +24,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MemberData.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\KarateDataAccess\\MemberData.cs",
+              "RelativeDocumentMoniker": "..\\KarateDataAccess\\MemberData.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\KarateDataAccess\\MemberData.cs",
+              "RelativeToolTip": "..\\KarateDataAccess\\MemberData.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAwwHIAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T22:47:00.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\KarateBusiness\\Member.cs",
+              "RelativeDocumentMoniker": "..\\KarateBusiness\\Member.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\KarateBusiness\\Member.cs",
+              "RelativeToolTip": "..\\KarateBusiness\\Member.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAGoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T22:46:28.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMemberTestsHistory.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmMemberTestsHistory.cs",
+              "RelativeDocumentMoniker": "Members\\frmMemberTestsHistory.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmMemberTestsHistory.cs",
+              "RelativeToolTip": "Members\\frmMemberTestsHistory.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T22:37:08.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMemberTestsHistory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmMemberTestsHistory.cs",
+              "RelativeDocumentMoniker": "Members\\frmMemberTestsHistory.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Karate-Management-System\\Karate-System\\Members\\frmMemberTestsHistory.cs [Design]",
+              "RelativeToolTip": "Members\\frmMemberTestsHistory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T22:33:01.429Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

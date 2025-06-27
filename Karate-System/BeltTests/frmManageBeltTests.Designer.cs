@@ -33,6 +33,7 @@
             this.cmsManageBeltTests = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.takeNextTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.retakeTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showTestDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -41,7 +42,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnAddTest = new Guna.UI2.WinForms.Guna2Button();
-            this.showTestDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showMemberTestsHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllBeltTests)).BeginInit();
             this.cmsManageBeltTests.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -67,7 +68,8 @@
             this.cmsManageBeltTests.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.takeNextTestToolStripMenuItem,
             this.retakeTestToolStripMenuItem,
-            this.showTestDetailsToolStripMenuItem});
+            this.showTestDetailsToolStripMenuItem,
+            this.showMemberTestsHistoryToolStripMenuItem});
             this.cmsManageBeltTests.Name = "cmsManagePeople";
             this.cmsManageBeltTests.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.cmsManageBeltTests.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -78,22 +80,29 @@
             this.cmsManageBeltTests.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageBeltTests.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageBeltTests.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageBeltTests.Size = new System.Drawing.Size(211, 104);
+            this.cmsManageBeltTests.Size = new System.Drawing.Size(262, 128);
             this.cmsManageBeltTests.Opening += new System.ComponentModel.CancelEventHandler(this.cmsManageBeltTests_Opening);
             // 
             // takeNextTestToolStripMenuItem
             // 
             this.takeNextTestToolStripMenuItem.Name = "takeNextTestToolStripMenuItem";
-            this.takeNextTestToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.takeNextTestToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
             this.takeNextTestToolStripMenuItem.Text = "Take Next Test";
             this.takeNextTestToolStripMenuItem.Click += new System.EventHandler(this.takeNextTestToolStripMenuItem_Click);
             // 
             // retakeTestToolStripMenuItem
             // 
             this.retakeTestToolStripMenuItem.Name = "retakeTestToolStripMenuItem";
-            this.retakeTestToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.retakeTestToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
             this.retakeTestToolStripMenuItem.Text = "Retake Test";
             this.retakeTestToolStripMenuItem.Click += new System.EventHandler(this.retakeTestToolStripMenuItem_Click);
+            // 
+            // showTestDetailsToolStripMenuItem
+            // 
+            this.showTestDetailsToolStripMenuItem.Name = "showTestDetailsToolStripMenuItem";
+            this.showTestDetailsToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.showTestDetailsToolStripMenuItem.Text = "Show Test Details";
+            this.showTestDetailsToolStripMenuItem.Click += new System.EventHandler(this.showTestDetailsToolStripMenuItem_Click);
             // 
             // guna2PictureBox1
             // 
@@ -211,12 +220,12 @@
             this.btnAddTest.Text = "ADD";
             this.btnAddTest.Click += new System.EventHandler(this.btnAddTest_Click);
             // 
-            // showTestDetailsToolStripMenuItem
+            // showMemberTestsHistoryToolStripMenuItem
             // 
-            this.showTestDetailsToolStripMenuItem.Name = "showTestDetailsToolStripMenuItem";
-            this.showTestDetailsToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.showTestDetailsToolStripMenuItem.Text = "Show Test Details";
-            this.showTestDetailsToolStripMenuItem.Click += new System.EventHandler(this.showTestDetailsToolStripMenuItem_Click);
+            this.showMemberTestsHistoryToolStripMenuItem.Name = "showMemberTestsHistoryToolStripMenuItem";
+            this.showMemberTestsHistoryToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.showMemberTestsHistoryToolStripMenuItem.Text = "Show Member Tests History";
+            this.showMemberTestsHistoryToolStripMenuItem.Click += new System.EventHandler(this.showMemberTestsHistoryToolStripMenuItem_Click);
             // 
             // frmManageBeltTests
             // 
@@ -259,5 +268,6 @@
         private System.Windows.Forms.ToolStripMenuItem takeNextTestToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem retakeTestToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showTestDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showMemberTestsHistoryToolStripMenuItem;
     }
 }

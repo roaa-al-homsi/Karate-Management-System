@@ -144,6 +144,12 @@
     <Compile Include="Members\frmManageMembers.Designer.cs">
       <DependentUpon>frmManageMembers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Members\frmMemberTestsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\frmMemberTestsHistory.Designer.cs">
+      <DependentUpon>frmMemberTestsHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Members\frmShowMemberDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -354,6 +360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Members\frmManageMembers.resx">
       <DependentUpon>frmManageMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\frmMemberTestsHistory.resx">
+      <DependentUpon>frmMemberTestsHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Members\frmShowMemberDetails.resx">
       <DependentUpon>frmShowMemberDetails.cs</DependentUpon>

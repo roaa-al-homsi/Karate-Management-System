@@ -1,4 +1,5 @@
 ﻿using KarateBusiness;
+using KarateSystem.Members;
 using System.Data;
 using System.Windows.Forms;
 
@@ -149,6 +150,12 @@ namespace KarateSystem.BeltTests
         {
             frmShowTestDetails frmShowTestDetails = new frmShowTestDetails((int)dgvAllBeltTests.CurrentRow.Cells[0].Value);
             frmShowTestDetails.ShowDialog();
+        }
+
+        private void showMemberTestsHistoryToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmMemberTestsHistory frmMemberTestsHistory = new frmMemberTestsHistory((int)dgvAllBeltTests.CurrentRow.Cells[3].Value);
+            frmMemberTestsHistory.ShowDialog();
         }
     }
 }

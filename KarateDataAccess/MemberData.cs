@@ -110,6 +110,11 @@ namespace KarateDataAccess
         {
             return GenericData.GetAllBySpecificField("select * from SubscriptionPeriods where MemberId=@memberId", "@memberId", memberId);
         }
+        static public DataTable GetAllTestsForSpecificMember(int memberId)
+        {
+            return GenericData.GetAllBySpecificField("select * from view_BeltTests_Info where [Member Id]=@memberId", "@memberId", memberId);
+        }
+
         static public bool Delete(int id)
         {
             return GenericData.Delete("delete Members where id = @id", "@id", id);

@@ -102,6 +102,11 @@ namespace KarateBusiness
         {
             return MemberData.GetAllPeriodsHistoryForSpecificMember(this.id);
         }
+        public DataTable GetAllTestsForSpecificMember()
+        {
+            return MemberData.GetAllTestsForSpecificMember(this.id);
+        }
+
     }
 
 
