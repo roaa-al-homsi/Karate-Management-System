@@ -76,6 +76,12 @@
     <Compile Include="BeltTests\frmManageBeltTests.Designer.cs">
       <DependentUpon>frmManageBeltTests.cs</DependentUpon>
     </Compile>
+    <Compile Include="BeltTests\frmShowTestDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeltTests\frmShowTestDetails.Designer.cs">
+      <DependentUpon>frmShowTestDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="BeltTests\uc\uc_BeltTestDetailsCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -314,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BeltTests\frmManageBeltTests.resx">
       <DependentUpon>frmManageBeltTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeltTests\frmShowTestDetails.resx">
+      <DependentUpon>frmShowTestDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BeltTests\uc\uc_BeltTestDetailsCard.resx">
       <DependentUpon>uc_BeltTestDetailsCard.cs</DependentUpon>
