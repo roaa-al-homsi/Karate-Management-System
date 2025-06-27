@@ -143,5 +143,11 @@ namespace KarateSystem.Members
             frmShowPeriodHistoryForSpecificMember frmShowPeriodHistoryForSpecificMember = new frmShowPeriodHistoryForSpecificMember((int)dgvAllMembers.CurrentRow.Cells[0].Value);
             frmShowPeriodHistoryForSpecificMember.ShowDialog();
         }
+
+        private void showMemberTestsHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMemberTestsHistory frmMemberTestsHistory = new frmMemberTestsHistory((int)dgvAllMembers.CurrentRow.Cells[0].Value);
+            frmMemberTestsHistory.ShowDialog();
+        }
     }
 }
