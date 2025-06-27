@@ -120,8 +120,21 @@ namespace KarateSystem.BeltTests
 
         private void updateToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            frmAddBeltTest frmAddUpdateBeltTest = new frmAddBeltTest();
-            frmAddUpdateBeltTest.ShowDialog();
+            frmAddBeltTest frmAddBeltTest = new frmAddBeltTest();
+            frmAddBeltTest.ShowDialog();
+            frmManageBeltTests_Load(null, null);
+        }
+
+        private void cmsManageBeltTests_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            takeNextTestToolStripMenuItem.Enabled = (bool)dgvAllBeltTests.CurrentRow.Cells[9].Value;
+            retakeTestToolStripMenuItem.Enabled = !(bool)dgvAllBeltTests.CurrentRow.Cells[9].Value;
+        }
+
+        private void takeNextTestToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmAddBeltTest frmAddBeltTest = new frmAddBeltTest((int)dgvAllBeltTests.CurrentRow.Cells[3].Value, (int)dgvAllBeltTests.CurrentRow.Cells[5].Value);
+            frmAddBeltTest.ShowDialog();
             frmManageBeltTests_Load(null, null);
         }
     }

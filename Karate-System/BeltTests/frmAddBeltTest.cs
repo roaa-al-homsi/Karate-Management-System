@@ -6,7 +6,7 @@ namespace KarateSystem.BeltTests
 {
     public partial class frmAddBeltTest : Form
     {
-
+        private enum modeTest { firstTime = 1, retake = 2 }
         private int _beltTestId;
         private BeltTest _beltTest;
 
@@ -15,14 +15,23 @@ namespace KarateSystem.BeltTests
         public frmAddBeltTest()
         {
             InitializeComponent();
+            uc_MemberInfoWithFilter1.FilterEnabled = true;
+            uc_InstructorInfoWithFilter1.FilterEnabled = true;
+        }
+        public frmAddBeltTest(int memberId, int instructorId)
+        {
+            InitializeComponent();
+            uc_MemberInfoWithFilter1.LoadMemberInfo(memberId);
+            uc_InstructorInfoWithFilter1.LoadInstructorData(instructorId);
+            uc_InstructorInfoWithFilter1.FilterEnabled = false;
+            uc_MemberInfoWithFilter1.FilterEnabled = false;
 
         }
         private void _ResetDefaultValue()
         {
-            this.Text = "Add New Belt Test";
-            labTitle.Text = "Add New Belt Test";
-            uc_MemberInfoWithFilter1.FilterEnabled = true;
-            uc_InstructorInfoWithFilter1.FilterEnabled = true;
+            this.Text = "Take Belt Test";
+            labTitle.Text = "Take Belt Test";
+
             tpInstructor.Enabled = false;
             _beltTest = new BeltTest();
         }
