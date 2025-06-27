@@ -187,7 +187,7 @@
             this.btnSave.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnSave.Location = new System.Drawing.Point(637, 135);
+            this.btnSave.Location = new System.Drawing.Point(634, 140);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 45);
             this.btnSave.TabIndex = 139;
@@ -288,7 +288,7 @@
             this.labFeesTest.BackColor = System.Drawing.Color.Transparent;
             this.labFeesTest.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labFeesTest.ForeColor = System.Drawing.Color.Maroon;
-            this.labFeesTest.Location = new System.Drawing.Point(571, 148);
+            this.labFeesTest.Location = new System.Drawing.Point(425, 145);
             this.labFeesTest.Name = "labFeesTest";
             this.labFeesTest.Size = new System.Drawing.Size(97, 29);
             this.labFeesTest.TabIndex = 54;
@@ -312,9 +312,9 @@
             this.labBeltRankName.BackColor = System.Drawing.Color.Transparent;
             this.labBeltRankName.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labBeltRankName.ForeColor = System.Drawing.Color.Maroon;
-            this.labBeltRankName.Location = new System.Drawing.Point(571, 106);
+            this.labBeltRankName.Location = new System.Drawing.Point(515, 105);
             this.labBeltRankName.Name = "labBeltRankName";
-            this.labBeltRankName.Size = new System.Drawing.Size(97, 29);
+            this.labBeltRankName.Size = new System.Drawing.Size(173, 29);
             this.labBeltRankName.TabIndex = 52;
             this.labBeltRankName.Text = "[??]";
             // 

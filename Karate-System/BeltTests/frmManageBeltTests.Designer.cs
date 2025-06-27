@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManageBeltTests));
             this.dgvAllBeltTests = new System.Windows.Forms.DataGridView();
             this.cmsManageBeltTests = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.takeNextTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.retakeTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -39,8 +41,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnAddTest = new Guna.UI2.WinForms.Guna2Button();
-            this.takeNextTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.retakeTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllBeltTests)).BeginInit();
             this.cmsManageBeltTests.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -78,6 +78,20 @@
             this.cmsManageBeltTests.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.cmsManageBeltTests.Size = new System.Drawing.Size(211, 80);
             this.cmsManageBeltTests.Opening += new System.ComponentModel.CancelEventHandler(this.cmsManageBeltTests_Opening);
+            // 
+            // takeNextTestToolStripMenuItem
+            // 
+            this.takeNextTestToolStripMenuItem.Name = "takeNextTestToolStripMenuItem";
+            this.takeNextTestToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.takeNextTestToolStripMenuItem.Text = "Take Next Test";
+            this.takeNextTestToolStripMenuItem.Click += new System.EventHandler(this.takeNextTestToolStripMenuItem_Click);
+            // 
+            // retakeTestToolStripMenuItem
+            // 
+            this.retakeTestToolStripMenuItem.Name = "retakeTestToolStripMenuItem";
+            this.retakeTestToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.retakeTestToolStripMenuItem.Text = "Retake Test";
+            this.retakeTestToolStripMenuItem.Click += new System.EventHandler(this.retakeTestToolStripMenuItem_Click);
             // 
             // guna2PictureBox1
             // 
@@ -194,19 +208,6 @@
             this.btnAddTest.TabIndex = 38;
             this.btnAddTest.Text = "ADD";
             this.btnAddTest.Click += new System.EventHandler(this.btnAddTest_Click);
-            // 
-            // takeNextTestToolStripMenuItem
-            // 
-            this.takeNextTestToolStripMenuItem.Name = "takeNextTestToolStripMenuItem";
-            this.takeNextTestToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.takeNextTestToolStripMenuItem.Text = "Take Next Test";
-            this.takeNextTestToolStripMenuItem.Click += new System.EventHandler(this.takeNextTestToolStripMenuItem_Click);
-            // 
-            // retakeTestToolStripMenuItem
-            // 
-            this.retakeTestToolStripMenuItem.Name = "retakeTestToolStripMenuItem";
-            this.retakeTestToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.retakeTestToolStripMenuItem.Text = "Retake Test";
             // 
             // frmManageBeltTests
             // 

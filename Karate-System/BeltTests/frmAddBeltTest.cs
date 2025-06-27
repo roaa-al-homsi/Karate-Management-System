@@ -6,34 +6,84 @@ namespace KarateSystem.BeltTests
 {
     public partial class frmAddBeltTest : Form
     {
-        private enum modeTest { firstTime = 1, retake = 2 }
-        private int _beltTestId;
-        private BeltTest _beltTest;
+        public enum CreationMode { firstTime = 1, retake = 2, takeNextTest = 3 }
+        private CreationMode _creationMode = CreationMode.firstTime;
 
+        private int _beltTestId;
+        private BeltTest _beltTest = new BeltTest();
+
+        private int _oldTestId = -1;
         private int _memberSelectedId = -1;
 
         public frmAddBeltTest()
         {
             InitializeComponent();
+            _creationMode = CreationMode.firstTime;
             uc_MemberInfoWithFilter1.FilterEnabled = true;
             uc_InstructorInfoWithFilter1.FilterEnabled = true;
         }
         public frmAddBeltTest(int memberId, int instructorId)
         {
             InitializeComponent();
+            _creationMode = CreationMode.takeNextTest;
             uc_MemberInfoWithFilter1.LoadMemberInfo(memberId);
             uc_InstructorInfoWithFilter1.LoadInstructorData(instructorId);
-            uc_InstructorInfoWithFilter1.FilterEnabled = false;
+
+        }
+
+        public frmAddBeltTest(int oldTestId)
+        {
+            InitializeComponent();
+            _creationMode = CreationMode.retake;
+            _oldTestId = oldTestId;
+        }
+        private void _LoadDataToFormInModeRetakeTest()
+        {
+            BeltTest oldBeltTest = BeltTest.Find(_oldTestId);
+            if (oldBeltTest == null)
+            {
+                MessageBox.Show($"There is not blet test with this Id:{_beltTestId}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            uc_MemberInfoWithFilter1.LoadMemberInfo(oldBeltTest.memberId);
             uc_MemberInfoWithFilter1.FilterEnabled = false;
+
+            uc_InstructorInfoWithFilter1.LoadInstructorData(oldBeltTest.testedByInstructorID);
+            uc_InstructorInfoWithFilter1.FilterEnabled = true;
+
+            labBeltRankId.Text = oldBeltTest.rankId.ToString();
+            labBeltRankName.Text = oldBeltTest.beltRankInfo.name;
+            labFeesTest.Text = oldBeltTest.beltRankInfo.testFees.ToString();
+            dtpAssignDate.Value = DateTime.Now;
+            rdFail.Checked = true;
 
         }
         private void _ResetDefaultValue()
         {
-            this.Text = "Take Belt Test";
-            labTitle.Text = "Take Belt Test";
+            switch (_creationMode)
+            {
+                case CreationMode.firstTime:
+                    this.Text = "Take Belt Test";
+                    labTitle.Text = "Take Belt Test";
+                    tpInstructor.Enabled = false;
+                    _beltTest = new BeltTest();
+                    return;
+                case CreationMode.takeNextTest:
+                    this.Text = "Take Next Belt Test";
+                    labTitle.Text = "Take Next Belt Test";
+                    tpInstructor.Enabled = false;
+                    _beltTest = new BeltTest();
 
-            tpInstructor.Enabled = false;
-            _beltTest = new BeltTest();
+                    uc_InstructorInfoWithFilter1.FilterEnabled = true;
+                    uc_MemberInfoWithFilter1.FilterEnabled = false;
+                    return;
+
+                case CreationMode.retake:
+                    labTitle.Text = "Retake Test";
+                    _LoadDataToFormInModeRetakeTest();
+                    return;
+
+            }
         }
 
         private void frmAddUpdateBeltTest_Load(object sender, System.EventArgs e)

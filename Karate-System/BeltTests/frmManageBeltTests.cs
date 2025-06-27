@@ -137,5 +137,12 @@ namespace KarateSystem.BeltTests
             frmAddBeltTest.ShowDialog();
             frmManageBeltTests_Load(null, null);
         }
+
+        private void retakeTestToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmAddBeltTest frmAddBeltTest = new frmAddBeltTest((int)dgvAllBeltTests.CurrentRow.Cells[0].Value);
+            frmAddBeltTest.ShowDialog();
+            frmManageBeltTests_Load(null, null);
+        }
     }
 }
