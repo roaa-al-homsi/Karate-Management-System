@@ -156,5 +156,11 @@ namespace KarateSystem.Subscription_Periods
             frmRenewSubscriptionPeriod frmRenewSubscriptionPeriod = new frmRenewSubscriptionPeriod();
             frmRenewSubscriptionPeriod.ShowDialog();
         }
+
+        private void renewSubscriptionToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmRenewSubscriptionPeriod frmRenewSubscriptionPeriod = new frmRenewSubscriptionPeriod((int)dgvAllPeriods.CurrentRow.Cells[0].Value);
+            frmRenewSubscriptionPeriod.ShowDialog();
+        }
     }
 }

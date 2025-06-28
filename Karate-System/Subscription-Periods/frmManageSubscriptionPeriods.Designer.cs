@@ -84,7 +84,7 @@
             this.cmsManagePeriods.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePeriods.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePeriods.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePeriods.Size = new System.Drawing.Size(312, 134);
+            this.cmsManagePeriods.Size = new System.Drawing.Size(312, 162);
             this.cmsManagePeriods.Opening += new System.ComponentModel.CancelEventHandler(this.cmsManagePeriods_Opening);
             // 
             // updateToolStripMenuItem
@@ -116,6 +116,7 @@
             this.renewSubscriptionToolStripMenuItem.Name = "renewSubscriptionToolStripMenuItem";
             this.renewSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
             this.renewSubscriptionToolStripMenuItem.Text = "Renew Subscription";
+            this.renewSubscriptionToolStripMenuItem.Click += new System.EventHandler(this.renewSubscriptionToolStripMenuItem_Click);
             // 
             // addNewPeriodToolStripMenuItem
             // 

@@ -36,6 +36,7 @@ namespace KarateSystem.Members
             _dtMemberTestsHistory = uc_MemberInfoCard1.SelectedMember.GetAllTestsForSpecificMember();
             dgvMemberTests.DataSource = _dtMemberTestsHistory;
             _ChangeFormatDgvAllBeltTests();
+            labCountRecords.Text = dgvMemberTests.RowCount.ToString();
         }
     }
 }

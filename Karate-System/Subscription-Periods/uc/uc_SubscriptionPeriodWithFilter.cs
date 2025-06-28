@@ -7,10 +7,6 @@ namespace KarateSystem.Subscription_Periods.uc
     public partial class uc_SubscriptionPeriodWithFilter : UserControl
     {
         public event Action<int> OnePeriodSelected;
-        protected virtual void PeriodSelected(int periodId)
-        {
-            OnePeriodSelected?.Invoke(periodId);
-        }
 
         private int _periodId = -1;
         public int PeriodId
@@ -69,7 +65,7 @@ namespace KarateSystem.Subscription_Periods.uc
 
             uc_SubscriptionPeriodInfoCard1.LoadPeriodInfo(_periodId);
             _periodId = uc_SubscriptionPeriodInfoCard1.SubscriptionPeriod.id;
-            if (OnePeriodSelected != null && FilterEnabled)
+            if (OnePeriodSelected != null)
             {
                 OnePeriodSelected(_periodId);
 
