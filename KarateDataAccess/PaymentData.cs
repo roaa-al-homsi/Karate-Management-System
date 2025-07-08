@@ -7,10 +7,10 @@ namespace KarateDataAccess
 {
     public static class PaymentData
     {
-        public static int Add(decimal amount, DateTime date, int memberId)
+        public static int Add(decimal amount, DateTime date, int memberId, byte paymentReason)
         {
             int newId = 0;
-            string query = "insert into Payments (amount,date,memberId) values (@amount,@date,@memberId) SELECT SCOPE_IDENTITY(); ";
+            string query = "insert into Payments (amount,date,memberId,paymentReason) values (@amount,@date,@memberId,@paymentReason) SELECT SCOPE_IDENTITY(); ";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
@@ -19,7 +19,7 @@ namespace KarateDataAccess
                     command.Parameters.AddWithValue("@amount", amount);
                     command.Parameters.AddWithValue("@date", date);
                     command.Parameters.AddWithValue("@memberId", memberId);
-
+                    command.Parameters.AddWithValue("@paymentReason", paymentReason);
                     try
                     {
                         connection.Open();
@@ -36,10 +36,10 @@ namespace KarateDataAccess
 
             return newId;
         }
-        public static bool Update(int id, decimal amount, DateTime date, int memberId)
+        public static bool Update(int id, decimal amount, DateTime date, int memberId, byte paymentReason)
         {
             int RowsAffected = 0;
-            string query = "update Payments set amount = @amount,date = @date,memberId = @memberId  WHERE id=@id;";
+            string query = "update Payments set amount = @amount,date = @date,memberId = @member,paymentReason=@paymentReason Id  WHERE id=@id;";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
@@ -48,7 +48,7 @@ namespace KarateDataAccess
                     command.Parameters.AddWithValue("@amount", amount);
                     command.Parameters.AddWithValue("@date", date);
                     command.Parameters.AddWithValue("@memberId", memberId);
-
+                    command.Parameters.AddWithValue("@paymentReason", paymentReason);
                     try
                     {
                         connection.Open();
@@ -60,7 +60,7 @@ namespace KarateDataAccess
 
             return RowsAffected > 0;
         }
-        public static bool Get(int id, ref decimal amount, ref DateTime date, ref int memberId)
+        public static bool Get(int id, ref decimal amount, ref DateTime date, ref int memberId, ref byte paymentReason)
         {
             bool IsFound = false;
             string query = "select * from Payments  WHERE id=@id;";
@@ -84,7 +84,7 @@ namespace KarateDataAccess
                                 amount = (decimal)reader["amount"];
                                 date = (DateTime)reader["date"];
                                 memberId = (int)reader["memberId"];
-
+                                paymentReason = (byte)reader["paymentReason"];
 
                             }
                             else
