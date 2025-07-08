@@ -19,8 +19,10 @@ namespace KarateSystem.Subscription_Periods
         public frmRenewSubscriptionPeriod(int oldPeriodId)
         {
             InitializeComponent();
-            uc_SubscriptionPeriodWithFilter1.FilterEnabled = true;
+            uc_SubscriptionPeriodWithFilter1.FilterEnabled = false;
             _OldPeriodId = oldPeriodId;
+
+            uc_SubscriptionPeriodWithFilter1.LoadPeriodData(oldPeriodId);
         }
         private void uc_SubscriptionPeriodWithFilter1_OnePeriodSelected(int obj)
         {
@@ -55,7 +57,7 @@ namespace KarateSystem.Subscription_Periods
             _subscriptionPeriod.fees = Convert.ToDecimal(txtFees.Text);
             _subscriptionPeriod.startDate = dtpStartDate.Value;
             _subscriptionPeriod.endDate = dtpEndDate.Value;
-            _subscriptionPeriod.memberId = labMemberId.Text;
+            // _subscriptionPeriod.memberId = labMemberId.Text;
 
 
         }

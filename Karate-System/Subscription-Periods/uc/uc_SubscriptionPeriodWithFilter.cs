@@ -62,7 +62,7 @@ namespace KarateSystem.Subscription_Periods.uc
         public void LoadPeriodData(int periodId)
         {
             txtFilterValue.Text = periodId.ToString();
-
+            _periodId = periodId;
             uc_SubscriptionPeriodInfoCard1.LoadPeriodInfo(_periodId);
             _periodId = uc_SubscriptionPeriodInfoCard1.SubscriptionPeriod.id;
             if (OnePeriodSelected != null)
