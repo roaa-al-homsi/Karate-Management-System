@@ -15,8 +15,23 @@ namespace KarateBusiness
         public DateTime date { get; set; }
         public int memberId { get; set; }
         public enPaymentReason PaymentReason { get; set; }
-
         public Member memberInfo { get; private set; }
+
+        public string PaymentReasonText
+        {
+            get
+            {
+                switch (PaymentReason)
+                {
+                    case enPaymentReason.BeltTest:
+                        return "Belt Test";
+                    case enPaymentReason.SubscriptionPeriod:
+                        return "Subscription Period";
+                    default: return "Subscription Period";
+                }
+            }
+        }
+
         public Payment()
         {
             this.id = 0;

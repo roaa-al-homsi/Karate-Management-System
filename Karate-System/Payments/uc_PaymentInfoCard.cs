@@ -28,6 +28,11 @@ namespace KarateSystem.Payments
             labNameMember.Text = _payment.memberInfo.personInfo.FullName;
             labPaymentId.Text = _payment.id.ToString();
             dtpDate.Value = _payment.date;
+            labPaymentReason.Text = _payment.PaymentReasonText;
+            lnkTestInfo.Visible = _payment.PaymentReason == Payment.enPaymentReason.BeltTest;
+            lnkPeriodInfo.Visible = _payment.PaymentReason == Payment.enPaymentReason.SubscriptionPeriod;
+            labNameTestOrPeriod.Text = _payment.PaymentReason == Payment.enPaymentReason.BeltTest ? "Belt Test Id:" : "Period Id:";
+
 
             if (string.IsNullOrWhiteSpace(_payment.memberInfo.personInfo.imagePath))
             {
@@ -53,10 +58,14 @@ namespace KarateSystem.Payments
 
         }
 
+        private void lnkPeriodInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
 
+        }
 
+        private void lnkTestInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
 
-
-
+        }
     }
 }

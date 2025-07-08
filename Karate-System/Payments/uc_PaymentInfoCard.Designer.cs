@@ -30,15 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_PaymentInfoCard));
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lnkTestInfo = new System.Windows.Forms.LinkLabel();
+            this.lnkPeriodInfo = new System.Windows.Forms.LinkLabel();
             this.linkLabMemberInfo = new System.Windows.Forms.LinkLabel();
             this.picMember = new Guna.UI2.WinForms.Guna2PictureBox();
             this.labGender = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labLastBeltRank = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labTestOrPeriod = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labIssueReason = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labNameTestOrPeriod = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labPaymentReason = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labFees = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -54,8 +56,6 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lnkPeriodInfo = new System.Windows.Forms.LinkLabel();
-            this.lnkTestInfo = new System.Windows.Forms.LinkLabel();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
@@ -78,10 +78,10 @@
             this.guna2GroupBox1.Controls.Add(this.labGender);
             this.guna2GroupBox1.Controls.Add(this.guna2PictureBox11);
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel12);
-            this.guna2GroupBox1.Controls.Add(this.labLastBeltRank);
+            this.guna2GroupBox1.Controls.Add(this.labTestOrPeriod);
             this.guna2GroupBox1.Controls.Add(this.guna2PictureBox9);
-            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel10);
-            this.guna2GroupBox1.Controls.Add(this.labIssueReason);
+            this.guna2GroupBox1.Controls.Add(this.labNameTestOrPeriod);
+            this.guna2GroupBox1.Controls.Add(this.labPaymentReason);
             this.guna2GroupBox1.Controls.Add(this.guna2PictureBox8);
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel9);
             this.guna2GroupBox1.Controls.Add(this.labFees);
@@ -105,6 +105,34 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(982, 301);
             this.guna2GroupBox1.TabIndex = 3;
             this.guna2GroupBox1.Text = "Payment Info";
+            // 
+            // lnkTestInfo
+            // 
+            this.lnkTestInfo.AutoSize = true;
+            this.lnkTestInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lnkTestInfo.DisabledLinkColor = System.Drawing.Color.Transparent;
+            this.lnkTestInfo.Font = new System.Drawing.Font("Aldhabi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkTestInfo.Location = new System.Drawing.Point(231, 258);
+            this.lnkTestInfo.Name = "lnkTestInfo";
+            this.lnkTestInfo.Size = new System.Drawing.Size(75, 35);
+            this.lnkTestInfo.TabIndex = 73;
+            this.lnkTestInfo.TabStop = true;
+            this.lnkTestInfo.Text = "Test Info";
+            this.lnkTestInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkTestInfo_LinkClicked);
+            // 
+            // lnkPeriodInfo
+            // 
+            this.lnkPeriodInfo.AutoSize = true;
+            this.lnkPeriodInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lnkPeriodInfo.DisabledLinkColor = System.Drawing.Color.Transparent;
+            this.lnkPeriodInfo.Font = new System.Drawing.Font("Aldhabi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkPeriodInfo.Location = new System.Drawing.Point(120, 258);
+            this.lnkPeriodInfo.Name = "lnkPeriodInfo";
+            this.lnkPeriodInfo.Size = new System.Drawing.Size(91, 35);
+            this.lnkPeriodInfo.TabIndex = 72;
+            this.lnkPeriodInfo.TabStop = true;
+            this.lnkPeriodInfo.Text = "Period Info";
+            this.lnkPeriodInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkPeriodInfo_LinkClicked);
             // 
             // linkLabMemberInfo
             // 
@@ -172,18 +200,18 @@
             this.guna2HtmlLabel12.TabIndex = 66;
             this.guna2HtmlLabel12.Text = "Gender:";
             // 
-            // labLastBeltRank
+            // labTestOrPeriod
             // 
-            this.labLastBeltRank.AutoSize = false;
-            this.labLastBeltRank.BackColor = System.Drawing.Color.Transparent;
-            this.labLastBeltRank.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labLastBeltRank.ForeColor = System.Drawing.Color.Maroon;
-            this.labLastBeltRank.Location = new System.Drawing.Point(559, 192);
-            this.labLastBeltRank.Name = "labLastBeltRank";
-            this.labLastBeltRank.Size = new System.Drawing.Size(113, 29);
-            this.labLastBeltRank.TabIndex = 62;
-            this.labLastBeltRank.Text = "[??]";
-            this.labLastBeltRank.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labTestOrPeriod.AutoSize = false;
+            this.labTestOrPeriod.BackColor = System.Drawing.Color.Transparent;
+            this.labTestOrPeriod.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labTestOrPeriod.ForeColor = System.Drawing.Color.Maroon;
+            this.labTestOrPeriod.Location = new System.Drawing.Point(559, 192);
+            this.labTestOrPeriod.Name = "labTestOrPeriod";
+            this.labTestOrPeriod.Size = new System.Drawing.Size(113, 29);
+            this.labTestOrPeriod.TabIndex = 62;
+            this.labTestOrPeriod.Text = "[??]";
+            this.labTestOrPeriod.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2PictureBox9
             // 
@@ -198,29 +226,29 @@
             this.guna2PictureBox9.TabStop = false;
             this.guna2PictureBox9.UseTransparentBackground = true;
             // 
-            // guna2HtmlLabel10
+            // labNameTestOrPeriod
             // 
-            this.guna2HtmlLabel10.AutoSize = false;
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(418, 192);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(136, 30);
-            this.guna2HtmlLabel10.TabIndex = 60;
-            this.guna2HtmlLabel10.Text = "Last Belt Rank:";
+            this.labNameTestOrPeriod.AutoSize = false;
+            this.labNameTestOrPeriod.BackColor = System.Drawing.Color.Transparent;
+            this.labNameTestOrPeriod.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labNameTestOrPeriod.Location = new System.Drawing.Point(418, 192);
+            this.labNameTestOrPeriod.Name = "labNameTestOrPeriod";
+            this.labNameTestOrPeriod.Size = new System.Drawing.Size(136, 30);
+            this.labNameTestOrPeriod.TabIndex = 60;
+            this.labNameTestOrPeriod.Text = "Test Id:";
             // 
-            // labIssueReason
+            // labPaymentReason
             // 
-            this.labIssueReason.AutoSize = false;
-            this.labIssueReason.BackColor = System.Drawing.Color.Transparent;
-            this.labIssueReason.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labIssueReason.ForeColor = System.Drawing.Color.Maroon;
-            this.labIssueReason.Location = new System.Drawing.Point(549, 146);
-            this.labIssueReason.Name = "labIssueReason";
-            this.labIssueReason.Size = new System.Drawing.Size(138, 29);
-            this.labIssueReason.TabIndex = 59;
-            this.labIssueReason.Text = "[??]";
-            this.labIssueReason.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labPaymentReason.AutoSize = false;
+            this.labPaymentReason.BackColor = System.Drawing.Color.Transparent;
+            this.labPaymentReason.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPaymentReason.ForeColor = System.Drawing.Color.Maroon;
+            this.labPaymentReason.Location = new System.Drawing.Point(549, 146);
+            this.labPaymentReason.Name = "labPaymentReason";
+            this.labPaymentReason.Size = new System.Drawing.Size(138, 29);
+            this.labPaymentReason.TabIndex = 59;
+            this.labPaymentReason.Text = "[??]";
+            this.labPaymentReason.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2PictureBox8
             // 
@@ -411,39 +439,13 @@
             this.guna2HtmlLabel5.TabIndex = 32;
             this.guna2HtmlLabel5.Text = "Member Id:";
             // 
-            // lnkPeriodInfo
-            // 
-            this.lnkPeriodInfo.AutoSize = true;
-            this.lnkPeriodInfo.BackColor = System.Drawing.Color.Transparent;
-            this.lnkPeriodInfo.DisabledLinkColor = System.Drawing.Color.Transparent;
-            this.lnkPeriodInfo.Font = new System.Drawing.Font("Aldhabi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkPeriodInfo.Location = new System.Drawing.Point(120, 258);
-            this.lnkPeriodInfo.Name = "lnkPeriodInfo";
-            this.lnkPeriodInfo.Size = new System.Drawing.Size(91, 35);
-            this.lnkPeriodInfo.TabIndex = 72;
-            this.lnkPeriodInfo.TabStop = true;
-            this.lnkPeriodInfo.Text = "Period Info";
-            // 
-            // lnkTestInfo
-            // 
-            this.lnkTestInfo.AutoSize = true;
-            this.lnkTestInfo.BackColor = System.Drawing.Color.Transparent;
-            this.lnkTestInfo.DisabledLinkColor = System.Drawing.Color.Transparent;
-            this.lnkTestInfo.Font = new System.Drawing.Font("Aldhabi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkTestInfo.Location = new System.Drawing.Point(120, 258);
-            this.lnkTestInfo.Name = "lnkTestInfo";
-            this.lnkTestInfo.Size = new System.Drawing.Size(75, 35);
-            this.lnkTestInfo.TabIndex = 73;
-            this.lnkTestInfo.TabStop = true;
-            this.lnkTestInfo.Text = "Test Info";
-            // 
             // uc_PaymentInfoCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2GroupBox1);
             this.Name = "uc_PaymentInfoCard";
-            this.Size = new System.Drawing.Size(1089, 422);
+            this.Size = new System.Drawing.Size(991, 314);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMember)).EndInit();
@@ -466,10 +468,10 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labGender;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox11;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labLastBeltRank;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labTestOrPeriod;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labIssueReason;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labNameTestOrPeriod;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labPaymentReason;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel labFees;
