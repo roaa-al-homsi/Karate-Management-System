@@ -9,7 +9,9 @@ namespace KarateSystem.Subscription_Periods
 
         private int _periodId = -1;
         private int _OldPeriodId = -1;
-        private SubscriptionPeriod _subscriptionPeriod;
+        private SubscriptionPeriod _oldSubscriptionPeriod;
+        private SubscriptionPeriod _NewSubscriptionPeriod;
+        private Payment _newPayment = new Payment();
 
         public frmRenewSubscriptionPeriod()
         {
@@ -32,7 +34,6 @@ namespace KarateSystem.Subscription_Periods
                 MessageBox.Show("You can't renew this period because is still active..", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 uc_SubscriptionPeriodWithFilter1.FilterFocus();
                 btnRenew.Enabled = false;
-                btnSave.Enabled = false;
             }
             dtpStartDate.MinDate = uc_SubscriptionPeriodWithFilter1.SubscriptionPeriod.endDate;
             dtpStartDate.Value = uc_SubscriptionPeriodWithFilter1.SubscriptionPeriod.endDate;
@@ -52,14 +53,42 @@ namespace KarateSystem.Subscription_Periods
         {
             _ResetDefaultValue();
         }
+        private bool _AddPaymentForNewPeriod()
+        {
+
+            _newPayment.memberId = _oldSubscriptionPeriod.memberId;
+            _newPayment.amount = _oldSubscriptionPeriod.fees;
+            _newPayment.date = DateTime.Now;
+            return (_newPayment.Save());
+
+        }
         private void _FillPeriodObjectBeforeSave()
         {
-            _subscriptionPeriod.fees = Convert.ToDecimal(txtFees.Text);
-            _subscriptionPeriod.startDate = dtpStartDate.Value;
-            _subscriptionPeriod.endDate = dtpEndDate.Value;
-            // _subscriptionPeriod.memberId = labMemberId.Text;
+            if (_OldPeriodId == -1)
+            { _OldPeriodId = uc_SubscriptionPeriodWithFilter1.PeriodId; }
 
-
+            _oldSubscriptionPeriod = SubscriptionPeriod.Find(_OldPeriodId);
+            if (_oldSubscriptionPeriod == null)
+            {
+                MessageBox.Show($"There is not subscription period with this Id : {_OldPeriodId} ", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            _NewSubscriptionPeriod = new SubscriptionPeriod();
+            _NewSubscriptionPeriod.fees = Convert.ToDecimal(txtFees.Text);
+            _NewSubscriptionPeriod.startDate = dtpStartDate.Value;
+            _NewSubscriptionPeriod.endDate = dtpEndDate.Value;
+            _NewSubscriptionPeriod.memberId = Convert.ToInt16(labMemberId.Text);
+            _NewSubscriptionPeriod.issueReason = SubscriptionPeriod.IssueReason.Renew;
+            if (_AddPaymentForNewPeriod())
+            {
+                labPaymentId.Text = _newPayment.id.ToString();
+                _NewSubscriptionPeriod.paymentId = _newPayment.id;
+            }
+            else
+            {
+                MessageBox.Show("There is problem in creating new payment, You can not renew period.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
         private void btnRenew_Click(object sender, System.EventArgs e)
         {
@@ -69,10 +98,15 @@ namespace KarateSystem.Subscription_Periods
                 return;
             }
             _FillPeriodObjectBeforeSave();
-
-
-
-
+            if (_NewSubscriptionPeriod.Save())
+            {
+                LabPeriodId.Text = _NewSubscriptionPeriod.id.ToString();
+                MessageBox.Show("Data Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Data Failed Saved ", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void txtFees_Validating(object sender, System.ComponentModel.CancelEventArgs e)
@@ -82,6 +116,11 @@ namespace KarateSystem.Subscription_Periods
                 e.Cancel = true;
                 errorProvider1.SetError(txtFees, "This field is required...");
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

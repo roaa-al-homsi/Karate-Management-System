@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRenewSubscriptionPeriod));
             this.labTitleForm = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.uc_SubscriptionPeriodWithFilter1 = new KarateSystem.Subscription_Periods.uc.uc_SubscriptionPeriodWithFilter();
             this.btnRenew = new Guna.UI2.WinForms.Guna2Button();
@@ -71,30 +70,11 @@
             this.labTitleForm.BackColor = System.Drawing.Color.Transparent;
             this.labTitleForm.Font = new System.Drawing.Font("Andalus", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labTitleForm.ForeColor = System.Drawing.Color.Maroon;
-            this.labTitleForm.Location = new System.Drawing.Point(345, 12);
+            this.labTitleForm.Location = new System.Drawing.Point(300, 12);
             this.labTitleForm.Name = "labTitleForm";
             this.labTitleForm.Size = new System.Drawing.Size(368, 30);
             this.labTitleForm.TabIndex = 140;
             this.labTitleForm.Text = "Renew Subsricription Period";
-            // 
-            // btnSave
-            // 
-            this.btnSave.AutoRoundedCorners = true;
-            this.btnSave.BorderRadius = 21;
-            this.btnSave.CheckedState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.Black;
-            this.btnSave.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnSave.Location = new System.Drawing.Point(68, 743);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 45);
-            this.btnSave.TabIndex = 141;
-            this.btnSave.Text = "Save";
             // 
             // btnClose
             // 
@@ -109,11 +89,12 @@
             this.btnClose.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnClose.Location = new System.Drawing.Point(190, 743);
+            this.btnClose.Location = new System.Drawing.Point(480, 720);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 45);
+            this.btnClose.Size = new System.Drawing.Size(184, 45);
             this.btnClose.TabIndex = 142;
             this.btnClose.Text = "Close";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // uc_SubscriptionPeriodWithFilter1
             // 
@@ -138,9 +119,9 @@
             this.btnRenew.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRenew.ForeColor = System.Drawing.Color.White;
             this.btnRenew.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnRenew.Location = new System.Drawing.Point(300, 743);
+            this.btnRenew.Location = new System.Drawing.Point(271, 720);
             this.btnRenew.Name = "btnRenew";
-            this.btnRenew.Size = new System.Drawing.Size(100, 45);
+            this.btnRenew.Size = new System.Drawing.Size(189, 45);
             this.btnRenew.TabIndex = 144;
             this.btnRenew.Text = "Renew";
             this.btnRenew.Click += new System.EventHandler(this.btnRenew_Click);
@@ -170,11 +151,11 @@
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(12, 501);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(101, 501);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(717, 195);
             this.guna2GroupBox1.TabIndex = 145;
-            this.guna2GroupBox1.Text = "Subscription Period Info";
+            this.guna2GroupBox1.Text = " New Subscription Period Info";
             // 
             // labMemberId
             // 
@@ -426,11 +407,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 822);
+            this.ClientSize = new System.Drawing.Size(996, 783);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.btnRenew);
             this.Controls.Add(this.uc_SubscriptionPeriodWithFilter1);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.labTitleForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -452,7 +432,6 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2HtmlLabel labTitleForm;
-        private Guna.UI2.WinForms.Guna2Button btnSave;
         private Guna.UI2.WinForms.Guna2Button btnClose;
         private uc.uc_SubscriptionPeriodWithFilter uc_SubscriptionPeriodWithFilter1;
         private Guna.UI2.WinForms.Guna2Button btnRenew;

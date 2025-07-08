@@ -84,7 +84,7 @@
             this.cmsManagePeriods.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePeriods.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePeriods.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePeriods.Size = new System.Drawing.Size(312, 162);
+            this.cmsManagePeriods.Size = new System.Drawing.Size(312, 134);
             this.cmsManagePeriods.Opening += new System.ComponentModel.CancelEventHandler(this.cmsManagePeriods_Opening);
             // 
             // updateToolStripMenuItem
@@ -261,13 +261,14 @@
             this.btnRenewPeriod.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnRenewPeriod.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnRenewPeriod.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRenewPeriod.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRenewPeriod.ForeColor = System.Drawing.Color.White;
-            this.btnRenewPeriod.Location = new System.Drawing.Point(1119, 48);
+            this.btnRenewPeriod.FillColor = System.Drawing.Color.Silver;
+            this.btnRenewPeriod.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRenewPeriod.ForeColor = System.Drawing.Color.Black;
+            this.btnRenewPeriod.Location = new System.Drawing.Point(1119, 698);
             this.btnRenewPeriod.Name = "btnRenewPeriod";
-            this.btnRenewPeriod.Size = new System.Drawing.Size(180, 45);
+            this.btnRenewPeriod.Size = new System.Drawing.Size(150, 45);
             this.btnRenewPeriod.TabIndex = 30;
-            this.btnRenewPeriod.Text = "guna2Button1";
+            this.btnRenewPeriod.Text = "Renew Period";
             this.btnRenewPeriod.Click += new System.EventHandler(this.btnRenewPeriod_Click);
             // 
             // frmManageSubscriptionPeriods
