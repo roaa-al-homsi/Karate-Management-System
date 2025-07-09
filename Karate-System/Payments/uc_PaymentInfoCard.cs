@@ -1,4 +1,7 @@
 ﻿using KarateBusiness;
+using KarateSystem.BeltTests;
+using KarateSystem.Subscription_Periods;
+using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -32,7 +35,14 @@ namespace KarateSystem.Payments
             lnkTestInfo.Visible = _payment.PaymentReason == Payment.enPaymentReason.BeltTest;
             lnkPeriodInfo.Visible = _payment.PaymentReason == Payment.enPaymentReason.SubscriptionPeriod;
             labNameTestOrPeriod.Text = _payment.PaymentReason == Payment.enPaymentReason.BeltTest ? "Belt Test Id:" : "Period Id:";
-
+            if (_payment.PaymentReason == Payment.enPaymentReason.BeltTest)
+            {
+                labTestOrPeriodId.Text = _payment.GetTestIdByPaymentId().ToString();
+            }
+            else
+            {
+                labTestOrPeriodId.Text = _payment.GetPeriodIdByPaymentId().ToString();
+            }
 
             if (string.IsNullOrWhiteSpace(_payment.memberInfo.personInfo.imagePath))
             {
@@ -60,12 +70,14 @@ namespace KarateSystem.Payments
 
         private void lnkPeriodInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            frmShowSubscriptionPeriodInfo frmShowSubscriptionPeriodInfo = new frmShowSubscriptionPeriodInfo(Convert.ToInt32(labTestOrPeriodId.Text));
+            frmShowSubscriptionPeriodInfo.ShowDialog();
         }
 
         private void lnkTestInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            frmShowTestDetails frmShowTestDetails = new frmShowTestDetails(Convert.ToInt32(labTestOrPeriodId.Text));
+            frmShowTestDetails.ShowDialog();
         }
     }
 }

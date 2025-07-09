@@ -121,7 +121,7 @@ namespace KarateDataAccess
 
         static public int GetIdByName(string nameBelt)
         {
-            return GenericData.GetIdByName("select Id from BeltRanks where Name=@nameBelt", "@nameBelt", nameBelt);
+            return GenericData.GetIdBySpecificField("select Id from BeltRanks where Name=@nameBelt", "@nameBelt", nameBelt);
         }
 
         static public decimal GetTestFeesById(int beltId)

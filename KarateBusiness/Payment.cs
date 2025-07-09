@@ -49,7 +49,7 @@ namespace KarateBusiness
             this.date = date;
             this.memberId = memberId;
             this.PaymentReason = paymentReason;
-            this.memberInfo=Member.Find(memberId);
+            this.memberInfo = Member.Find(memberId);
             _mode = Mode.Update;
         }
         private bool _Add()
@@ -110,6 +110,16 @@ namespace KarateBusiness
             }
             return null;
         }
+
+        public int GetTestIdByPaymentId()
+        {
+            return PaymentData.GetTestIdByPaymentId(this.id);
+        }
+        public int GetPeriodIdByPaymentId()
+        {
+            return PaymentData.GetPeriodIdByPaymentId(this.id);
+        }
+
     }
 
 

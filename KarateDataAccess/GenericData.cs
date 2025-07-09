@@ -121,7 +121,7 @@ namespace KarateDataAccess
             }
             return name;
         }
-        static public int GetIdByName(string query, string ParameterName, string ParameterValue)
+        static public int GetIdBySpecificField<T>(string query, string ParameterName, T ParameterValue)
         {
             int Id = -1;
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))

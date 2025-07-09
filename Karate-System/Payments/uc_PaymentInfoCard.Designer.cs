@@ -37,7 +37,7 @@
             this.labGender = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labTestOrPeriod = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labTestOrPeriodId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.labNameTestOrPeriod = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPaymentReason = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -78,7 +78,7 @@
             this.guna2GroupBox1.Controls.Add(this.labGender);
             this.guna2GroupBox1.Controls.Add(this.guna2PictureBox11);
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel12);
-            this.guna2GroupBox1.Controls.Add(this.labTestOrPeriod);
+            this.guna2GroupBox1.Controls.Add(this.labTestOrPeriodId);
             this.guna2GroupBox1.Controls.Add(this.guna2PictureBox9);
             this.guna2GroupBox1.Controls.Add(this.labNameTestOrPeriod);
             this.guna2GroupBox1.Controls.Add(this.labPaymentReason);
@@ -200,18 +200,18 @@
             this.guna2HtmlLabel12.TabIndex = 66;
             this.guna2HtmlLabel12.Text = "Gender:";
             // 
-            // labTestOrPeriod
+            // labTestOrPeriodId
             // 
-            this.labTestOrPeriod.AutoSize = false;
-            this.labTestOrPeriod.BackColor = System.Drawing.Color.Transparent;
-            this.labTestOrPeriod.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTestOrPeriod.ForeColor = System.Drawing.Color.Maroon;
-            this.labTestOrPeriod.Location = new System.Drawing.Point(559, 192);
-            this.labTestOrPeriod.Name = "labTestOrPeriod";
-            this.labTestOrPeriod.Size = new System.Drawing.Size(113, 29);
-            this.labTestOrPeriod.TabIndex = 62;
-            this.labTestOrPeriod.Text = "[??]";
-            this.labTestOrPeriod.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labTestOrPeriodId.AutoSize = false;
+            this.labTestOrPeriodId.BackColor = System.Drawing.Color.Transparent;
+            this.labTestOrPeriodId.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labTestOrPeriodId.ForeColor = System.Drawing.Color.Maroon;
+            this.labTestOrPeriodId.Location = new System.Drawing.Point(559, 192);
+            this.labTestOrPeriodId.Name = "labTestOrPeriodId";
+            this.labTestOrPeriodId.Size = new System.Drawing.Size(113, 29);
+            this.labTestOrPeriodId.TabIndex = 62;
+            this.labTestOrPeriodId.Text = "[??]";
+            this.labTestOrPeriodId.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2PictureBox9
             // 
@@ -468,7 +468,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labGender;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox11;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labTestOrPeriod;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labTestOrPeriodId;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
         private Guna.UI2.WinForms.Guna2HtmlLabel labNameTestOrPeriod;
         private Guna.UI2.WinForms.Guna2HtmlLabel labPaymentReason;

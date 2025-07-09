@@ -84,7 +84,7 @@ namespace KarateDataAccess
                                 amount = (decimal)reader["amount"];
                                 date = (DateTime)reader["date"];
                                 memberId = (int)reader["memberId"];
-                                paymentReason = (byte)reader["paymentReason"];
+                                paymentReason = (byte)reader["PaymentReason"];
 
                             }
                             else
@@ -110,6 +110,14 @@ namespace KarateDataAccess
         static public bool Exist(int id)
         {
             return GenericData.Exist("select Found=1 from Payments where id= @id", "@id", id);
+        }
+        static public int GetTestIdByPaymentId(int paymentId)
+        {
+            return GenericData.GetIdBySpecificField("select Id from BeltTests where PaymentId=@paymentId", "@paymentId", paymentId);
+        }
+        static public int GetPeriodIdByPaymentId(int paymentId)
+        {
+            return GenericData.GetIdBySpecificField("select Id from SubscriptionPeriods where PaymentId=@paymentId", "@paymentId", paymentId);
         }
 
     }

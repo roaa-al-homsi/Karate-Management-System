@@ -107,7 +107,7 @@ namespace KarateDataAccess
         }
         static public int GetCountryIdByName(string name)
         {
-            return GenericData.GetIdByName("select Id from Countries where name=@name", "@name", name);
+            return GenericData.GetIdBySpecificField("select Id from Countries where name=@name", "@name", name);
         }
 
     }
