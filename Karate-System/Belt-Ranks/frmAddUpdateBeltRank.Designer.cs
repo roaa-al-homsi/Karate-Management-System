@@ -53,7 +53,7 @@
             this.guna2PictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
             this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(34, 128);
+            this.guna2PictureBox8.Location = new System.Drawing.Point(60, 159);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
             this.guna2PictureBox8.Size = new System.Drawing.Size(32, 29);
             this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -66,7 +66,7 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(72, 129);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(98, 160);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(96, 28);
             this.guna2HtmlLabel1.TabIndex = 44;
@@ -77,7 +77,7 @@
             this.lab.AutoSize = false;
             this.lab.BackColor = System.Drawing.Color.Transparent;
             this.lab.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab.Location = new System.Drawing.Point(58, 83);
+            this.lab.Location = new System.Drawing.Point(84, 114);
             this.lab.Name = "lab";
             this.lab.Size = new System.Drawing.Size(110, 29);
             this.lab.TabIndex = 51;
@@ -89,7 +89,7 @@
             this.LabBeltId.BackColor = System.Drawing.Color.Transparent;
             this.LabBeltId.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabBeltId.ForeColor = System.Drawing.Color.Maroon;
-            this.LabBeltId.Location = new System.Drawing.Point(200, 83);
+            this.LabBeltId.Location = new System.Drawing.Point(226, 114);
             this.LabBeltId.Name = "LabBeltId";
             this.LabBeltId.Size = new System.Drawing.Size(110, 29);
             this.LabBeltId.TabIndex = 50;
@@ -111,7 +111,7 @@
             this.txtNameBelt.Font = new System.Drawing.Font("Andalus", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNameBelt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txtNameBelt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNameBelt.Location = new System.Drawing.Point(200, 129);
+            this.txtNameBelt.Location = new System.Drawing.Point(226, 160);
             this.txtNameBelt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNameBelt.Name = "txtNameBelt";
             this.txtNameBelt.PlaceholderForeColor = System.Drawing.Color.Transparent;
@@ -124,7 +124,7 @@
             // linkLabPic
             // 
             this.linkLabPic.AutoSize = true;
-            this.linkLabPic.Location = new System.Drawing.Point(84, 96);
+            this.linkLabPic.Location = new System.Drawing.Point(110, 127);
             this.linkLabPic.Name = "linkLabPic";
             this.linkLabPic.Size = new System.Drawing.Size(0, 16);
             this.linkLabPic.TabIndex = 49;
@@ -133,7 +133,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(34, 184);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(60, 215);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(32, 29);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -156,7 +156,7 @@
             this.txtTestFees.Font = new System.Drawing.Font("Andalus", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTestFees.ForeColor = System.Drawing.Color.Black;
             this.txtTestFees.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTestFees.Location = new System.Drawing.Point(200, 185);
+            this.txtTestFees.Location = new System.Drawing.Point(226, 216);
             this.txtTestFees.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTestFees.Name = "txtTestFees";
             this.txtTestFees.PlaceholderForeColor = System.Drawing.Color.Transparent;
@@ -173,7 +173,7 @@
             this.guna2HtmlLabel6.AutoSize = false;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(72, 182);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(98, 213);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(110, 29);
             this.guna2HtmlLabel6.TabIndex = 47;
@@ -185,7 +185,7 @@
             this.labTitleForm.BackColor = System.Drawing.Color.Transparent;
             this.labTitleForm.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labTitleForm.ForeColor = System.Drawing.Color.Maroon;
-            this.labTitleForm.Location = new System.Drawing.Point(110, 12);
+            this.labTitleForm.Location = new System.Drawing.Point(136, 43);
             this.labTitleForm.Name = "labTitleForm";
             this.labTitleForm.Size = new System.Drawing.Size(277, 29);
             this.labTitleForm.TabIndex = 53;
@@ -204,7 +204,7 @@
             this.btnSave.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnSave.Location = new System.Drawing.Point(110, 252);
+            this.btnSave.Location = new System.Drawing.Point(136, 283);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 45);
             this.btnSave.TabIndex = 135;
@@ -224,7 +224,7 @@
             this.btnCancel.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnCancel.Location = new System.Drawing.Point(228, 252);
+            this.btnCancel.Location = new System.Drawing.Point(254, 283);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 45);
             this.btnCancel.TabIndex = 136;
@@ -239,7 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 322);
+            this.ClientSize = new System.Drawing.Size(489, 374);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.labTitleForm);
@@ -255,7 +255,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAddUpdateBeltRank";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAddUpdateBeltRank";
+            this.Text = "Add Update BeltRank";
             this.Load += new System.EventHandler(this.frmAddUpdateBeltRank_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

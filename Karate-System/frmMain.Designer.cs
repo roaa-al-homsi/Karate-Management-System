@@ -65,8 +65,8 @@
             this.btnAllBooks.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAllBooks.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAllBooks.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAllBooks.FillColor = System.Drawing.Color.Black;
-            this.btnAllBooks.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAllBooks.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnAllBooks.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllBooks.ForeColor = System.Drawing.Color.White;
             this.btnAllBooks.Image = ((System.Drawing.Image)(resources.GetObject("btnAllBooks.Image")));
             this.btnAllBooks.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -94,6 +94,7 @@
             this.pnlOptions.Controls.Add(this.btnAllBooks);
             this.pnlOptions.Controls.Add(this.guna2Panel1);
             this.pnlOptions.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlOptions.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
             this.pnlOptions.Location = new System.Drawing.Point(0, 72);
             this.pnlOptions.Name = "pnlOptions";
             this.pnlOptions.Size = new System.Drawing.Size(291, 833);
@@ -107,8 +108,8 @@
             this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLogout.FillColor = System.Drawing.Color.Black;
-            this.btnLogout.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnLogout.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -128,8 +129,8 @@
             this.btnPayments.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnPayments.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnPayments.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPayments.FillColor = System.Drawing.Color.Black;
-            this.btnPayments.Font = new System.Drawing.Font("Andalus", 12F);
+            this.btnPayments.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnPayments.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayments.ForeColor = System.Drawing.Color.White;
             this.btnPayments.Image = ((System.Drawing.Image)(resources.GetObject("btnPayments.Image")));
             this.btnPayments.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -150,8 +151,8 @@
             this.btnBeltTests.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBeltTests.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBeltTests.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBeltTests.FillColor = System.Drawing.Color.Black;
-            this.btnBeltTests.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBeltTests.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnBeltTests.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBeltTests.ForeColor = System.Drawing.Color.White;
             this.btnBeltTests.Image = ((System.Drawing.Image)(resources.GetObject("btnBeltTests.Image")));
             this.btnBeltTests.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -172,8 +173,8 @@
             this.btnSubscriptionPeriods.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSubscriptionPeriods.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSubscriptionPeriods.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubscriptionPeriods.FillColor = System.Drawing.Color.Black;
-            this.btnSubscriptionPeriods.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubscriptionPeriods.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnSubscriptionPeriods.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubscriptionPeriods.ForeColor = System.Drawing.Color.White;
             this.btnSubscriptionPeriods.Image = ((System.Drawing.Image)(resources.GetObject("btnSubscriptionPeriods.Image")));
             this.btnSubscriptionPeriods.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -194,8 +195,8 @@
             this.btnBeltRanks.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBeltRanks.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBeltRanks.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBeltRanks.FillColor = System.Drawing.Color.Black;
-            this.btnBeltRanks.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBeltRanks.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnBeltRanks.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBeltRanks.ForeColor = System.Drawing.Color.White;
             this.btnBeltRanks.Image = ((System.Drawing.Image)(resources.GetObject("btnBeltRanks.Image")));
             this.btnBeltRanks.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -216,8 +217,8 @@
             this.btnMembersInstructors.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMembersInstructors.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMembersInstructors.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMembersInstructors.FillColor = System.Drawing.Color.Black;
-            this.btnMembersInstructors.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMembersInstructors.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnMembersInstructors.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembersInstructors.ForeColor = System.Drawing.Color.White;
             this.btnMembersInstructors.Image = ((System.Drawing.Image)(resources.GetObject("btnMembersInstructors.Image")));
             this.btnMembersInstructors.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -238,8 +239,8 @@
             this.btnManageUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnManageUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnManageUsers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnManageUsers.FillColor = System.Drawing.Color.Black;
-            this.btnManageUsers.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageUsers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnManageUsers.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageUsers.ForeColor = System.Drawing.Color.White;
             this.btnManageUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnManageUsers.Image")));
             this.btnManageUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -260,8 +261,8 @@
             this.btnInstructors.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnInstructors.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnInstructors.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInstructors.FillColor = System.Drawing.Color.Black;
-            this.btnInstructors.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInstructors.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnInstructors.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInstructors.ForeColor = System.Drawing.Color.White;
             this.btnInstructors.Image = ((System.Drawing.Image)(resources.GetObject("btnInstructors.Image")));
             this.btnInstructors.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -282,8 +283,8 @@
             this.btnMembers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMembers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMembers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMembers.FillColor = System.Drawing.Color.Black;
-            this.btnMembers.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMembers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnMembers.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembers.ForeColor = System.Drawing.Color.White;
             this.btnMembers.Image = ((System.Drawing.Image)(resources.GetObject("btnMembers.Image")));
             this.btnMembers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -304,8 +305,8 @@
             this.btnManagePeople.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnManagePeople.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnManagePeople.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnManagePeople.FillColor = System.Drawing.Color.Black;
-            this.btnManagePeople.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManagePeople.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnManagePeople.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManagePeople.ForeColor = System.Drawing.Color.White;
             this.btnManagePeople.Image = ((System.Drawing.Image)(resources.GetObject("btnManagePeople.Image")));
             this.btnManagePeople.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -324,6 +325,7 @@
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(291, 157);
@@ -331,7 +333,7 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(56, 12);
@@ -344,7 +346,7 @@
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.AutoSize = false;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(56, 113);
@@ -356,7 +358,7 @@
             // panelMainMenu
             // 
             this.panelMainMenu.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.panelMainMenu.FillColor = System.Drawing.Color.Black;
+            this.panelMainMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
             this.panelMainMenu.Location = new System.Drawing.Point(289, 72);
             this.panelMainMenu.Name = "panelMainMenu";
             this.panelMainMenu.Size = new System.Drawing.Size(1509, 833);
@@ -364,7 +366,7 @@
             // 
             // picCurrentUser
             // 
-            this.picCurrentUser.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.picCurrentUser.BackColor = System.Drawing.Color.Transparent;
             this.picCurrentUser.Image = ((System.Drawing.Image)(resources.GetObject("picCurrentUser.Image")));
             this.picCurrentUser.ImageRotate = 0F;
             this.picCurrentUser.Location = new System.Drawing.Point(1715, 3);
@@ -383,6 +385,7 @@
             this.guna2Panel2.Controls.Add(this.labUserName);
             this.guna2Panel2.Controls.Add(this.labCurrentUser);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1798, 72);
@@ -395,8 +398,8 @@
             this.btnTitle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTitle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTitle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTitle.FillColor = System.Drawing.Color.Transparent;
-            this.btnTitle.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTitle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnTitle.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTitle.ForeColor = System.Drawing.Color.MintCream;
             this.btnTitle.Image = ((System.Drawing.Image)(resources.GetObject("btnTitle.Image")));
             this.btnTitle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -423,8 +426,8 @@
             // labCurrentUser
             // 
             this.labCurrentUser.AutoSize = false;
-            this.labCurrentUser.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.labCurrentUser.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labCurrentUser.BackColor = System.Drawing.Color.Transparent;
+            this.labCurrentUser.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCurrentUser.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labCurrentUser.Location = new System.Drawing.Point(1604, 27);
             this.labCurrentUser.Name = "labCurrentUser";
