@@ -38,7 +38,7 @@ namespace KarateSystem.Subscription_Periods.uc
             labIsActive.Text = _subscriptionPeriod.isActivePeriod ? "Yes" : "No";
             dtpStartDate.Value = _subscriptionPeriod.startDate;
             dtpEndDate.Value = _subscriptionPeriod.endDate;
-            labPaymentReason.text =
+            //   labPaymentReason.text =
 
 
             if (string.IsNullOrWhiteSpace(_subscriptionPeriod.memberInfo.personInfo.imagePath))

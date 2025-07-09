@@ -94,6 +94,7 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalClasses\LoginUser.cs" />
     <Compile Include="GlobalClasses\Util.cs" />
     <Compile Include="GlobalClasses\Validation.cs" />
     <Compile Include="Instructors\frmAddUpdateInstructor.cs">
@@ -131,6 +132,12 @@
     </Compile>
     <Compile Include="Instructors\uc\uc_InstructorInfoWithFilter.Designer.cs">
       <DependentUpon>uc_InstructorInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Members\frmAddUpdateMember.cs">
       <SubType>Form</SubType>
@@ -197,6 +204,12 @@
     </Compile>
     <Compile Include="Payments\frmManagePayments.Designer.cs">
       <DependentUpon>frmManagePayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\frmShowPaymentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\frmShowPaymentDetails.Designer.cs">
+      <DependentUpon>frmShowPaymentDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Payments\uc_PaymentInfoCard.cs">
       <SubType>UserControl</SubType>
@@ -361,6 +374,9 @@
     <EmbeddedResource Include="Instructors\uc\uc_InstructorInfoWithFilter.resx">
       <DependentUpon>uc_InstructorInfoWithFilter.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Members\frmAddUpdateMember.resx">
       <DependentUpon>frmAddUpdateMember.cs</DependentUpon>
     </EmbeddedResource>
@@ -393,6 +409,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Payments\frmManagePayments.resx">
       <DependentUpon>frmManagePayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\frmShowPaymentDetails.resx">
+      <DependentUpon>frmShowPaymentDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payments\uc_PaymentInfoCard.resx">
       <DependentUpon>uc_PaymentInfoCard.cs</DependentUpon>

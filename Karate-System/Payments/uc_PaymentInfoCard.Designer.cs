@@ -241,11 +241,11 @@
             // 
             this.labPaymentReason.AutoSize = false;
             this.labPaymentReason.BackColor = System.Drawing.Color.Transparent;
-            this.labPaymentReason.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPaymentReason.Font = new System.Drawing.Font("Andalus", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labPaymentReason.ForeColor = System.Drawing.Color.Maroon;
             this.labPaymentReason.Location = new System.Drawing.Point(549, 146);
             this.labPaymentReason.Name = "labPaymentReason";
-            this.labPaymentReason.Size = new System.Drawing.Size(138, 29);
+            this.labPaymentReason.Size = new System.Drawing.Size(203, 29);
             this.labPaymentReason.TabIndex = 59;
             this.labPaymentReason.Text = "[??]";
             this.labPaymentReason.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;

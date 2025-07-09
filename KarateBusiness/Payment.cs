@@ -49,7 +49,7 @@ namespace KarateBusiness
             this.date = date;
             this.memberId = memberId;
             this.PaymentReason = paymentReason;
-
+            this.memberInfo=Member.Find(memberId);
             _mode = Mode.Update;
         }
         private bool _Add()

@@ -2,6 +2,7 @@
 using KarateSystem.Belt_Ranks;
 using KarateSystem.BeltTests;
 using KarateSystem.Instructors;
+using KarateSystem.Login;
 using KarateSystem.Members;
 using KarateSystem.Members_Instructors;
 using KarateSystem.Payments;
@@ -18,6 +19,11 @@ namespace KarateSystem
         public frmMain()
         {
             InitializeComponent();
+        }
+        public frmMain(frmLogin frmLogin)
+        {
+            InitializeComponent();
+
         }
         private Guna2Button _currentButton;
         private Form _activeForm;

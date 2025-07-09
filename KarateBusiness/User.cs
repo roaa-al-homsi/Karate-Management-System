@@ -102,6 +102,21 @@ namespace KarateBusiness
         {
             return UserData.ChangePassword(this.id, this.password);
         }
+        public static User FindByUsernameAndPassword(string username, string password)
+        {
+            int id = -1;
+            int personId = -1;
+            bool isActive = false;
+
+            if (UserData.GetByUsernameAndPassword(username, password, ref id, ref personId, ref isActive))
+            {
+                return new User(id, personId, username, password, isActive);
+            }
+            return null;
+        }
+
+
+
     }
 
 

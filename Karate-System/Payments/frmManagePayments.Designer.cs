@@ -40,6 +40,7 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.showPaymentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllPayments)).BeginInit();
             this.cmsManagePayments.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -64,7 +65,8 @@
             this.cmsManagePayments.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsManagePayments.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateToolStripMenuItem,
-            this.deleteToolStripMenuItem});
+            this.deleteToolStripMenuItem,
+            this.showPaymentDetailsToolStripMenuItem});
             this.cmsManagePayments.Name = "cmsManagePeople";
             this.cmsManagePayments.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.cmsManagePayments.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -75,20 +77,20 @@
             this.cmsManagePayments.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePayments.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePayments.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePayments.Size = new System.Drawing.Size(132, 56);
+            this.cmsManagePayments.Size = new System.Drawing.Size(229, 110);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
             this.updateToolStripMenuItem.Text = "Update";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // guna2PictureBox1
@@ -191,6 +193,13 @@
             this.guna2HtmlLabel1.TabIndex = 30;
             this.guna2HtmlLabel1.Text = "Manage Payments";
             // 
+            // showPaymentDetailsToolStripMenuItem
+            // 
+            this.showPaymentDetailsToolStripMenuItem.Name = "showPaymentDetailsToolStripMenuItem";
+            this.showPaymentDetailsToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.showPaymentDetailsToolStripMenuItem.Text = "Show Payment Details";
+            this.showPaymentDetailsToolStripMenuItem.Click += new System.EventHandler(this.showPaymentDetailsToolStripMenuItem_Click);
+            // 
             // frmManagePayments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -229,5 +238,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private System.Windows.Forms.ToolStripMenuItem showPaymentDetailsToolStripMenuItem;
     }
 }

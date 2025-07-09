@@ -102,5 +102,11 @@ namespace KarateSystem.Payments
                     break;
             }
         }
+
+        private void showPaymentDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowPaymentDetails frmShowPaymentDetails = new frmShowPaymentDetails((int)dgvAllPayments.CurrentRow.Cells[0].Value);
+            frmShowPaymentDetails.ShowDialog();
+        }
     }
 }

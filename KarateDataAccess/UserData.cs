@@ -66,7 +66,6 @@ namespace KarateDataAccess
         {
             bool IsFound = false;
             string query = "select * from Users  WHERE id=@id;";
-
             try
             {
                 using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
@@ -87,8 +86,6 @@ namespace KarateDataAccess
                                 username = (string)reader["username"];
                                 password = (string)reader["password"];
                                 isActive = (bool)reader["isActive"];
-
-
                             }
                             else
                             {
@@ -142,6 +139,43 @@ namespace KarateDataAccess
             }
 
             return rowsAffected > 0;
+        }
+
+        public static bool GetByUsernameAndPassword(string username, string password, ref int id, ref int personId, ref bool isActive)
+        {
+            bool IsFound = false;
+            string query = "select * from Users  WHERE Username=@username and Password=@password;";
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@username", username);
+                        command.Parameters.AddWithValue("@password", password);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                IsFound = true;
+                                id = (int)reader["id"];
+                                personId = (int)reader["personId"];
+                                username = (string)reader["username"];
+                                password = (string)reader["password"];
+                                isActive = (bool)reader["isActive"];
+                            }
+                            else
+                            {
+                                IsFound = false;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex) { GenericData.LogException(ex.Message, EventLogEntryType.Error); }
+            return IsFound;
         }
     }
 
