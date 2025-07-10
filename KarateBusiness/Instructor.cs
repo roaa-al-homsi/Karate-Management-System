@@ -89,6 +89,10 @@ namespace KarateBusiness
             }
             return null;
         }
+        public static int GetInstructorsCount()
+        {
+            return InstructorData.GetInstructorsCount();
+        }
     }
 
 

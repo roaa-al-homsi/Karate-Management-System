@@ -119,7 +119,10 @@ namespace KarateBusiness
         {
             return PaymentData.GetPeriodIdByPaymentId(this.id);
         }
-
+        public static int GetPaymentCount()
+        {
+            return PaymentData.GetPaymentCount();
+        }
     }
 
 

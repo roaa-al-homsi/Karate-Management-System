@@ -106,7 +106,10 @@ namespace KarateBusiness
         {
             return MemberData.GetAllTestsForSpecificMember(this.id);
         }
-
+        public static int GetMembersCount()
+        {
+            return MemberData.GetMembersCount();
+        }
     }
 
 

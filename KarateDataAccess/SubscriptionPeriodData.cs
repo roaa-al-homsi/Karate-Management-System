@@ -117,7 +117,11 @@ namespace KarateDataAccess
         {
             return GenericData.Exist("select Found=1 from SubscriptionPeriods where id= @id", "@id", id);
         }
+        static public int GetSubscriptionPeriodsCount()
+        {
+            return GenericData.GetFieldsCount("GetSubscriptionPeriodsCount");
 
+        }
 
     }
 

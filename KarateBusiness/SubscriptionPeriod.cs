@@ -122,6 +122,10 @@ namespace KarateBusiness
             }
             return null;
         }
+        public static int GetSubscriptionPeriodsCount()
+        {
+            return SubscriptionPeriodData.GetSubscriptionPeriodsCount();
+        }
     }
 
 

@@ -121,6 +121,12 @@ namespace KarateDataAccess
             return GenericData.Exist("select Found=1 from BeltTests where id= @id", "@id", id);
         }
 
+        public static int GetBeltTestsCount()
+        {
+            return GenericData.GetFieldsCount("GetBeltTestsCount");
+        }
+
+
     }
 
 

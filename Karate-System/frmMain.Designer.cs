@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.btnAllBooks = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.pnlOptions = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnPayments = new Guna.UI2.WinForms.Guna2Button();
@@ -57,26 +57,27 @@
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnAllBooks
+            // btnDashboard
             // 
-            this.btnAllBooks.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnAllBooks.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAllBooks.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAllBooks.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAllBooks.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAllBooks.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAllBooks.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
-            this.btnAllBooks.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAllBooks.ForeColor = System.Drawing.Color.White;
-            this.btnAllBooks.Image = ((System.Drawing.Image)(resources.GetObject("btnAllBooks.Image")));
-            this.btnAllBooks.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAllBooks.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAllBooks.Location = new System.Drawing.Point(0, 157);
-            this.btnAllBooks.Name = "btnAllBooks";
-            this.btnAllBooks.Size = new System.Drawing.Size(291, 59);
-            this.btnAllBooks.TabIndex = 2;
-            this.btnAllBooks.Tag = "Dashboard";
-            this.btnAllBooks.Text = "Dashboard";
+            this.btnDashboard.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnDashboard.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDashboard.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 157);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(291, 59);
+            this.btnDashboard.TabIndex = 2;
+            this.btnDashboard.Tag = "Dashboard";
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.Click += new System.EventHandler(this.btnAllBooks_Click);
             // 
             // pnlOptions
             // 
@@ -91,7 +92,7 @@
             this.pnlOptions.Controls.Add(this.btnInstructors);
             this.pnlOptions.Controls.Add(this.btnMembers);
             this.pnlOptions.Controls.Add(this.btnManagePeople);
-            this.pnlOptions.Controls.Add(this.btnAllBooks);
+            this.pnlOptions.Controls.Add(this.btnDashboard);
             this.pnlOptions.Controls.Add(this.guna2Panel1);
             this.pnlOptions.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlOptions.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
@@ -459,7 +460,7 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button btnAllBooks;
+        private Guna.UI2.WinForms.Guna2Button btnDashboard;
         private Guna.UI2.WinForms.Guna2Panel pnlOptions;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;

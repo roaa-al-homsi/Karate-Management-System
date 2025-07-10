@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KarateSystem.Login;
+using System;
 using System.Windows.Forms;
 
 namespace KarateSystem
@@ -17,7 +18,7 @@ namespace KarateSystem
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new frmLogin());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();

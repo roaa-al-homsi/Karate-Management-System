@@ -113,6 +113,10 @@ namespace KarateDataAccess
         {
             return GenericData.Exist("select Found=1 from Instructors where PersonId= @personId", "@personId", personId);
         }
+        static public int GetInstructorsCount()
+        {
+            return GenericData.GetFieldsCount("GetInstructorsCount");
+        }
     }
 
 

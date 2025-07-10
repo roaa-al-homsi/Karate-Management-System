@@ -119,7 +119,10 @@ namespace KarateDataAccess
         {
             return GenericData.GetIdBySpecificField("select Id from SubscriptionPeriods where PaymentId=@paymentId", "@paymentId", paymentId);
         }
-
+        static public int GetPaymentCount()
+        {
+            return GenericData.GetFieldsCount("GetPaymentsCount");
+        }
     }
 
 }

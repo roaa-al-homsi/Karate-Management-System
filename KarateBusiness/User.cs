@@ -114,7 +114,10 @@ namespace KarateBusiness
             }
             return null;
         }
-
+        public static int GetUsersCount()
+        {
+            return UserData.GetUsersCount();
+        }
 
 
     }

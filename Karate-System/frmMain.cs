@@ -151,5 +151,11 @@ namespace KarateSystem
             btnTitle.Image = btnPayments.Image;
             OpenChildFormAsync(new frmManagePayments(this), sender);
         }
+
+        private void btnAllBooks_Click(object sender, System.EventArgs e)
+        {
+            btnTitle.Image = btnDashboard.Image;
+            OpenChildFormAsync(new frmDashboard(this), sender);
+        }
     }
 }

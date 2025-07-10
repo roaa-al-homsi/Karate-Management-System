@@ -168,7 +168,27 @@ namespace KarateDataAccess
             catch (Exception ex) { LogException(ex.Message, EventLogEntryType.Error); }
             return dt;
         }
+        public static int GetFieldsCount(string nameProcedure)
+        {
+            int count = 0;
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(nameProcedure, connection))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
 
+                    connection.Open();
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != null && int.TryParse(result.ToString(), out int parsedCount))
+                    {
+                        count = parsedCount;
+                    }
+                }
+            }
+
+            return count;
+        }
     }
 
 }

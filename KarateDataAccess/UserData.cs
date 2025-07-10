@@ -140,7 +140,6 @@ namespace KarateDataAccess
 
             return rowsAffected > 0;
         }
-
         public static bool GetByUsernameAndPassword(string username, string password, ref int id, ref int personId, ref bool isActive)
         {
             bool IsFound = false;
@@ -177,6 +176,12 @@ namespace KarateDataAccess
             catch (Exception ex) { GenericData.LogException(ex.Message, EventLogEntryType.Error); }
             return IsFound;
         }
+        public static int GetUsersCount()
+        {
+            return GenericData.GetFieldsCount("GetUsersCount");
+        }
+
+
     }
 
 }

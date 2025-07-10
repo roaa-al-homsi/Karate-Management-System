@@ -117,6 +117,12 @@ namespace KarateBusiness
             }
             return null;
         }
+
+        public static int GetBeltTestCount()
+        {
+            return BeltTestData.GetBeltTestsCount();
+        }
+
     }
 
 }
