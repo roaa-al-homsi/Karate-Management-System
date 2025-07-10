@@ -157,5 +157,12 @@ namespace KarateSystem
             btnTitle.Image = btnDashboard.Image;
             OpenChildFormAsync(new frmDashboard(this), sender);
         }
+
+        private void btnLogout_Click(object sender, System.EventArgs e)
+        {
+            this.Hide();
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.ShowDialog();
+        }
     }
 }

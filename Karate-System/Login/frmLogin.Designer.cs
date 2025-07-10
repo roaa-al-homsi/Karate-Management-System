@@ -195,6 +195,7 @@
             this.btnClose.TabIndex = 79;
             this.btnClose.Text = "Close";
             this.btnClose.UseTransparentBackground = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // chkRememberMe
             // 
