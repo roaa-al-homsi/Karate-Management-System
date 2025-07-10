@@ -79,7 +79,7 @@
             this.guna2CustomGradientPanel4.FillColor4 = System.Drawing.Color.LightSkyBlue;
             this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(12, 395);
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
-            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(483, 297);
+            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(453, 297);
             this.guna2CustomGradientPanel4.TabIndex = 4;
             // 
             // guna2PictureBox4
@@ -88,9 +88,9 @@
             this.guna2PictureBox4.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(25, 3);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(46, 9);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(440, 187);
+            this.guna2PictureBox4.Size = new System.Drawing.Size(336, 159);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox4.TabIndex = 3;
             this.guna2PictureBox4.TabStop = false;
@@ -101,7 +101,7 @@
             this.labInstructors.AutoSize = false;
             this.labInstructors.BackColor = System.Drawing.Color.Transparent;
             this.labInstructors.Font = new System.Drawing.Font("Algerian", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labInstructors.Location = new System.Drawing.Point(197, 234);
+            this.labInstructors.Location = new System.Drawing.Point(158, 240);
             this.labInstructors.Name = "labInstructors";
             this.labInstructors.Size = new System.Drawing.Size(105, 37);
             this.labInstructors.TabIndex = 2;
@@ -113,7 +113,7 @@
             this.guna2HtmlLabel7.AutoSize = false;
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Showcard Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(133, 178);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(95, 184);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(253, 50);
             this.guna2HtmlLabel7.TabIndex = 1;
@@ -131,7 +131,7 @@
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.LightSkyBlue;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(12, 76);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(483, 297);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(453, 297);
             this.guna2CustomGradientPanel1.TabIndex = 5;
             // 
             // guna2PictureBox1
@@ -140,9 +140,9 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(25, 3);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(46, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(440, 187);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(345, 187);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
@@ -153,7 +153,7 @@
             this.labMembers.AutoSize = false;
             this.labMembers.BackColor = System.Drawing.Color.Transparent;
             this.labMembers.Font = new System.Drawing.Font("Algerian", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labMembers.Location = new System.Drawing.Point(197, 234);
+            this.labMembers.Location = new System.Drawing.Point(158, 234);
             this.labMembers.Name = "labMembers";
             this.labMembers.Size = new System.Drawing.Size(105, 37);
             this.labMembers.TabIndex = 2;
@@ -165,7 +165,7 @@
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Showcard Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(166, 178);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(129, 178);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(203, 50);
             this.guna2HtmlLabel2.TabIndex = 1;
@@ -181,9 +181,9 @@
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel4);
             this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.LightSkyBlue;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(515, 15);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(504, 82);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(483, 297);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(450, 297);
             this.guna2CustomGradientPanel2.TabIndex = 6;
             // 
             // guna2PictureBox2
@@ -192,9 +192,9 @@
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(25, 3);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(37, 14);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(440, 187);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(378, 163);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 3;
             this.guna2PictureBox2.TabStop = false;
@@ -205,7 +205,7 @@
             this.labUsers.AutoSize = false;
             this.labUsers.BackColor = System.Drawing.Color.Transparent;
             this.labUsers.Font = new System.Drawing.Font("Algerian", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labUsers.Location = new System.Drawing.Point(197, 234);
+            this.labUsers.Location = new System.Drawing.Point(164, 237);
             this.labUsers.Name = "labUsers";
             this.labUsers.Size = new System.Drawing.Size(105, 37);
             this.labUsers.TabIndex = 2;
@@ -217,9 +217,9 @@
             this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Showcard Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(166, 178);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(164, 183);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(203, 50);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(121, 50);
             this.guna2HtmlLabel4.TabIndex = 1;
             this.guna2HtmlLabel4.Text = "Users";
             // 
@@ -233,9 +233,9 @@
             this.guna2CustomGradientPanel3.Controls.Add(this.guna2HtmlLabel8);
             this.guna2CustomGradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
             this.guna2CustomGradientPanel3.FillColor4 = System.Drawing.Color.LightSkyBlue;
-            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(515, 334);
+            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(504, 401);
             this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
-            this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(483, 297);
+            this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(450, 297);
             this.guna2CustomGradientPanel3.TabIndex = 7;
             // 
             // guna2PictureBox3
@@ -244,9 +244,9 @@
             this.guna2PictureBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(25, 3);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(55, 5);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(440, 187);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(341, 169);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox3.TabIndex = 3;
             this.guna2PictureBox3.TabStop = false;
@@ -257,7 +257,7 @@
             this.labPayments.AutoSize = false;
             this.labPayments.BackColor = System.Drawing.Color.Transparent;
             this.labPayments.Font = new System.Drawing.Font("Algerian", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labPayments.Location = new System.Drawing.Point(197, 234);
+            this.labPayments.Location = new System.Drawing.Point(192, 234);
             this.labPayments.Name = "labPayments";
             this.labPayments.Size = new System.Drawing.Size(105, 37);
             this.labPayments.TabIndex = 2;
@@ -269,7 +269,7 @@
             this.guna2HtmlLabel8.AutoSize = false;
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Showcard Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(150, 178);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(141, 178);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(203, 50);
             this.guna2HtmlLabel8.TabIndex = 1;
@@ -349,7 +349,7 @@
             this.guna2PictureBox6.ImageRotate = 0F;
             this.guna2PictureBox6.Location = new System.Drawing.Point(52, 3);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(320, 187);
+            this.guna2PictureBox6.Size = new System.Drawing.Size(301, 174);
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox6.TabIndex = 3;
             this.guna2PictureBox6.TabStop = false;
@@ -391,7 +391,7 @@
             this.Controls.Add(this.guna2CustomGradientPanel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDashboard";
-            this.Text = "frmDashboard";
+            this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.frmDashboard_Load);
             this.guna2CustomGradientPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();

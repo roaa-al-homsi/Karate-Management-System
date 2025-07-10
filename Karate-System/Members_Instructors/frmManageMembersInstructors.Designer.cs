@@ -43,6 +43,7 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllMembersInstructors)).BeginInit();
             this.cmsManageInstructors.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -80,13 +81,13 @@
             this.cmsManageInstructors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageInstructors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageInstructors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageInstructors.Size = new System.Drawing.Size(215, 136);
+            this.cmsManageInstructors.Size = new System.Drawing.Size(169, 108);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.updateToolStripMenuItem.Text = "Edit";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
@@ -94,7 +95,7 @@
             // 
             this.showDetailsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showDetailsToolStripMenuItem.Image")));
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.showDetailsToolStripMenuItem.Text = "Show Details";
             this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
             // 
@@ -102,7 +103,7 @@
             // 
             this.addNewInstructorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewInstructorToolStripMenuItem.Image")));
             this.addNewInstructorToolStripMenuItem.Name = "addNewInstructorToolStripMenuItem";
-            this.addNewInstructorToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.addNewInstructorToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.addNewInstructorToolStripMenuItem.Text = "Add New ";
             this.addNewInstructorToolStripMenuItem.Click += new System.EventHandler(this.addNewInstructorToolStripMenuItem_Click);
             // 
@@ -110,7 +111,7 @@
             // 
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -118,7 +119,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(632, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(588, 21);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -153,14 +154,15 @@
             // btnAddMemberInstructor
             // 
             this.btnAddMemberInstructor.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAddMemberInstructor.HoverState.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
             this.btnAddMemberInstructor.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAddMemberInstructor.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMemberInstructor.Image")));
             this.btnAddMemberInstructor.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnAddMemberInstructor.ImageRotate = 0F;
-            this.btnAddMemberInstructor.Location = new System.Drawing.Point(1176, 331);
+            this.btnAddMemberInstructor.Location = new System.Drawing.Point(1177, 325);
             this.btnAddMemberInstructor.Name = "btnAddMemberInstructor";
             this.btnAddMemberInstructor.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddMemberInstructor.Size = new System.Drawing.Size(71, 65);
+            this.btnAddMemberInstructor.Size = new System.Drawing.Size(70, 71);
             this.btnAddMemberInstructor.TabIndex = 43;
             this.btnAddMemberInstructor.Click += new System.EventHandler(this.btnAddMemberInstructor_Click);
             // 
@@ -221,18 +223,35 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sakkal Majalla", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(519, 209);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Algerian", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(441, 245);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(500, 75);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(666, 52);
             this.guna2HtmlLabel1.TabIndex = 39;
             this.guna2HtmlLabel1.Text = "Manage Members- Instructors";
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1134, 359);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(37, 37);
+            this.guna2ImageButton1.TabIndex = 47;
+            this.guna2ImageButton1.UseTransparentBackground = true;
             // 
             // frmManageMembersInstructors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1509, 833);
+            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.dgvAllMembersInstructors);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -244,7 +263,7 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManageMembersInstructors";
-            this.Text = "frmManageMembersInstructors";
+            this.Text = "Manage Members Instructors";
             this.Load += new System.EventHandler(this.frmManageMembersInstructors_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllMembersInstructors)).EndInit();
             this.cmsManageInstructors.ResumeLayout(false);
@@ -270,5 +289,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbFilterBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }

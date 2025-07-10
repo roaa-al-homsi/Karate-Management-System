@@ -50,11 +50,17 @@
             this.btnTitle = new Guna.UI2.WinForms.Guna2Button();
             this.labUserName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCurrentUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlOptions.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.panelMainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCurrentUser)).BeginInit();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDashboard
@@ -323,6 +329,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -337,9 +344,9 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(56, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(56, 24);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(177, 83);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(84, 83);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
@@ -348,18 +355,20 @@
             // 
             this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(56, 113);
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(44, 113);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(180, 38);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(202, 38);
             this.guna2HtmlLabel3.TabIndex = 48;
-            this.guna2HtmlLabel3.Text = "Karate System";
+            this.guna2HtmlLabel3.Text = "Karate Club";
             // 
             // panelMainMenu
             // 
             this.panelMainMenu.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.panelMainMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.panelMainMenu.Controls.Add(this.guna2HtmlLabel1);
+            this.panelMainMenu.Controls.Add(this.guna2PictureBox3);
+            this.panelMainMenu.FillColor = System.Drawing.Color.White;
             this.panelMainMenu.Location = new System.Drawing.Point(289, 72);
             this.panelMainMenu.Name = "panelMainMenu";
             this.panelMainMenu.Size = new System.Drawing.Size(1509, 833);
@@ -370,13 +379,14 @@
             this.picCurrentUser.BackColor = System.Drawing.Color.Transparent;
             this.picCurrentUser.Image = ((System.Drawing.Image)(resources.GetObject("picCurrentUser.Image")));
             this.picCurrentUser.ImageRotate = 0F;
-            this.picCurrentUser.Location = new System.Drawing.Point(1715, 3);
+            this.picCurrentUser.Location = new System.Drawing.Point(1585, 13);
             this.picCurrentUser.Name = "picCurrentUser";
             this.picCurrentUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.picCurrentUser.Size = new System.Drawing.Size(83, 63);
+            this.picCurrentUser.Size = new System.Drawing.Size(59, 39);
             this.picCurrentUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCurrentUser.TabIndex = 3;
             this.picCurrentUser.TabStop = false;
+            this.picCurrentUser.UseTransparentBackground = true;
             // 
             // guna2Panel2
             // 
@@ -430,11 +440,48 @@
             this.labCurrentUser.BackColor = System.Drawing.Color.Transparent;
             this.labCurrentUser.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCurrentUser.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labCurrentUser.Location = new System.Drawing.Point(1604, 27);
+            this.labCurrentUser.Location = new System.Drawing.Point(1650, 27);
             this.labCurrentUser.Name = "labCurrentUser";
             this.labCurrentUser.Size = new System.Drawing.Size(105, 25);
             this.labCurrentUser.TabIndex = 0;
             this.labCurrentUser.Text = "Username";
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(137, 24);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(84, 83);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 49;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(721, 113);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(745, 660);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 50;
+            this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.UseTransparentBackground = true;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(492, 96);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(400, 38);
+            this.guna2HtmlLabel1.TabIndex = 50;
+            this.guna2HtmlLabel1.Text = "Welcome To Karate Club";
             // 
             // frmMain
             // 
@@ -452,9 +499,12 @@
             this.pnlOptions.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.panelMainMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picCurrentUser)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -481,6 +531,9 @@
         private Guna.UI2.WinForms.Guna2Button btnInstructors;
         private Guna.UI2.WinForms.Guna2Button btnMembers;
         private Guna.UI2.WinForms.Guna2Button btnManagePeople;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
 

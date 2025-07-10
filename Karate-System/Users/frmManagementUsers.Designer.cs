@@ -73,7 +73,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvAllUsers.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvAllUsers.Location = new System.Drawing.Point(389, 375);
+            this.dgvAllUsers.Location = new System.Drawing.Point(430, 385);
             this.dgvAllUsers.Name = "dgvAllUsers";
             this.dgvAllUsers.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -145,7 +145,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(565, 39);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(606, 49);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(300, 181);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -158,7 +158,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(389, 707);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(430, 717);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(114, 32);
             this.guna2HtmlLabel3.TabIndex = 26;
@@ -170,7 +170,7 @@
             this.labCountRecords.BackColor = System.Drawing.Color.Transparent;
             this.labCountRecords.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCountRecords.ForeColor = System.Drawing.Color.Black;
-            this.labCountRecords.Location = new System.Drawing.Point(565, 706);
+            this.labCountRecords.Location = new System.Drawing.Point(606, 716);
             this.labCountRecords.Name = "labCountRecords";
             this.labCountRecords.Size = new System.Drawing.Size(104, 33);
             this.labCountRecords.TabIndex = 25;
@@ -184,10 +184,10 @@
             this.btnAddUser.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUser.Image")));
             this.btnAddUser.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnAddUser.ImageRotate = 0F;
-            this.btnAddUser.Location = new System.Drawing.Point(954, 304);
+            this.btnAddUser.Location = new System.Drawing.Point(1044, 314);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddUser.Size = new System.Drawing.Size(112, 65);
+            this.btnAddUser.Size = new System.Drawing.Size(84, 65);
             this.btnAddUser.TabIndex = 24;
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
@@ -204,7 +204,7 @@
             this.txtFilterBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFilterBy.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFilterBy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFilterBy.Location = new System.Drawing.Point(678, 321);
+            this.txtFilterBy.Location = new System.Drawing.Point(719, 331);
             this.txtFilterBy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFilterBy.Name = "txtFilterBy";
             this.txtFilterBy.PlaceholderText = "";
@@ -232,7 +232,7 @@
             "Person Id",
             "FullName",
             "Username"});
-            this.cmbFilterBy.Location = new System.Drawing.Point(469, 322);
+            this.cmbFilterBy.Location = new System.Drawing.Point(510, 332);
             this.cmbFilterBy.Name = "cmbFilterBy";
             this.cmbFilterBy.Size = new System.Drawing.Size(186, 36);
             this.cmbFilterBy.TabIndex = 22;
@@ -242,7 +242,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(389, 325);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(430, 335);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(74, 33);
             this.guna2HtmlLabel2.TabIndex = 21;
@@ -252,10 +252,10 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sakkal Majalla", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(588, 221);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Algerian", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(633, 236);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(300, 75);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(303, 55);
             this.guna2HtmlLabel1.TabIndex = 20;
             this.guna2HtmlLabel1.Text = "Manage Users";
             // 

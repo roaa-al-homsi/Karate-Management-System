@@ -33,6 +33,7 @@
             this.cmsManagePayments = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showPaymentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -40,7 +41,6 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.showPaymentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllPayments)).BeginInit();
             this.cmsManagePayments.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -77,7 +77,7 @@
             this.cmsManagePayments.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePayments.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePayments.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePayments.Size = new System.Drawing.Size(229, 110);
+            this.cmsManagePayments.Size = new System.Drawing.Size(229, 82);
             // 
             // updateToolStripMenuItem
             // 
@@ -93,11 +93,18 @@
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
+            // showPaymentDetailsToolStripMenuItem
+            // 
+            this.showPaymentDetailsToolStripMenuItem.Name = "showPaymentDetailsToolStripMenuItem";
+            this.showPaymentDetailsToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.showPaymentDetailsToolStripMenuItem.Text = "Show Payment Details";
+            this.showPaymentDetailsToolStripMenuItem.Click += new System.EventHandler(this.showPaymentDetailsToolStripMenuItem_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(626, 56);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(594, 46);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -186,19 +193,12 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sakkal Majalla", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(626, 249);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Algerian", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(559, 252);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(300, 75);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(380, 54);
             this.guna2HtmlLabel1.TabIndex = 30;
             this.guna2HtmlLabel1.Text = "Manage Payments";
-            // 
-            // showPaymentDetailsToolStripMenuItem
-            // 
-            this.showPaymentDetailsToolStripMenuItem.Name = "showPaymentDetailsToolStripMenuItem";
-            this.showPaymentDetailsToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
-            this.showPaymentDetailsToolStripMenuItem.Text = "Show Payment Details";
-            this.showPaymentDetailsToolStripMenuItem.Click += new System.EventHandler(this.showPaymentDetailsToolStripMenuItem_Click);
             // 
             // frmManagePayments
             // 

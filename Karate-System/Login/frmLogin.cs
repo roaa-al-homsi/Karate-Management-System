@@ -22,6 +22,12 @@ namespace KarateSystem.Login
             }
             else
             {
+                if (chkRememberMe.Checked)
+                {
+
+                }
+
+
 
                 this.Hide();
                 frmMain frm = new frmMain(this);

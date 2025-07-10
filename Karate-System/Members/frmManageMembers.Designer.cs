@@ -34,6 +34,7 @@
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showSubscriptionPeriodsHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showMemberTestsHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -42,7 +43,6 @@
             this.cmbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.showMemberTestsHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllMembers)).BeginInit();
             this.cmsManagePeople.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -80,7 +80,7 @@
             this.cmsManagePeople.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManagePeople.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManagePeople.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManagePeople.Size = new System.Drawing.Size(312, 136);
+            this.cmsManagePeople.Size = new System.Drawing.Size(312, 108);
             // 
             // updateToolStripMenuItem
             // 
@@ -105,13 +105,20 @@
             this.showSubscriptionPeriodsHistoryToolStripMenuItem.Text = "Show Subscription Periods History ";
             this.showSubscriptionPeriodsHistoryToolStripMenuItem.Click += new System.EventHandler(this.showSubscriptionPeriodsHistoryToolStripMenuItem_Click);
             // 
+            // showMemberTestsHistoryToolStripMenuItem
+            // 
+            this.showMemberTestsHistoryToolStripMenuItem.Name = "showMemberTestsHistoryToolStripMenuItem";
+            this.showMemberTestsHistoryToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
+            this.showMemberTestsHistoryToolStripMenuItem.Text = "Show Member Tests History";
+            this.showMemberTestsHistoryToolStripMenuItem.Click += new System.EventHandler(this.showMemberTestsHistoryToolStripMenuItem_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(631, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(631, 45);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(280, 200);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 28;
             this.guna2PictureBox1.TabStop = false;
@@ -212,19 +219,12 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sakkal Majalla", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(631, 218);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Algerian", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(585, 251);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(300, 75);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(383, 49);
             this.guna2HtmlLabel1.TabIndex = 21;
             this.guna2HtmlLabel1.Text = "Manage Members";
-            // 
-            // showMemberTestsHistoryToolStripMenuItem
-            // 
-            this.showMemberTestsHistoryToolStripMenuItem.Name = "showMemberTestsHistoryToolStripMenuItem";
-            this.showMemberTestsHistoryToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
-            this.showMemberTestsHistoryToolStripMenuItem.Text = "Show Member Tests History";
-            this.showMemberTestsHistoryToolStripMenuItem.Click += new System.EventHandler(this.showMemberTestsHistoryToolStripMenuItem_Click);
             // 
             // frmManageMembers
             // 
@@ -242,7 +242,7 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManageMembers";
-            this.Text = "frmManageMembers";
+            this.Text = "Manage Members";
             this.Load += new System.EventHandler(this.frmManageMembers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllMembers)).EndInit();
             this.cmsManagePeople.ResumeLayout(false);

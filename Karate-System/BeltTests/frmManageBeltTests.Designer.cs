@@ -34,6 +34,7 @@
             this.takeNextTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.retakeTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showTestDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showMemberTestsHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labCountRecords = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -42,7 +43,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnAddTest = new Guna.UI2.WinForms.Guna2Button();
-            this.showMemberTestsHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllBeltTests)).BeginInit();
             this.cmsManageBeltTests.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -80,7 +80,7 @@
             this.cmsManageBeltTests.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageBeltTests.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageBeltTests.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageBeltTests.Size = new System.Drawing.Size(262, 128);
+            this.cmsManageBeltTests.Size = new System.Drawing.Size(262, 100);
             this.cmsManageBeltTests.Opening += new System.ComponentModel.CancelEventHandler(this.cmsManageBeltTests_Opening);
             // 
             // takeNextTestToolStripMenuItem
@@ -104,11 +104,18 @@
             this.showTestDetailsToolStripMenuItem.Text = "Show Test Details";
             this.showTestDetailsToolStripMenuItem.Click += new System.EventHandler(this.showTestDetailsToolStripMenuItem_Click);
             // 
+            // showMemberTestsHistoryToolStripMenuItem
+            // 
+            this.showMemberTestsHistoryToolStripMenuItem.Name = "showMemberTestsHistoryToolStripMenuItem";
+            this.showMemberTestsHistoryToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.showMemberTestsHistoryToolStripMenuItem.Text = "Show Member Tests History";
+            this.showMemberTestsHistoryToolStripMenuItem.Click += new System.EventHandler(this.showMemberTestsHistoryToolStripMenuItem_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(626, 56);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(600, 58);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,10 +204,10 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sakkal Majalla", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(626, 249);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Algerian", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(578, 273);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(300, 75);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(402, 49);
             this.guna2HtmlLabel1.TabIndex = 30;
             this.guna2HtmlLabel1.Text = "Manage Belt Tests";
             // 
@@ -211,21 +218,15 @@
             this.btnAddTest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddTest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddTest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddTest.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddTest.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnAddTest.Font = new System.Drawing.Font("Algerian", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddTest.ForeColor = System.Drawing.Color.White;
-            this.btnAddTest.Location = new System.Drawing.Point(1264, 360);
+            this.btnAddTest.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTest.Image")));
+            this.btnAddTest.Location = new System.Drawing.Point(1314, 363);
             this.btnAddTest.Name = "btnAddTest";
-            this.btnAddTest.Size = new System.Drawing.Size(96, 45);
+            this.btnAddTest.Size = new System.Drawing.Size(46, 45);
             this.btnAddTest.TabIndex = 38;
-            this.btnAddTest.Text = "ADD";
             this.btnAddTest.Click += new System.EventHandler(this.btnAddTest_Click);
-            // 
-            // showMemberTestsHistoryToolStripMenuItem
-            // 
-            this.showMemberTestsHistoryToolStripMenuItem.Name = "showMemberTestsHistoryToolStripMenuItem";
-            this.showMemberTestsHistoryToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
-            this.showMemberTestsHistoryToolStripMenuItem.Text = "Show Member Tests History";
-            this.showMemberTestsHistoryToolStripMenuItem.Click += new System.EventHandler(this.showMemberTestsHistoryToolStripMenuItem_Click);
             // 
             // frmManageBeltTests
             // 
@@ -243,7 +244,7 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManageBeltTests";
-            this.Text = "frmManageBeltTests";
+            this.Text = "Manage BeltTests";
             this.Load += new System.EventHandler(this.frmManageBeltTests_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllBeltTests)).EndInit();
             this.cmsManageBeltTests.ResumeLayout(false);

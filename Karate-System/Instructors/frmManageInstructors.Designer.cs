@@ -82,7 +82,7 @@
             this.cmsManageInstructors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageInstructors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageInstructors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageInstructors.Size = new System.Drawing.Size(238, 162);
+            this.cmsManageInstructors.Size = new System.Drawing.Size(238, 134);
             // 
             // updateToolStripMenuItem
             // 
@@ -124,14 +124,16 @@
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(687, 44);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(531, 41);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(412, 200);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 37;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // guna2HtmlLabel3
             // 
@@ -139,7 +141,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(102, 756);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(215, 686);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(114, 32);
             this.guna2HtmlLabel3.TabIndex = 36;
@@ -151,7 +153,7 @@
             this.labCountRecords.BackColor = System.Drawing.Color.Transparent;
             this.labCountRecords.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCountRecords.ForeColor = System.Drawing.Color.Black;
-            this.labCountRecords.Location = new System.Drawing.Point(205, 755);
+            this.labCountRecords.Location = new System.Drawing.Point(320, 686);
             this.labCountRecords.Name = "labCountRecords";
             this.labCountRecords.Size = new System.Drawing.Size(104, 33);
             this.labCountRecords.TabIndex = 35;
@@ -163,12 +165,13 @@
             this.btnAddInstructor.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAddInstructor.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAddInstructor.Image = ((System.Drawing.Image)(resources.GetObject("btnAddInstructor.Image")));
+            this.btnAddInstructor.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
             this.btnAddInstructor.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnAddInstructor.ImageRotate = 0F;
-            this.btnAddInstructor.Location = new System.Drawing.Point(1253, 329);
+            this.btnAddInstructor.Location = new System.Drawing.Point(1254, 324);
             this.btnAddInstructor.Name = "btnAddInstructor";
             this.btnAddInstructor.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnAddInstructor.Size = new System.Drawing.Size(89, 65);
+            this.btnAddInstructor.Size = new System.Drawing.Size(65, 69);
             this.btnAddInstructor.TabIndex = 34;
             this.btnAddInstructor.Click += new System.EventHandler(this.btnAddInstructor_Click);
             // 
@@ -229,10 +232,10 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sakkal Majalla", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(687, 250);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Algerian", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(531, 261);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(343, 75);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(444, 47);
             this.guna2HtmlLabel1.TabIndex = 30;
             this.guna2HtmlLabel1.Text = "Manage Instructors";
             // 

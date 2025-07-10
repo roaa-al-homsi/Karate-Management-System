@@ -129,7 +129,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(590, 48);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(639, 42);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -142,7 +142,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(46, 724);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(180, 712);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(114, 32);
             this.guna2HtmlLabel3.TabIndex = 27;
@@ -154,7 +154,7 @@
             this.labCountRecords.BackColor = System.Drawing.Color.Transparent;
             this.labCountRecords.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCountRecords.ForeColor = System.Drawing.Color.Black;
-            this.labCountRecords.Location = new System.Drawing.Point(149, 723);
+            this.labCountRecords.Location = new System.Drawing.Point(283, 711);
             this.labCountRecords.Name = "labCountRecords";
             this.labCountRecords.Size = new System.Drawing.Size(104, 33);
             this.labCountRecords.TabIndex = 26;
@@ -232,10 +232,10 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sakkal Majalla", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(518, 244);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Algerian", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(457, 258);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(499, 75);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(632, 54);
             this.guna2HtmlLabel1.TabIndex = 21;
             this.guna2HtmlLabel1.Text = "Manage Subscription Periods";
             // 
@@ -261,12 +261,14 @@
             this.btnRenewPeriod.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnRenewPeriod.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnRenewPeriod.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRenewPeriod.FillColor = System.Drawing.Color.Silver;
-            this.btnRenewPeriod.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRenewPeriod.ForeColor = System.Drawing.Color.Black;
-            this.btnRenewPeriod.Location = new System.Drawing.Point(1119, 698);
+            this.btnRenewPeriod.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnRenewPeriod.Font = new System.Drawing.Font("Algerian", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRenewPeriod.ForeColor = System.Drawing.Color.White;
+            this.btnRenewPeriod.Image = ((System.Drawing.Image)(resources.GetObject("btnRenewPeriod.Image")));
+            this.btnRenewPeriod.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnRenewPeriod.Location = new System.Drawing.Point(1060, 683);
             this.btnRenewPeriod.Name = "btnRenewPeriod";
-            this.btnRenewPeriod.Size = new System.Drawing.Size(150, 45);
+            this.btnRenewPeriod.Size = new System.Drawing.Size(209, 50);
             this.btnRenewPeriod.TabIndex = 30;
             this.btnRenewPeriod.Text = "Renew Period";
             this.btnRenewPeriod.Click += new System.EventHandler(this.btnRenewPeriod_Click);
