@@ -113,7 +113,7 @@
             this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
             this.btnLogin.Location = new System.Drawing.Point(310, 524);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(153, 58);
+            this.btnLogin.Size = new System.Drawing.Size(196, 58);
             this.btnLogin.TabIndex = 78;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseTransparentBackground = true;
@@ -189,9 +189,9 @@
             this.btnClose.HoverState.CustomBorderColor = System.Drawing.Color.LightSteelBlue;
             this.btnClose.HoverState.FillColor = System.Drawing.Color.LightSteelBlue;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(124, 524);
+            this.btnClose.Location = new System.Drawing.Point(89, 524);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(156, 58);
+            this.btnClose.Size = new System.Drawing.Size(191, 58);
             this.btnClose.TabIndex = 79;
             this.btnClose.Text = "Close";
             this.btnClose.UseTransparentBackground = true;
@@ -232,7 +232,7 @@
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(653, 79);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(835, 682);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(919, 682);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 88;
             this.guna2PictureBox1.TabStop = false;

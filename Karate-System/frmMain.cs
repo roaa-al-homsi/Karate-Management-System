@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using KarateSystem.Account_Setting;
 using KarateSystem.Belt_Ranks;
 using KarateSystem.BeltTests;
 using KarateSystem.GlobalClasses;
@@ -44,7 +45,7 @@ namespace KarateSystem
                 _currentButton = (Guna2Button)btnSender;
                 _currentButton.BackColor = Color.White;
                 _currentButton.ForeColor = Color.FromArgb(175, 238, 238);
-                _currentButton.Font = new System.Drawing.Font("Comic Sans MS", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                _currentButton.Font = new System.Drawing.Font("Bell MT", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             }
         }
         public void OpenChildFormAsync(Form childForm, object btnSender)
@@ -169,6 +170,27 @@ namespace KarateSystem
         private void frmMain_Load(object sender, System.EventArgs e)
         {
             labCurrentUser.Text = LoginUser.CurrentUser.username;
+        }
+
+        private void btnAccountSetting_Click(object sender, System.EventArgs e)
+        {
+            frmAccountSettingcs frmAccountSettingcs = new frmAccountSettingcs();
+            frmAccountSettingcs.ShowDialog();
+        }
+
+        private void currentUserInfoToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void siToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

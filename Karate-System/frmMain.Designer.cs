@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.pnlOptions = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnAccountSetting = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnPayments = new Guna.UI2.WinForms.Guna2Button();
             this.btnBeltTests = new Guna.UI2.WinForms.Guna2Button();
@@ -88,6 +89,7 @@
             // pnlOptions
             // 
             this.pnlOptions.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.pnlOptions.Controls.Add(this.btnAccountSetting);
             this.pnlOptions.Controls.Add(this.btnLogout);
             this.pnlOptions.Controls.Add(this.btnPayments);
             this.pnlOptions.Controls.Add(this.btnBeltTests);
@@ -104,8 +106,30 @@
             this.pnlOptions.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
             this.pnlOptions.Location = new System.Drawing.Point(0, 72);
             this.pnlOptions.Name = "pnlOptions";
-            this.pnlOptions.Size = new System.Drawing.Size(291, 833);
+            this.pnlOptions.Size = new System.Drawing.Size(291, 868);
             this.pnlOptions.TabIndex = 6;
+            // 
+            // btnAccountSetting
+            // 
+            this.btnAccountSetting.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnAccountSetting.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAccountSetting.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAccountSetting.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAccountSetting.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAccountSetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAccountSetting.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(79)))), ((int)(((byte)(118)))));
+            this.btnAccountSetting.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccountSetting.ForeColor = System.Drawing.Color.White;
+            this.btnAccountSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountSetting.Image")));
+            this.btnAccountSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAccountSetting.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnAccountSetting.Location = new System.Drawing.Point(0, 806);
+            this.btnAccountSetting.Name = "btnAccountSetting";
+            this.btnAccountSetting.Size = new System.Drawing.Size(291, 59);
+            this.btnAccountSetting.TabIndex = 24;
+            this.btnAccountSetting.Tag = "Account Setting";
+            this.btnAccountSetting.Text = "Account Setting";
+            this.btnAccountSetting.Click += new System.EventHandler(this.btnAccountSetting_Click);
             // 
             // btnLogout
             // 
@@ -329,7 +353,9 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.guna2Panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Panel1.BorderThickness = 1;
             this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
@@ -345,7 +371,7 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(137, 24);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(146, 24);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(84, 83);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -384,7 +410,7 @@
             this.panelMainMenu.FillColor = System.Drawing.Color.White;
             this.panelMainMenu.Location = new System.Drawing.Point(289, 72);
             this.panelMainMenu.Name = "panelMainMenu";
-            this.panelMainMenu.Size = new System.Drawing.Size(1509, 833);
+            this.panelMainMenu.Size = new System.Drawing.Size(1509, 865);
             this.panelMainMenu.TabIndex = 8;
             // 
             // guna2HtmlLabel1
@@ -393,7 +419,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(492, 96);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(516, 94);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(400, 38);
             this.guna2HtmlLabel1.TabIndex = 50;
@@ -404,9 +430,9 @@
             this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(721, 113);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(752, 113);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(745, 660);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(745, 749);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox3.TabIndex = 50;
             this.guna2PictureBox3.TabStop = false;
@@ -488,7 +514,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1798, 905);
+            this.ClientSize = new System.Drawing.Size(1798, 940);
             this.Controls.Add(this.pnlOptions);
             this.Controls.Add(this.panelMainMenu);
             this.Controls.Add(this.guna2Panel2);
@@ -536,6 +562,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2Button btnAccountSetting;
     }
 }
 

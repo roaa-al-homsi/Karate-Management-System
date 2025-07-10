@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account_Setting\frmAcountSettingcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Setting\frmAcountSettingcs.Designer.cs">
+      <DependentUpon>frmAcountSettingcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Belt-Ranks\frmAddUpdateBeltRank.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +345,9 @@
     <Compile Include="Users\uc\uc_UserInfoCard.Designer.cs">
       <DependentUpon>uc_UserInfoCard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Account_Setting\frmAcountSettingcs.resx">
+      <DependentUpon>frmAcountSettingcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Belt-Ranks\frmAddUpdateBeltRank.resx">
       <DependentUpon>frmAddUpdateBeltRank.cs</DependentUpon>
       <SubType>Designer</SubType>
