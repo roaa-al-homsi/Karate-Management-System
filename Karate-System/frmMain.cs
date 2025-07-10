@@ -1,6 +1,7 @@
 ﻿using Guna.UI2.WinForms;
 using KarateSystem.Belt_Ranks;
 using KarateSystem.BeltTests;
+using KarateSystem.GlobalClasses;
 using KarateSystem.Instructors;
 using KarateSystem.Login;
 using KarateSystem.Members;
@@ -163,6 +164,11 @@ namespace KarateSystem
             this.Hide();
             frmLogin frmLogin = new frmLogin();
             frmLogin.ShowDialog();
+        }
+
+        private void frmMain_Load(object sender, System.EventArgs e)
+        {
+            labCurrentUser.Text = LoginUser.CurrentUser.username;
         }
     }
 }
